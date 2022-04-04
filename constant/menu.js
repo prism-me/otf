@@ -126,47 +126,20 @@ export const MENUITEMS = [
       ]
    },
    {
-      title: 'Locations', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [
-         {
-            title: 'Portfolio-Basic', type: 'link', children: [
-               { path: '/portfolio/basic-2-grid', title: 'Basic – 2 Grid', type: 'link' },
-               { path: '/portfolio/basic-3-grid', title: 'Basic – 3 Grid', type: 'link' },
-               { path: '/portfolio/basic-4-grid', title: 'Basic – 4 Grid', type: 'link' },
-               { path: '/portfolio/portfolio-title-2-col', title: 'Basic W Tittle – 2 Grid', type: 'link' },
-               { path: '/portfolio/portfolio-title-3-col', title: 'Basic W Tittle – 3 Grid', type: 'link' },
-               { path: '/portfolio/portfolio-title-4-col', title: 'Basic W Tittle – 4 Grid', type: 'link' },
-               { path: '/portfolio/portfolio-parallex', title: 'Parallex', type: 'link' },
-               { path: '/portfolio/centered-slide', title: 'Centered Slides', type: 'link' },
-               { path: '/portfolio/vertical-slide', title: 'Vertical Slides', type: 'link' },
-               { path: '/portfolio/multiple-carousel', title: '4 Slide With Center Slider', type: 'link' }]
-         },
-         {
-            title: 'Portfolio-Details', type: 'link', children: [
-               { path: '/portfolio/portfolio-detail-1', title: 'Container Layout', type: 'link' },
-               { path: '/portfolio/portfolio-detail-2', title: 'Full Width', type: 'link' },
-               { path: '/portfolio/portfolio-detail-3', title: 'With Bg Bredcrumb', type: 'link' },
-               { path: '/portfolio/portfolio-detail-4', title: 'Details With Slider', type: 'link' },
-               { path: '/portfolio/portfolio-detail-5', title: 'Video Portfolio', type: 'link' },
-               { path: '/portfolio/portfolio-detail-6', title: 'Two Image Portfolio', type: 'link' },
-               { path: '/portfolio/portfolio-detail-7', title: 'Left Side Image Portfolio', type: 'link' }]
-         },
-         {
-            title: 'Trending Layout', type: 'link', children: [
-               { path: '/portfolio/creative-1', title: 'Trending Layout 1', type: 'link' },
-               { path: '/portfolio/creative-2', title: 'Trending Layout 2', type: 'link' },
-               { path: '/portfolio/creative-3', title: 'Trending Layout 3', type: 'link' },
-               { path: '/portfolio/creative-4', title: 'Trending Layout 4', type: 'link' },
-               { path: '/portfolio/modern-4', title: 'Trending Layout 5', type: 'link' },
-               { path: '/portfolio/modern-3', title: 'Trending Layout 6', type: 'link' },
-               { path: '/portfolio/modern-2', title: 'Trending Layout 7', type: 'link' }]
-         },
-         {
-            title: 'Portfolio-Masonary', type: 'link', children: [
-               { path: '/portfolio/full-width-2-grid', title: 'Full-Width – 2 Grid', type: 'link' },
-               { path: '/portfolio/full-width-3-grid', title: 'Full-Width – 3 Grid', type: 'link' },
-               { path: '/portfolio/full-width-4-grid', title: 'Full-Width – 4 Grid', type: 'link' }]
-         },
-      ]
+      title: 'Locations', type: 'sub', children: [
+         { path: '/layouts/agency', title: 'Agency', type: 'link' },
+         { path: '/layouts/app1', title: 'App Landing1', type: 'link' },
+         { path: '/layouts/app2', title: 'App Landing2', type: 'link', },
+         { path: '/layouts/event', title: 'Event', type: 'link' },
+         { path: '/layouts/gym', title: 'Gym', type: 'link' },
+         { path: '/layouts/music', title: 'Music', type: 'link' },
+         { path: '/layouts/resume', title: 'Resume', type: 'link' },
+         { path: '/layouts/modern-sass', title: 'Sass1', type: 'link' },
+         { path: '/layouts/enterprice-sass', title: 'Sass2', type: 'link' },
+         { path: '/layouts/wedding', title: 'Wedding', type: 'link' },
+         { path: '/layouts/yoga', title: 'Yoga', type: 'link' },
+         { path: '/layouts/portfolioLayouts', title: 'Portfolio', type: 'link' }
+      ],
    },
    {
       title: 'Support', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [

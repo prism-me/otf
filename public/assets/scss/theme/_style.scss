@@ -1600,8 +1600,8 @@ section {
         // background-position: center;
         // background-repeat: no-repeat;
         background: $orange !important;
-        // transition: 1s;
-        // transform: scale(1.08);
+        transform: scale(1.1);
+        transition: 0.5s;
 
         .font-primary {
           color: $white;
@@ -8154,6 +8154,8 @@ schedule css end
       }
     }
 
+
+
     .music-testimonial-slider {
       &.owl-theme {
         .owl-nav {
@@ -10856,6 +10858,158 @@ gym css start
       }
     }
   }
+
+  .pricing-slider {
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          padding: 1.5rem 1rem;
+
+          &.slick-center {
+            &.slick-active {
+              .price-container {
+                filter: drop-shadow(0 0 6px $shadow-light2);
+                opacity: 1;
+                transform: scale(1.1);
+                transition: 0.5s;
+                background: $orange !important;
+
+                .font-primary {
+                  color: $white;
+                }
+
+                .price-feature-container {
+                  .otfBtn2 {
+                    background: $white !important;
+                  }
+
+                  .feature-text {
+                    .feature-icon1 {
+                      display: none;
+                    }
+
+                    .feature-icon2 {
+                      display: block !important;
+                      filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.14));
+                    }
+
+                    .feature-text-heading {
+                      color: $white !important;
+                    }
+
+                    .set-border {
+                      color: $white;
+                    }
+                  }
+
+                  .price-features {
+                    .price-feature {
+                      color: $white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      li {
+        margin-top: 40px !important;
+        line-height: 1;
+        width: auto;
+        height: auto;
+
+        button {
+          background-color: $black;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          padding: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          button {
+            transform: scale(1.4);
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .trainers-slider {
+
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          >div {
+            .item {
+              padding: 0 5px !important;
+            }
+          }
+
+          &.slick-active {
+            &.slick-center {
+              >div {
+                .item {
+                  img {
+                    box-shadow: 0 0 10px 0 $white10 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      position: relative;
+      bottom: 0;
+      margin-top: 10px;
+
+      li {
+        width: auto;
+        height: auto;
+
+        +li {
+          margin-left: 15px;
+        }
+
+        button {
+          width: auto;
+          height: auto;
+          padding: 0;
+
+          &:before {
+            font-size: 40px;
+            margin-top: -9px;
+            opacity: 1 !important;
+          }
+        }
+
+        &.slick-active,
+        &:hover {
+          button {
+            &:before {
+              color: $orange;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
 
   &.brand-slider {
     padding: 50px 0;

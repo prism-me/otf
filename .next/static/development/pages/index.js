@@ -358,133 +358,55 @@ var MENUITEMS = [// {
   }]
 }, {
   title: 'Locations',
-  megaMenu: true,
-  megaMenuType: 'medium',
   type: 'sub',
   children: [{
-    title: 'Portfolio-Basic',
-    type: 'link',
-    children: [{
-      path: '/portfolio/basic-2-grid',
-      title: 'Basic – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/basic-3-grid',
-      title: 'Basic – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/basic-4-grid',
-      title: 'Basic – 4 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-2-col',
-      title: 'Basic W Tittle – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-3-col',
-      title: 'Basic W Tittle – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-title-4-col',
-      title: 'Basic W Tittle – 4 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-parallex',
-      title: 'Parallex',
-      type: 'link'
-    }, {
-      path: '/portfolio/centered-slide',
-      title: 'Centered Slides',
-      type: 'link'
-    }, {
-      path: '/portfolio/vertical-slide',
-      title: 'Vertical Slides',
-      type: 'link'
-    }, {
-      path: '/portfolio/multiple-carousel',
-      title: '4 Slide With Center Slider',
-      type: 'link'
-    }]
+    path: '/layouts/agency',
+    title: 'Agency',
+    type: 'link'
   }, {
-    title: 'Portfolio-Details',
-    type: 'link',
-    children: [{
-      path: '/portfolio/portfolio-detail-1',
-      title: 'Container Layout',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-2',
-      title: 'Full Width',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-3',
-      title: 'With Bg Bredcrumb',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-4',
-      title: 'Details With Slider',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-5',
-      title: 'Video Portfolio',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-6',
-      title: 'Two Image Portfolio',
-      type: 'link'
-    }, {
-      path: '/portfolio/portfolio-detail-7',
-      title: 'Left Side Image Portfolio',
-      type: 'link'
-    }]
+    path: '/layouts/app1',
+    title: 'App Landing1',
+    type: 'link'
   }, {
-    title: 'Trending Layout',
-    type: 'link',
-    children: [{
-      path: '/portfolio/creative-1',
-      title: 'Trending Layout 1',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-2',
-      title: 'Trending Layout 2',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-3',
-      title: 'Trending Layout 3',
-      type: 'link'
-    }, {
-      path: '/portfolio/creative-4',
-      title: 'Trending Layout 4',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-4',
-      title: 'Trending Layout 5',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-3',
-      title: 'Trending Layout 6',
-      type: 'link'
-    }, {
-      path: '/portfolio/modern-2',
-      title: 'Trending Layout 7',
-      type: 'link'
-    }]
+    path: '/layouts/app2',
+    title: 'App Landing2',
+    type: 'link'
   }, {
-    title: 'Portfolio-Masonary',
-    type: 'link',
-    children: [{
-      path: '/portfolio/full-width-2-grid',
-      title: 'Full-Width – 2 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/full-width-3-grid',
-      title: 'Full-Width – 3 Grid',
-      type: 'link'
-    }, {
-      path: '/portfolio/full-width-4-grid',
-      title: 'Full-Width – 4 Grid',
-      type: 'link'
-    }]
+    path: '/layouts/event',
+    title: 'Event',
+    type: 'link'
+  }, {
+    path: '/layouts/gym',
+    title: 'Gym',
+    type: 'link'
+  }, {
+    path: '/layouts/music',
+    title: 'Music',
+    type: 'link'
+  }, {
+    path: '/layouts/resume',
+    title: 'Resume',
+    type: 'link'
+  }, {
+    path: '/layouts/modern-sass',
+    title: 'Sass1',
+    type: 'link'
+  }, {
+    path: '/layouts/enterprice-sass',
+    title: 'Sass2',
+    type: 'link'
+  }, {
+    path: '/layouts/wedding',
+    title: 'Wedding',
+    type: 'link'
+  }, {
+    path: '/layouts/yoga',
+    title: 'Yoga',
+    type: 'link'
+  }, {
+    path: '/layouts/portfolioLayouts',
+    title: 'Portfolio',
+    type: 'link'
   }]
 }, {
   title: 'Support',
@@ -938,7 +860,7 @@ var Nav = function Nav() {
       lineNumber: 85,
       columnNumber: 13
     }
-  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].slice(0, 3).map(function (menuItem, i) {
+  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
     return __jsx("li", {
       key: i,
       className: " ".concat(menuItem.megaMenu ? 'mega-menu' : ''),
@@ -1182,263 +1104,6 @@ var Nav = function Nav() {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 179,
-            columnNumber: 73
-          }
-        }, childrenSubItem.title)) : '');
-      })) : '');
-    })) : '');
-  })), __jsx("ul", {
-    className: "main-menu",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 195,
-      columnNumber: 13
-    }
-  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].slice(3, 7).map(function (menuItem, i) {
-    return __jsx("li", {
-      key: i,
-      className: " ".concat(menuItem.megaMenu ? 'mega-menu' : ''),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 199,
-        columnNumber: 29
-      }
-    }, menuItem.sidebartitle ? __jsx("div", {
-      className: "dropdown",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 202,
-        columnNumber: 37
-      }
-    }, menuItem.sidebartitle) : '', menuItem.type === 'sub' ? __jsx("a", {
-      className: "dropdown",
-      href: "#javascript",
-      onClick: function onClick() {
-        return toggletNavActive(menuItem);
-      },
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 205,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 206,
-        columnNumber: 41
-      }
-    }, menuItem.title)) : '', menuItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "".concat(process.env.PUBLIC_URL).concat(menuItem.path),
-      className: "".concat(menuItem.active ? 'active' : ''),
-      onClick: function onClick() {
-        return toggletNavActive(menuItem);
-      },
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 210,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 216,
-        columnNumber: 41
-      }
-    }, menuItem.title), menuItem.children ? __jsx("i", {
-      className: "fa fa-angle-right pull-right",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 218,
-        columnNumber: 45
-      }
-    }) : '') : '', __jsx("div", {
-      className: "mega-menu-container ".concat(menuItem.title === 'Elements' ? 'resize' : '', " ").concat(menuItem.active ? 'opensubmenu activeSubmenu' : ''),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 223,
-        columnNumber: 33
-      }
-    }, menuItem.megaMenu === true ? __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 227,
-        columnNumber: 45
-      }
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 228,
-        columnNumber: 49
-      }
-    }, menuItem.children.map(function (megaMenuItem, i) {
-      return __jsx("div", {
-        className: "".concat(menuItem.megaMenuType == 'small' ? 'col-lg-4' : menuItem.megaMenuType == 'medium' ? 'col-lg-3' : menuItem.megaMenuType == 'large' ? 'col' : '', " "),
-        key: i,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 232,
-          columnNumber: 65
-        }
-      }, __jsx("div", {
-        className: "menu-container",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 233,
-          columnNumber: 69
-        }
-      }, __jsx("a", {
-        className: "menu-head",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 234,
-          columnNumber: 73
-        }
-      }, megaMenuItem.title), __jsx("ul", {
-        className: "menu-icon ".concat(megaMenuItem.title ? 'openSubChildMenu' : ''),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 235,
-          columnNumber: 73
-        }
-      }, menuItem.title === 'Elements' ? megaMenuItem.children.map(function (subMegaMenuItem, i) {
-        return __jsx("li", {
-          key: i,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 240,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 241,
-            columnNumber: 93
-          }
-        }, __jsx("i", {
-          className: "icon-".concat(subMegaMenuItem.icon),
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 242,
-            columnNumber: 97
-          }
-        }), subMegaMenuItem.title));
-      }) : megaMenuItem.children.map(function (subMegaMenuItem, i) {
-        return __jsx("li", {
-          key: i,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 248,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 249,
-            columnNumber: 93
-          }
-        }, subMegaMenuItem.title));
-      }))));
-    }))) : ''), menuItem.children && !menuItem.megaMenu ? __jsx("ul", {
-      className: "".concat(menuItem.active ? 'menu-open activeSubmenu' : ''),
-      style: menuItem.active ? {
-        opacity: 1,
-        transition: 'opacity 500ms ease-in'
-      } : {},
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 267,
-        columnNumber: 37
-      }
-    }, menuItem.children.map(function (childrenItem, index) {
-      return __jsx("li", {
-        key: index,
-        className: "".concat(childrenItem.children ? 'sub-menu ' : ''),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 272,
-          columnNumber: 45
-        }
-      }, childrenItem.type === 'sub' ? __jsx("a", {
-        href: "#javascript",
-        onClick: function onClick() {
-          return toggletNavActive(childrenItem);
-        },
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 274,
-          columnNumber: 53
-        }
-      }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "".concat(childrenItem.path),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 279,
-          columnNumber: 53
-        }
-      }, __jsx("a", {
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 280,
-          columnNumber: 57
-        }
-      }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
-        className: "".concat(childrenItem.active ? 'menu-open activeSubmenu' : 'active'),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 284,
-          columnNumber: 53
-        }
-      }, childrenItem.children.map(function (childrenSubItem, key) {
-        return __jsx("li", {
-          key: key,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 286,
-            columnNumber: 61
-          }
-        }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-          href: "".concat(childrenSubItem.path),
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 288,
-            columnNumber: 69
-          }
-        }, __jsx("a", {
-          className: "sub-menu-title",
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 289,
             columnNumber: 73
           }
         }, childrenSubItem.title)) : '');
@@ -1847,6 +1512,36 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 
 /***/ }),
 
@@ -33899,255 +33594,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/elements/price/element/price5.js":
-/*!************************************************!*\
-  !*** ./pages/elements/price/element/price5.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-
-
-var _this = undefined,
-    _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\elements\\price\\element\\price5.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
- // import Slider from "react-slick";
-
- // import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  arrows: false,
-  autoplay: true,
-  centerMode: true,
-  swipeToSlide: true,
-  centerPadding: '0px',
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true
-    }
-  }, {
-    breakpoint: 991,
-    settings: {
-      slidesToShow: 1,
-      centerPadding: "160px",
-      padding: "20px",
-      slidesToScroll: 1,
-      centerMode: true,
-      autoplay: true,
-      dots: true
-    }
-  }, {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 3
-    }
-  }]
-};
-
-var PricingFive = function PricingFive() {
-  var PricingResume2 = [{
-    icon: "assets/images/OTF/icons/Premier.png",
-    iconW: "assets/images/OTF/icons/PremierW.png",
-    title: "Orange Premier",
-    feature1: "Unlimited classes",
-    feature2: 'Reduced rate for families'
-  }, {
-    icon: "assets/images/OTF/icons/Orange-elite.png",
-    iconW: "assets/images/OTF/icons/eliteW.png",
-    title: "Orange Elite",
-    feature1: "8 classes/month",
-    feature2: 'Extra classes at reduced rate'
-  }, {
-    icon: "assets/images/OTF/icons/Basic.png",
-    iconW: "assets/images/OTF/icons/BasicW.png",
-    title: "Orange Basic",
-    feature1: "4 classes/month",
-    feature2: 'Extra classes at reduced rate'
-  }];
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 9
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "wrapper-full",
-    id: "monthly",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 17
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "12",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 25
-    }
-  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: "owl-carousel owl-theme pricing-slider price-margin"
-  }, settings, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 29
-    }
-  }), PricingResume2.map(function (item, i) {
-    return __jsx("div", {
-      className: "item",
-      key: i,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86,
-        columnNumber: 45
-      }
-    }, __jsx("div", {
-      className: "price-container hover-overlay shadows bg-white text-center",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 87,
-        columnNumber: 49
-      }
-    }, __jsx("div", {
-      className: "price-feature-container set-relative",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 88,
-        columnNumber: 53
-      }
-    }, __jsx("div", {
-      className: "feature-text",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 89,
-        columnNumber: 57
-      }
-    }, __jsx("center", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90,
-        columnNumber: 61
-      }
-    }, __jsx("img", {
-      src: item.icon,
-      className: "feature-icon1 mb-4",
-      alt: "icon",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 91,
-        columnNumber: 65
-      }
-    }), __jsx("img", {
-      src: item.iconW,
-      className: "feature-icon2 d-none mb-4",
-      alt: "icon",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 92,
-        columnNumber: 65
-      }
-    })), __jsx("h4", {
-      className: "feature-text-heading text-center bold text-uppercase font-primary",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 94,
-        columnNumber: 61
-      }
-    }, item.title), __jsx("hr", {
-      className: "set-border",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95,
-        columnNumber: 61
-      }
-    })), __jsx("div", {
-      className: "price-features font-primary",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 97,
-        columnNumber: 57
-      }
-    }, __jsx("h5", {
-      className: "price-feature text-center",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 98,
-        columnNumber: 61
-      }
-    }, item.feature1), __jsx("h5", {
-      className: "price-feature text-center",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 99,
-        columnNumber: 61
-      }
-    }, item.feature2)), __jsx("a", {
-      className: "otfBtn2",
-      href: "#",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 101,
-        columnNumber: 57
-      }
-    }, "join now"))));
-  })))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (PricingFive);
-
-/***/ }),
-
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -35807,17 +35253,60 @@ var Format = function Format() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _elements_price_element_price5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../elements/price/element/price5 */ "./pages/elements/price/element/price5.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-var _this = undefined,
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+
+
+
+var _settings,
+    _this = undefined,
     _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\pricing.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
+var settings = (_settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500
+}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "arrows", false), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "slidesToShow", 3), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "autoplay", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "centerMode", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "centerPadding", '0'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "slidesToScroll", 1), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "responsive", [{
+  breakpoint: 992,
+  settings: {
+    slidesToShow: 1
+  }
+}]), _settings);
+var PricingResume2 = [{
+  icon: "assets/images/OTF/icons/Premier.png",
+  iconW: "assets/images/OTF/icons/PremierW.png",
+  title: "Orange Premier",
+  feature1: "Unlimited classes",
+  feature2: 'Reduced rate for families'
+}, {
+  icon: "assets/images/OTF/icons/Orange-elite.png",
+  iconW: "assets/images/OTF/icons/eliteW.png",
+  title: "Orange Elite",
+  feature1: "8 classes/month",
+  feature2: 'Extra classes at reduced rate'
+}, {
+  icon: "assets/images/OTF/icons/Basic.png",
+  iconW: "assets/images/OTF/icons/BasicW.png",
+  title: "Orange Basic",
+  feature1: "4 classes/month",
+  feature2: 'Extra classes at reduced rate'
+}, {
+  icon: "assets/images/OTF/icons/Basic.png",
+  iconW: "assets/images/OTF/icons/BasicW.png",
+  title: "Orange Basic",
+  feature1: "4 classes/month",
+  feature2: 'Extra classes at reduced rate'
+}];
 
 var Pricing = function Pricing() {
   return __jsx("section", {
@@ -35826,30 +35315,30 @@ var Pricing = function Pricing() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 57,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 58,
       columnNumber: 9
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 59,
       columnNumber: 13
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
     md: "10",
     className: "offset-md-1",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 60,
       columnNumber: 17
     }
   }, __jsx("h2", {
@@ -35857,17 +35346,140 @@ var Pricing = function Pricing() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 61,
       columnNumber: 21
     }
-  }, "Let\u2019s talk memberships")), __jsx(_elements_price_element_price5__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Let\u2019s talk memberships")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+    lg: "12",
+    md: "8",
+    className: "offset-md-2 offset-lg-0",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 63,
       columnNumber: 17
     }
-  }))));
+  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: "pricing-slider price-margin"
+  }, settings, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 21
+    }
+  }), PricingResume2.map(function (item, i) {
+    return __jsx("div", {
+      className: "item",
+      key: i,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67,
+        columnNumber: 33
+      }
+    }, __jsx("div", {
+      className: "price-container hover-overlay shadows bg-white text-center",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68,
+        columnNumber: 37
+      }
+    }, __jsx("div", {
+      className: "price-feature-container set-relative",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69,
+        columnNumber: 41
+      }
+    }, __jsx("div", {
+      className: "feature-text",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70,
+        columnNumber: 45
+      }
+    }, __jsx("center", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71,
+        columnNumber: 49
+      }
+    }, __jsx("img", {
+      src: item.icon,
+      className: "feature-icon1 mb-4",
+      alt: "icon",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72,
+        columnNumber: 53
+      }
+    }), __jsx("img", {
+      src: item.iconW,
+      className: "feature-icon2 d-none mb-4",
+      alt: "icon",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 53
+      }
+    })), __jsx("h4", {
+      className: "feature-text-heading text-center bold text-uppercase font-primary",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 49
+      }
+    }, item.title), __jsx("hr", {
+      className: "set-border",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 49
+      }
+    })), __jsx("div", {
+      className: "price-features font-primary",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 45
+      }
+    }, __jsx("h5", {
+      className: "price-feature text-center mb-1",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79,
+        columnNumber: 49
+      }
+    }, item.feature1), __jsx("h5", {
+      className: "price-feature text-center",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80,
+        columnNumber: 49
+      }
+    }, item.feature2)), __jsx("a", {
+      className: "otfBtn2",
+      href: "#",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82,
+        columnNumber: 45
+      }
+    }, "join now"))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pricing);
@@ -36116,28 +35728,23 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 var settings = {
   dots: true,
   infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  autoplay: true,
+  swipeToSlide: true,
   centerMode: true,
   centerPadding: '60px',
   arrows: false,
-  autoplay: true,
-  swipeToSlide: true,
-  speed: 500,
-  slidesToShow: 5,
+  slidesToScroll: 1,
   responsive: [{
     breakpoint: 420,
     settings: {
-      slidesToShow: 1,
-      centerPadding: '65px'
+      slidesToShow: 1
     }
   }, {
-    breakpoint: 1024,
+    breakpoint: 1200,
     settings: {
       slidesToShow: 3
-    }
-  }, {
-    breakpoint: 1025,
-    settings: {
-      slidesToShow: 4
     }
   }]
 };
@@ -36177,7 +35784,7 @@ var Trainer = function Trainer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 70,
       columnNumber: 5
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
@@ -36185,7 +35792,7 @@ var Trainer = function Trainer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 71,
       columnNumber: 9
     }
   }, __jsx("h3", {
@@ -36193,14 +35800,14 @@ var Trainer = function Trainer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 72,
       columnNumber: 13
     }
   }, "Testimonials"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 73,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
@@ -36208,7 +35815,7 @@ var Trainer = function Trainer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 74,
       columnNumber: 17
     }
   }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -36218,7 +35825,7 @@ var Trainer = function Trainer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 75,
       columnNumber: 21
     }
   }), testimonial.map(function (x, i) {
@@ -36228,7 +35835,7 @@ var Trainer = function Trainer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 78,
         columnNumber: 33
       }
     }, __jsx("img", {
@@ -36238,7 +35845,7 @@ var Trainer = function Trainer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 79,
         columnNumber: 37
       }
     }), __jsx("div", {
@@ -36246,7 +35853,7 @@ var Trainer = function Trainer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 80,
         columnNumber: 37
       }
     }, __jsx("h4", {
@@ -36254,7 +35861,7 @@ var Trainer = function Trainer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 81,
         columnNumber: 41
       }
     }, x.title), __jsx("p", {
@@ -36262,7 +35869,7 @@ var Trainer = function Trainer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 86,
         columnNumber: 41
       }
     }, x.subtitle)));

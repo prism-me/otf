@@ -1,35 +1,28 @@
 import React from 'react'
 import Slider from "react-slick";
 import { Container, Row, Col } from 'reactstrap'
+
 var settings = {
     dots: true,
     infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    autoplay: true,
+    swipeToSlide: true,
     centerMode: true,
     centerPadding: '60px',
     arrows: false,
-    autoplay: true,
-    swipeToSlide: true,
-    speed: 500,
-    slidesToShow: 5,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 420,
             settings: {
-                slidesToShow: 1,
-                centerPadding: '65px',
+                slidesToShow: 1
             }
         },
         {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 1025,
-            settings: {
-                slidesToShow: 4,
-            }
+            breakpoint: 1200,
+            settings: { slidesToShow: 3 }
         }
     ]
 };

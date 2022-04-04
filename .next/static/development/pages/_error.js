@@ -26675,7 +26675,7 @@ Error.getInitialProps = function (_ref2) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 10:
 /*!******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=I%3A%5CPrism%20Projects%5COTF%5Cotf%5Cpages%5C_error.js ***!
   \******************************************************************************************************************************/
@@ -26698,5 +26698,5 @@ module.exports = dll_f7def7ba0dcb228c444e;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]);
+},[[10,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map
