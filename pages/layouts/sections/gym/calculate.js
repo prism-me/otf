@@ -1,79 +1,57 @@
 import React from 'react'
-import {Container,Row,Col} from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 const Calculate = () => (
-    <section className="gym format bg-cal-bmi" id="bmi">
-        <Container>
+    <section className="gym format bg-location p-0" id="bmi">
+        <Container fluid>
             <Row>
-                <Col md="6">
-                    <div className="center-text">
-                        <div>
-                            <div className="format-small-text">
-                                <h6 className="text-white"><span>our progress</span></h6>
-                            </div>
-                            <div className="format-head-text">
-                                <h3 className="text-white about-font-header">calculate your BMI</h3>
-                            </div>
-                            <div className="format-sub-text">
-                                <p className="p-light about-para text-white">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                </p>
-                            </div>
-                            <div className="link-horizontal">
-                                <ul>
-                                    <li>
-                                        <div className="checkbox">
-                                            <label className="text-white center-text"><input type="checkbox" value="" />Metric Units</label>
-                                        </div>
-                                    </li>
-                                    <li className="about-icon">
-                                        <div className="checkbox">
-                                            <label className="text-white center-text"><input type="checkbox" value="" />Imperial Units</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="link-horizontal m-t-40 m-b-40">
-                                <ul>
-                                    <li>
-                                        <a className="btn btn-default primary-btn transparent">Weight/Kg</a>
-                                    </li>
-                                    <li>
-                                        <a className="btn btn-default primary-btn transparent">Height/Cm</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a className="btn btn-default back-white">CALCULATE</a>
-                        </div>
+                <Col sm={6} className={"BGImgLocation p-0"}
+                    style={{ backgroundImage: "url('assets/images/OTF/home/locationbg.jpg')" }}
+                >
+                    <div className={"p-5 mx-5 mb-4"}>
+                        <h3 className="text-left oftHeading">Our Locations</h3>
+                        <Container>
+                            <Row className={"locationDiv mb-3"}>
+                                <Col sm={8}>
+                                    <h4 className='locationHeading'>
+                                        Orangetheory Fitness
+                                        mercato mall - Level 1
+                                    </h4>
+                                    <p className='locationsubHeading'>
+                                        Jumeirah Beach Road, Dubai
+                                        United Arab Emirates <br />
+                                        Contact No: <a href="tel:9714 340 1040">+9714 340 1040</a>
+                                    </p>
+                                </Col>
+                                <Col sm={4} className={"d-flex justify-content-center align-items-center"}>
+                                    <a href="tel:9714 340 1040">
+                                        <i className="fa fa-phone iconstyelLocation"></i>
+                                    </a>
+                                </Col>
+                            </Row>
+                            <Row className={"locationDiv"}>
+                                <Col sm={8} >
+                                    <h4 className='locationHeading'>
+                                        times square center - Ground Floor
+                                    </h4>
+                                    <p className='locationsubHeading'>
+                                        Sheikh Zayed Road, Dubai
+                                        United Arab Emirates <br />
+                                        Contact No: <a href="tel:+9714 324 4424">+9714 324 4424</a>
+                                    </p>
+                                </Col>
+                                <Col sm={4} className={"d-flex justify-content-center align-items-center"}>
+                                    <a href="tel:+9714 324 4424">
+                                        <i className="fa fa-phone iconstyelLocation"></i>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Container>
+
                     </div>
                 </Col>
-                <Col lg="5" md="6" className="offset-lg-1">
-                    <div className="center-text">
-                        <table className="calculate-bmi">
-                            <tbody>
-                                <tr>
-                                    <td>BMI</td>
-                                    <td>Weight Status</td>
-                                </tr>
-                                <tr>
-                                    <td>Below 18.5</td>
-                                    <td>Underweight</td>
-                                </tr>
-                                <tr>
-                                    <td>18.5 - 24.9</td>
-                                    <td>Normal</td>
-                                </tr>
-                                <tr>
-                                    <td>25 - 29.9</td>
-                                    <td>Overweight</td>
-                                </tr>
-                                <tr>
-                                    <td>30 and Above</td>
-                                    <td>Obese</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <Col sm={6} className={"p-0"}>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6032486928893!2d55.25071151432762!3d25.216599037102654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4362916220b1%3A0x175f64a16111cae7!2sOrangetheory%20Fitness%20at%20Mercato%20Mall!5e0!3m2!1sen!2s!4v1649050081764!5m2!1sen!2s"
+                        width="100%" height="100%" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </Col>
             </Row>
         </Container>

@@ -1,26 +1,28 @@
 import React, { Fragment } from 'react'
-import {Container,Row,Col} from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 const Footer = () => (
     <Fragment>
         <footer className="gym footer2">
             <Container>
                 <Row>
-                    <Col lg="3" md="3" sm="12"  className="set-first">
+                    <Col lg="3" md="3" sm="12" className="set-first">
                         <div className="logo-sec">
-                            <div className="footer-title mobile-title">
-                                <h3 className="text-white">About Us</h3>
-                            </div>
                             <div className="footer-contant">
-                                <img alt="" className="img-fluid footer-logo" src="/assets/images/logo/1.png" />
-                                <div className="footer-para">
-                                    <h6 className="text-white para-address">Unice</h6>
-                                    <h6 className="text-white para-address">324 Madison Street New york City, </h6>
-                                    <h6 className="text-white para-address">NY 10001.</h6>
-                                </div>
+                                <img alt="" className="img-fluid footer-logo" src="/assets/images/OTF/logo/footer_logo.png" />
                                 <ul className="d-flex footer-social social">
                                     <li className="footer-social-list">
                                         <a href="#">
-                                            <i aria-hidden="true" className="fa fa-facebook"></i>
+                                            <i aria-hidden="true" className="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li className="footer-social-list">
+                                        <a href="#">
+                                            <i aria-hidden="true" className="fa fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li className="footer-social-list">
+                                        <a href="#">
+                                            <i aria-hidden="true" className="fa fa-linkedin"></i>
                                         </a>
                                     </li>
                                     <li className="footer-social-list">
@@ -28,142 +30,110 @@ const Footer = () => (
                                             <i aria-hidden="true" className="fa fa-twitter"></i>
                                         </a>
                                     </li>
-                                    <li className="footer-social-list">
-                                        <a href="#">
-                                            <i aria-hidden="true" className="fa fa-google"></i>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </Col>
-                    <Col lg="2" md="3" sm="12">
-                        <div className="footer-title mobile-title">
-                            <h3 className="text-white">services</h3>
-                        </div>
+                    <Col lg="3" md="3" sm="12">
                         <div className="footer-contant">
-                            <h5 className="footer-headings">services</h5>
                             <div>
-                                <ul className="footer-lists op-text">
+                                <ul className="footer-lists">
                                     <li>
-                                        <a href="#">Portfolio Website</a>
+                                        <a href="#">Select You Locations</a>
                                     </li>
                                     <li>
-                                        <a href="#">Set up an account</a>
+                                        <a href="#">Our Mission, Vision, & Values</a>
                                     </li>
                                     <li>
-                                        <a href="#">Invoice Creation</a>
+                                        <a href="#">Press</a>
                                     </li>
                                     <li>
-                                        <a href="#">Get Our Specials</a>
+                                        <a href="#">Franchisees</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">International Opportunities</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Articles</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </Col>
-                    <Col lg="2" md="3" sm="12">
-                        <div className="footer-title mobile-title">
-                            <h3 className="text-white">brand</h3>
-                        </div>
+                    <Col lg="3" md="3" sm="12">
                         <div className="footer-contant">
-                            <h5 className="footer-headings">brand</h5>
                             <div>
-                                <ul className="footer-lists op-text">
+                                <ul className="footer-lists">
                                     <li>
-                                        <a href="#">Chat24</a>
+                                        <a href="#">Shop</a>
                                     </li>
                                     <li>
-                                        <a href="#">Zoom</a>
+                                        <a href="#">Customer Service</a>
                                     </li>
                                     <li>
-                                        <a href="#">Alpha Payment</a>
+                                        <a href="#">Real Estate</a>
                                     </li>
                                     <li>
-                                        <a href="#">Upwork</a>
+                                        <a href="#">Promotion Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Do not sell my information</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Global Studios</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </Col>
-                    <Col lg="2" md="3" sm="12">
-                        <div className="footer-title mobile-title">
-                            <h3 className="text-white">Support</h3>
-                        </div>
-                        <div className="footer-contant">
-                            <h5 className="footer-headings">Support</h5>
-                            <div>
-                                <ul className="footer-lists op-text">
-                                    <li>
-                                        <a href="#">For Freelancers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">For Companies</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">For Business</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">General Help</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col lg="3" md="12" sm="12" className="set-last">
-                        <div className="footer-title mobile-title">
-                            <h3 className="text-white">Post Tags</h3>
-                        </div>
-                        <div className="footer-contant">
-                            <h5 className="footer-headings">Post Tags</h5>
-                            <div className="link-btns">
-                                <ul>
-                                    <li className="buttons">
-                                        <a href="#">app</a>
-                                    </li>
-                                    <li className="buttons">
-                                        <a href="#">business</a>
-                                    </li>
-                                    <li className="buttons">
-                                        <a href="#">corporation</a>
-                                    </li>
-                                    <li className="buttons">
-                                        <a href="#">creative</a>
-                                    </li>
-                                    <li className="buttons">
-                                        <a href="#">design</a>
-                                    </li>
-                                    <li className="buttons">
-                                        <a href="#">fashion</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <Col lg="3" md="3" sm="12">
+                        <div className="footer-para">
+                            <p className="para-address">
+                                <i aria-hidden="true" className="fa fa-map-marker mr-2"></i>
+                                <strong>
+                                    Orangetheory Fitness
+                                    Mercato Mall - Level 1
+                                </strong>
+                                <br />
+                                <span style={{ fontWeight: "300" }}>
+                                    Jumeirah Beach Road, Dubai
+                                    United Arab Emirates
+                                </span>
+                            </p>
+                            <p className="para-address mt-2">
+                                <i aria-hidden="true" className="fa fa-phone mr-2"></i>
+                                <a href='tel:+9714 340 1040'>
+                                    +9714 340 1040
+                                </a>
+                            </p>
+                            <p className="para-address mt-3">
+                                <i aria-hidden="true" className="fa fa-map-marker mr-2"></i>
+                                <strong>
+                                    Times Square Centre - Ground Floor
+                                </strong>
+                                <br />
+                                <span style={{ fontWeight: "300" }}>
+                                    Sheikh Zayed Road, Dubai
+                                    United Arab Emirates
+                                </span>
+                            </p>
+                            <p className="para-address mt-2">
+                                <i aria-hidden="true" className="fa fa-phone mr-2"></i>
+                                <a href='tel:+9714 340 1040'>
+                                    +9714 340 1040
+                                </a>
+                            </p>
                         </div>
                     </Col>
                 </Row>
             </Container>
         </footer>
-        <div className="gym copyright">
+        <div className="gym copyright text-center">
             <Container>
-                <Row>
-                    <Col sm="6">
-                        <div className="link-horizontal">
-                            <ul>
-                                <li>
-                                    <a className="copyright-text op-text" href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a className="copyright-text op-text" href="#">Terms & Conditions</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </Col>
-                    <Col sm="6">
-                        <div>
-                            <h6 className="copyright-text text-white text-right op-text">Copyright © 2020 Unice by <i
-                                    aria-hidden="true" className="fa fa-heart"></i> pixelstrap</h6>
-                        </div>
-                    </Col>
-                </Row>
+                ©<a className="copyright-text" href="/">Orangetheoryfitness</a> | <a className="copyright-text " href="#">Terms of use </a> | <a className="copyright-text" href="#">Privacy Policy</a> | Designed and Managed by <a className="copyright-text" href="https://www.prism-me.com/" target={"_blank"}>Prism Digital.</a>
             </Container>
         </div>
     </Fragment>

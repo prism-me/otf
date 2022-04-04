@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { MENUITEMS } from '../../constant/menu';
-import {Container,Row} from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 const Nav = () => {
     const [mainmenu, setMainMenu] = useState(MENUITEMS);
     const [sidebar, setSidebar] = useState(false);
@@ -79,7 +79,7 @@ const Nav = () => {
         <div className={`navbar`} id="togglebtn">
             <div className="responsive-btn">
                 <a className="btn-back" onClick={closeSidebar}>
-                    <h5>back</h5>
+                    <h5>close</h5>
                 </a>
             </div>
             <ul className="main-menu">
@@ -87,7 +87,7 @@ const Nav = () => {
                     MENUITEMS.slice(0, 3).map((menuItem, i) => {
                         return (
                             <li key={i} className={` ${menuItem.megaMenu ? 'mega-menu' : ''}`}>
-                                
+
                                 {(menuItem.sidebartitle) ?
                                     <div className="dropdown">{menuItem.sidebartitle}</div>
                                     : ''}
@@ -124,7 +124,7 @@ const Nav = () => {
                                                                         <a className="menu-head">{megaMenuItem.title}</a>
                                                                         <ul className={`menu-icon ${megaMenuItem.title ? 'openSubChildMenu' : ''}`}>
                                                                             {menuItem.title === 'Elements' ?
-                                                                               
+
                                                                                 (megaMenuItem.children).map((subMegaMenuItem, i) => {
                                                                                     return (
                                                                                         <li key={i}>
@@ -197,7 +197,7 @@ const Nav = () => {
                     MENUITEMS.slice(3, 7).map((menuItem, i) => {
                         return (
                             <li key={i} className={` ${menuItem.megaMenu ? 'mega-menu' : ''}`}>
-                              
+
                                 {(menuItem.sidebartitle) ?
                                     <div className="dropdown">{menuItem.sidebartitle}</div>
                                     : ''}
@@ -220,7 +220,7 @@ const Nav = () => {
                                     : ''}
 
                                 {/* MEGHA MENU */}
-                                <div className={`mega-menu-container ${menuItem.title === 'Elements' ? 'resize' : ''} ${ menuItem.active ? 'opensubmenu activeSubmenu' : '' }`}>
+                                <div className={`mega-menu-container ${menuItem.title === 'Elements' ? 'resize' : ''} ${menuItem.active ? 'opensubmenu activeSubmenu' : ''}`}>
                                     {
                                         menuItem.megaMenu === true
                                             ?
@@ -234,7 +234,7 @@ const Nav = () => {
                                                                         <a className="menu-head">{megaMenuItem.title}</a>
                                                                         <ul className={`menu-icon ${megaMenuItem.title ? 'openSubChildMenu' : ''}`}>
                                                                             {menuItem.title === 'Elements' ?
-                                                                                
+
                                                                                 (megaMenuItem.children).map((subMegaMenuItem, i) => {
                                                                                     return (
                                                                                         <li key={i}>

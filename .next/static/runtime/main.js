@@ -4759,12 +4759,12 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/next/dist/build/polyfills/object-assign.js");
 
 /***/ }),
 
@@ -5233,7 +5233,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "D:\\Projects\\React Project\\OTF\\unice_theme\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "I:\\Prism Projects\\OTF\\otf\\.next");
       return error;
     }
   };
@@ -10909,12 +10909,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -10932,12 +10932,12 @@ module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -12536,14 +12536,14 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "dll-reference dll_e4329fd01811217614f8":
+/***/ "dll-reference dll_f7def7ba0dcb228c444e":
 /*!*******************************************!*\
-  !*** external "dll_e4329fd01811217614f8" ***!
+  !*** external "dll_f7def7ba0dcb228c444e" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_e4329fd01811217614f8;
+module.exports = dll_f7def7ba0dcb228c444e;
 
 /***/ })
 

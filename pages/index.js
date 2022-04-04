@@ -1,59 +1,60 @@
-import React, { Fragment, useEffect } from 'react'
-import '../public/assets/scss/landing.scss'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
-// import Custom Components
-import Header from '../landing/header'
-import GiftSection from '../landing/git-section'
-import DemoSection from '../landing/demo'
-import PortfolioSection from '../landing/portfolio'
-import WhatinsideSection from '../landing/whatinside'
-import BlogSection from '../landing/blog'
-import ElementSection from '../landing/elements'
-import FeaturesSection from '../landing/features'
-import TestimonialSection from '../landing/testimonial'
-import RatSection from '../landing/rat'
-import FooterSection from '../landing/footer'
 
-const Home = () => {
-  
+// import Custom Components
+import Header from '../containers/common/header'
+import BannerSection from '../pages/layouts/sections/gym/banner'
+import FormatSection from '../pages/layouts/sections/gym/format'
+import AboutSection from '../pages/layouts/sections/gym/about'
+import ScheduleSection from '../pages/layouts/sections/gym/schedule'
+import CounterSection from '../pages/layouts/sections/gym/counter'
+import TrainerSection from '../pages/layouts/sections/gym/trainer'
+// import TestimonialSection from '../pages/layouts/sections/gym/testimonial'
+import PricingSection from '../pages/layouts/sections/gym/pricing'
+import CalculateSection from '../pages/layouts/sections/gym/calculate'
+// import BrandSection from '../pages/layouts/sections/gym/brand'
+import FooterSection from '../pages/layouts/sections/gym/footer'
+
+const Gym = () => {
+
   useEffect(() => {
-    document.body.style.setProperty('--primary', '#10266b')
-    document.body.style.setProperty('--secondary', '#464545')
-    document.body.style.setProperty('--light', '#1F357D')
-    document.body.style.setProperty('--dark', '#04185B')
+    document.body.style.setProperty('--primary', '#000')
+    document.body.style.setProperty('--secondary', '#000')
+    document.body.style.setProperty('--light', '#000')
+    document.body.style.setProperty('--dark', '#000')
   })
 
   return (
-    <Fragment>
-      <div className="landing-page">
+    <div>
       <Head>
-        <title>Unice</title>
+        <title>Orange Theory</title>
       </Head>
 
-      <Header />
+      <Header className="gym nav-lg" />
 
-      <GiftSection />
+      <BannerSection />
 
-      <DemoSection />
+      <AboutSection />
 
-      <PortfolioSection />
+      <ScheduleSection />
 
-      <WhatinsideSection />
+      <PricingSection />
 
-      <BlogSection />
+      <CounterSection />
 
-      <ElementSection />
+      <TrainerSection />
 
-      <FeaturesSection />
+      {/* <TestimonialSection /> */}
 
-      <TestimonialSection />
+      <FormatSection />
 
-      <RatSection />
+      <CalculateSection />
+
+      {/* <BrandSection /> */}
 
       <FooterSection />
-      </div>
-    </Fragment>
+
+    </div>
   )
 }
-
-export default Home
+export default Gym;

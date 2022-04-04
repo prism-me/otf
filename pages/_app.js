@@ -12,7 +12,7 @@ import "../public/assets/scss/color-1.scss"
 import '../public/assets/scss/themify.scss';
 import "../public/assets/scss/slick.scss";
 import "../public/assets/scss/slick-theme.scss";
-import Customizer from '../containers/customizer';
+// import Customizer from '../containers/customizer';
 
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
@@ -64,7 +64,7 @@ function MyFunctionComponent({ children }) {
   return (
     <>
       <Head>
-        <title>Unice</title>
+        <title>Orange Theory</title>
       </Head>
       {loader &&
         <div className="loader-wrapper">
@@ -93,7 +93,7 @@ export default function MyApp({ Component, pageProps, graphql }) {
     <div>
       <MyFunctionComponent>
         <Component {...pageProps} />
-        <Customizer />
+        {/* <Customizer /> */}
       </MyFunctionComponent>
       <ToastContainer />
     </div>

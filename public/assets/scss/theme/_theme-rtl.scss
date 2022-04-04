@@ -3,6 +3,7 @@
 .rtl {
   direction: rtl;
   text-align: right;
+
   .split {
     .blog-list {
       &:nth-child(even) {
@@ -12,17 +13,21 @@
       }
     }
   }
+
   .form-check-input {
     margin-left: unset;
     margin-right: -1.25rem;
   }
+
   .ml-4 {
     margin-left: unset !important;
     margin-right: 1.5rem !important;
   }
+
   .input-range {
     direction: ltr;
   }
+
   .event-countdown {
     .countdown {
       ul {
@@ -30,23 +35,28 @@
           .event-counter {
             padding-left: unset;
             padding-right: 15px;
+
             span {
               text-align: left;
             }
+
             &:before {
               left: unset;
               right: 0;
             }
+
             &:after {
               left: unset;
               right: calc(100% - 20px);
             }
+
             .set-border-left {
               border-left: unset;
               border-right: 5px solid $white;
               left: unset;
               right: 0;
             }
+
             .set-border-bottom {
               left: unset;
               right: 5px;
@@ -56,19 +66,23 @@
       }
     }
   }
+
   .image-swatch {
     .slick-track {
       margin-left: unset;
       margin-right: 0;
     }
+
     .slick-slide {
       float: right;
     }
   }
+
   .ml-1 {
     margin-left: unset !important;
     margin-right: 0.25rem !important;
   }
+
   .modal-no-header {
     &.close-up {
       .close {
@@ -77,14 +91,17 @@
       }
     }
   }
+
   .alert-dismissible {
     padding-right: 1.25rem;
     padding-left: 4rem;
+
     .close {
       right: unset;
       left: 0;
     }
   }
+
   .multiple-carousel,
   .center-slide {
     .imgs-carousel {
@@ -93,10 +110,12 @@
       }
     }
   }
+
   .coming-soon {
     .count.no-border {
       border-right: 1px solid #777;
     }
+
     .set-count {
       .counters-content {
         &:first-child {
@@ -107,6 +126,7 @@
       }
     }
   }
+
   .accordion {
     .accordion-item {
       .title {
@@ -114,10 +134,12 @@
       }
     }
   }
+
   .header {
     .center-text {
       direction: rtl;
     }
+
     .bg {
       &.app2-header {
         .header-text {
@@ -129,20 +151,25 @@
         }
       }
     }
+
     .wave {
+
       &:before,
       &:after {
         right: 0;
       }
     }
+
     .wave-orange {
       &:after {
         display: none;
       }
+
       &:before {
         right: 0;
       }
     }
+
     .saas2-content {
       .round {
         .inner-circle {
@@ -151,11 +178,13 @@
         }
       }
     }
+
     &.ecommerce {
       nav {
         .m-r-auto {
           margin-left: unset !important;
         }
+
         .top-header-right {
           ul {
             li {
@@ -171,6 +200,7 @@
       }
     }
   }
+
   header {
     nav {
       a {
@@ -178,43 +208,50 @@
           // filter:brightness(0) invert(1);
         }
       }
+
       ul {
         .sub-menu {
-          & > a {
+          &>a {
             &:before {
               left: 18px;
               right: unset;
             }
           }
         }
+
         .dropdown {
           &:before {
             left: 18px;
             right: unset;
           }
         }
+
         .mega-menu {
           .mega-menu-container {
             right: unset;
             left: 0;
           }
         }
+
         ul {
           li {
             text-align: right;
           }
         }
       }
+
       .menu-head {
         padding: 10px 10px 10px 28px;
       }
     }
+
     .menu-container {
       .menu-icon {
         li {
           a {
             padding-right: 22px;
             padding-left: unset;
+
             i {
               right: 0;
               left: unset;
@@ -223,19 +260,23 @@
         }
       }
     }
+
     .color-animated {
       margin-right: 10px;
       margin-left: unset;
     }
+
     .center-text {
       direction: unset;
     }
+
     .main-menu {
       &.mr-auto {
         margin-left: auto !important;
         margin-right: unset !important;
       }
     }
+
     &.wedding {
       nav {
         a {
@@ -244,12 +285,14 @@
           }
         }
       }
+
       .responsive-btn {
         i {
           color: #c0882f !important;
         }
       }
     }
+
     &.resume {
       nav {
         a {
@@ -259,6 +302,7 @@
         }
       }
     }
+
     &.dark {
       nav {
         a {
@@ -268,6 +312,7 @@
         }
       }
     }
+
     &.agency {
       .responsive-btn {
         i {
@@ -275,15 +320,17 @@
         }
       }
     }
+
     &.dark {
       nav {
         ul {
           li {
-            > a {
+            >a {
               color: #000;
             }
           }
         }
+
         a {
           img {
             filter: unset;
@@ -291,12 +338,14 @@
         }
       }
     }
+
     &.yoga {
       .logo-abs {
         right: 42%;
         left: unset;
       }
     }
+
     &.ecommerce {
       nav {
         a {
@@ -307,6 +356,7 @@
       }
     }
   }
+
   .music {
     &.gallery {
       .gallery-slider {
@@ -318,11 +368,13 @@
       }
     }
   }
+
   .modal-header {
     .close {
       margin: -1rem auto -1rem -1rem;
     }
   }
+
   .modal-no-header {
     &.close-in-modal {
       .close {
@@ -330,6 +382,7 @@
         left: 16px;
       }
     }
+
     &.close-right {
       .close {
         right: unset;
@@ -337,46 +390,56 @@
       }
     }
   }
+
   .modal1 {
     .offer-content {
       padding-left: 30px;
       padding-right: unset;
     }
   }
+
   .shadow-section {
     .offset-md-2 {
       margin-left: 0;
       margin-right: 16.6666666667%;
     }
   }
+
   .owl-theme {
     .owl-nav {
       direction: ltr;
     }
   }
+
   .pull-right {
     float: left;
   }
+
   .center-content {
     direction: rtl;
   }
+
   section {
     &.header {
       direction: ltr;
     }
+
     &.app1,
     &.event {
       direction: unset;
     }
+
     &.app2 {
       .center-text {
         direction: unset;
       }
     }
+
     &.saas1 {
       &.build-bg {
         direction: ltr;
       }
+
       &.testimonial {
         .testi-profile {
           .media-body {
@@ -384,10 +447,12 @@
             text-align: left;
           }
         }
+
         .testimonial {
           margin-left: 40px;
           margin-right: 20px;
         }
+
         .testimonial-slider {
           .slick-slider {
             .slick-dots {
@@ -399,44 +464,56 @@
       }
     }
   }
+
   .link-horizontal {
     ul {
       direction: rtl;
     }
   }
+
   .m-r-5 {
     margin-left: 5px;
     margin-right: unset;
   }
+
   .text-left {
     text-align: right !important;
   }
+
   .m-r-auto {
     margin-left: auto !important;
     margin-right: unset !important;
+
     img {
       transform: scalex(-1);
     }
   }
+
   .m-l-auto {
     margin-right: auto;
     margin-left: unset;
   }
+
   .ml-auto {
     margin-right: auto !important;
     margin-left: unset !important;
   }
+
   .slick-slider {
     direction: ltr;
   }
+
   .text-as-shadow {
     right: 250px;
     left: unset;
   }
+
   .agency-content {
     text-align: right;
+
     .agency-header-center-container {
       text-align: right;
+
       .borders {
         margin-left: 30px;
         border-left: 2px solid;
@@ -444,18 +521,22 @@
         border-right: unset;
       }
     }
+
     .agency-para {
       text-align: right;
       margin-right: 30px;
     }
+
     .btn-default {
       margin-right: 30px;
     }
+
     .blue-img {
       right: -14%;
       left: unset;
       transform: scalex(-1);
     }
+
     .side-img {
       &.left-0 {
         right: 0;
@@ -464,6 +545,7 @@
       }
     }
   }
+
   .agency {
     .blog-agency {
       .blog-contain {
@@ -475,15 +557,18 @@
         }
       }
     }
+
     .blog_comment {
       &.comment-list {
         .comment_sec {
           .offset-1 {
             margin-right: 8.3333333333%;
           }
+
           .blog_center {
             .blog_user {
               margin-right: 15px;
+
               .panel-body {
                 .text-left {
                   .comment-user {
@@ -491,20 +576,25 @@
                       margin-left: 5px;
                     }
                   }
+
                   .comment-date {
                     margin-right: 10px;
+
                     i {
                       margin-left: 5px;
                     }
                   }
                 }
               }
+
               .panel-body {
                 .link-btn {
                   float: left;
+
                   .pr-2 {
                     padding-left: 0.5rem !important;
                   }
+
                   i {
                     &.fa-reply {
                       transform: scalex(-1);
@@ -517,13 +607,16 @@
         }
       }
     }
+
     &.blog-sidebar {
       .blog-title {
         text-align: right;
+
         &::before {
           right: 0;
         }
       }
+
       .sidebar-container {
         .newsletter {
           .form-group {
@@ -533,15 +626,18 @@
             }
           }
         }
+
         .sidebar-list {
           li {
             a {
               margin-right: 15px;
               margin-left: unset;
+
               i {
                 right: 10px;
                 left: unset;
                 transform: scalex(-1);
+
                 &.m-r-15 {
                   margin-left: 15px;
                   margin-right: unset;
@@ -551,6 +647,7 @@
           }
         }
       }
+
       .post-container {
         div {
           .badge {
@@ -560,43 +657,51 @@
         }
       }
     }
+
     &.testimonial-bg {
       direction: ltr;
       text-align: left;
     }
+
     .m-r-auto {
       img {
         filter: brightness(0) invert(1);
       }
     }
   }
+
   header.agency {
     .navbar {
       background-color: #11266b;
       border-radius: 15px;
     }
+
     &.dark {
       .m-r-auto {
         img {
           filter: unset;
         }
       }
+
       .navbar {
         background-color: transparent;
       }
     }
   }
+
   .collection-collapse-block {
     .collapse-block-title {
       &:after {
         left: -3px;
         right: unset;
       }
+
       .custom-control {
         padding-right: 1.5rem;
       }
     }
   }
+
   .event {
     .bg-about {
       &:before {
@@ -604,24 +709,29 @@
       }
     }
   }
+
   .wedding-time {
     .count {
       padding-right: 15px;
       padding-left: unset;
+
       &:before {
         right: 0;
         left: unset;
       }
+
       .set-border-left {
         border-right: 5px solid #fff;
         border-left: unset;
         right: 0;
         left: unset;
       }
+
       .set-border-bottom {
         right: 5px;
         left: unset;
       }
+
       &:after {
         border-left: 5px solid #fff;
         border-right: unset;
@@ -630,12 +740,15 @@
       }
     }
   }
+
   nav {
     .logo-erapper {
       transform: scalex(-1);
     }
   }
+
   .navbar {
+
     .container,
     .container-fluid,
     .container-sm,
@@ -645,6 +758,7 @@
       display: block;
     }
   }
+
   .blog-sidebar {
     .blog-insta {
       li {
@@ -653,16 +767,19 @@
       }
     }
   }
+
   .header {
     .rotate {
       left: 17%;
       right: unset;
     }
+
     .animation-circle-inverse {
       left: 100px;
       right: unset;
     }
   }
+
   .about {
     &.app1 {
       .mobile {
@@ -672,24 +789,29 @@
         .rectangle {
           left: -4%;
           right: unset;
+
           .r-2 {
             left: -2%;
             right: unset;
           }
         }
       }
+
       .counters {
         border-left: 1px solid #fff;
         border-right: unset;
+
         &:nth-child(even) {
           border-left: none;
         }
       }
+
       .mobile.galaxy {
         left: -15%;
         right: unset;
       }
     }
+
     &.event {
       .announcer-img {
         margin-left: unset;
@@ -697,23 +819,27 @@
       }
     }
   }
+
   .center-img-content {
     &.m-l-15 {
       margin-right: 15px;
       margin-left: unset;
     }
   }
+
   .link-horizontal {
     ul {
       li {
         padding-left: 35px;
         padding-right: unset;
+
         &.borders-right {
           border-left: 1px solid #fff;
           border-right: unset;
           margin-left: 35px;
           margin-right: unset;
         }
+
         &:last-child {
           padding-left: 0;
           padding-right: unset;
@@ -721,16 +847,19 @@
       }
     }
   }
+
   .videos {
     .video-description {
       text-align: right;
     }
   }
+
   .payment-box {
     .float-right {
       float: left !important;
     }
   }
+
   .order-box {
     .sub-total {
       .shopping-option {
@@ -741,8 +870,10 @@
       }
     }
   }
+
   .collection-product-wrapper {
     .product-top-filter {
+
       .product-filter-content,
       .popup-filter {
         .collection-view {
@@ -755,6 +886,7 @@
             }
           }
         }
+
         .product-page-per-view,
         .product-page-filter {
           select {
@@ -764,30 +896,37 @@
       }
     }
   }
+
   .custom-control-label {
     &:before {
       right: -1.5rem;
       left: unset;
     }
+
     &:after {
       right: -1.5rem;
       left: unset;
     }
   }
+
   .custom-control {
     padding-left: 0;
     padding-right: 1.5rem;
   }
+
   .mr-auto,
   .mx-auto {
     margin-left: auto !important;
   }
+
   .mr-auto {
     margin-right: unset !important;
   }
+
   .float-right {
     float: left !important;
   }
+
   /***App landing 2***/
   .app2 {
     &.about {
@@ -796,37 +935,44 @@
           left: 0;
           right: unset;
         }
+
         .j-img {
           left: 20%;
           right: unset;
         }
       }
     }
+
     &.app2-animation {
       .animated-bg {
         right: 0;
       }
     }
   }
+
   .quality {
     text-align: right;
   }
+
   .format {
     .about-icon {
       &:first-child {
         margin-right: 0;
         margin-left: unset;
       }
+
       &:last-child {
         margin-left: 0;
         margin-right: unset;
       }
     }
   }
+
   footer {
     &.subscribe {
       direction: unset;
     }
+
     &.footer2 {
       .link-horizontal {
         ul {
@@ -840,22 +986,26 @@
           }
         }
       }
+
       .float-right {
         float: left !important;
       }
     }
+
     .footer-contant {
       .form-group {
         input {
           padding-right: 0;
           margin-left: unset;
         }
+
         .fa-paper-plane {
           left: 10px;
           right: unset;
         }
       }
     }
+
     .logo-sec {
       .footer-social {
         .footer-social-list {
@@ -863,6 +1013,7 @@
             padding-right: 0;
             padding-left: unset;
           }
+
           &:last-child {
             padding-left: 0;
             padding-right: unset;
@@ -870,6 +1021,7 @@
         }
       }
     }
+
     .footer-lists {
       &.contacts {
         li {
@@ -880,6 +1032,7 @@
         }
       }
     }
+
     &.contact {
       .plane2 {
         left: 0;
@@ -889,35 +1042,42 @@
       .p-r-0 {
         padding-left: 0;
       }
+
       .p-l-0 {
         padding-right: 0;
       }
     }
+
     .logo-sec {
       .footer-logo {
         transform: scalex(-1);
       }
     }
+
     &.yoga {
       &.copyright {
         direction: ltr;
       }
     }
   }
+
   .list {
     ul {
       li {
         padding-right: 0;
         padding-left: 60px;
+
         &:last-child {
           padding-left: 0;
         }
       }
     }
   }
+
   .swiper-container-3d {
     direction: ltr;
   }
+
   /***** event layout ***/
   .about {
     &.event {
@@ -926,12 +1086,14 @@
       }
     }
   }
+
   /***Gym Layout**/
   .gym {
     input {
       margin-left: 12px;
       margin-right: unset;
     }
+
     .calculate-bmi {
       tr {
         td {
@@ -940,6 +1102,7 @@
       }
     }
   }
+
   /***MUSIC Layout**/
   .music {
     &.format {
@@ -948,17 +1111,20 @@
         margin-left: unset;
       }
     }
+
     &.bg-video {
       img {
         transform: scalex(-1);
       }
     }
   }
+
   .watch {
     .m-l-15 {
       margin-right: 15px;
     }
   }
+
   .saas1 {
     .title {
       img {
@@ -966,6 +1132,7 @@
         margin-left: 7px;
       }
     }
+
     &.faq {
       a {
         div {
@@ -974,6 +1141,7 @@
           margin-right: unset;
         }
       }
+
       .collapsed {
         a {
           div {
@@ -982,6 +1150,7 @@
           }
         }
       }
+
       .faq-block {
         .accordion {
           .accordion-item {
@@ -995,26 +1164,31 @@
         }
       }
     }
+
     .faq-img-block {
       .img-fluid {
         transform: scalex(-1);
       }
     }
+
     &.subscribe {
       .media {
         img {
           margin-left: 20px;
         }
       }
+
       input[type="submit"] {
         margin-right: -50px;
         margin-left: unset;
       }
+
       input[type="email"],
       input[type="submit"] {
         padding-right: 15px;
         padding-left: 15px;
       }
+
       .subscribe-input {
         h6 {
           margin-left: 16px;
@@ -1022,6 +1196,7 @@
         }
       }
     }
+
     &.pricing {
       .plan-box {
         .price-box {
@@ -1032,6 +1207,7 @@
       }
     }
   }
+
   .saas2 {
     &.feature {
       .center-content {
@@ -1040,6 +1216,7 @@
         }
       }
     }
+
     &.quick-sol {
       .set-center-div {
         .side-img {
@@ -1050,6 +1227,7 @@
         }
       }
     }
+
     .offers-container {
       .offers-content {
         .fa-check-circle {
@@ -1058,10 +1236,12 @@
       }
     }
   }
+
   .wedding {
     .about-img {
       transform: scalex(-1);
     }
+
     .decore {
       img {
         &:nth-child(2) {
@@ -1069,18 +1249,22 @@
         }
       }
     }
+
     .m-r-10 {
       margin-left: 10px;
     }
+
     .wedding-time {
       .count {
         .set-border-left {
           border-right: 5px solid #bf862d;
           right: 0;
         }
+
         .set-border-bottom {
           right: 5px;
         }
+
         &:after {
           border-left: 5px solid #ecc878;
           right: calc(100% - 20px);
@@ -1088,6 +1272,7 @@
         }
       }
     }
+
     .wedding-content {
       .logo-h1 {
         margin-right: -170px;
@@ -1095,6 +1280,7 @@
       }
     }
   }
+
   .wedding-content {
     .girl {
       right: 18%;
@@ -1102,6 +1288,7 @@
       transform: scalex(-1);
     }
   }
+
   /***Yoga Layout**/
   .header {
     .yoga-content {
@@ -1110,23 +1297,27 @@
       }
     }
   }
+
   .yoga {
     .meter {
       .lorem {
         padding-right: 20px;
         padding-left: unset;
       }
+
       .percent {
         left: 20px;
         right: unset;
       }
     }
+
     &.format {
       .experience-container {
         .exp-img {
           transform: scalex(-1);
         }
       }
+
       .girl-img-container {
         .girl-yoga {
           transform: scalex(-1);
@@ -1135,6 +1326,7 @@
         }
       }
     }
+
     &.event {
       .animated-bg {
         i {
@@ -1142,6 +1334,7 @@
           left: 0;
         }
       }
+
       .event-container {
         .event-info {
           margin-right: 20px;
@@ -1149,11 +1342,13 @@
       }
     }
   }
+
   /*****Eccomerce layout**/
   .product-box {
     .product-detail {
       text-align: right;
       padding-right: 5px;
+
       .color-variant {
         li {
           margin-left: 5px;
@@ -1162,27 +1357,33 @@
       }
     }
   }
+
   .layout-ecommerce {
     .ecommerce-footer {
       text-align: right;
       direction: rtl;
+
       .payment-card-bottom {
         text-align: left;
+
         ul {
-          li + li {
+          li+li {
             padding-right: 10px;
             padding-left: unset;
           }
         }
       }
+
       img {
         transform: scalex(-1);
       }
+
       .footer-contant {
         .contact-list {
           li {
             padding-left: unset;
             padding-right: 25px;
+
             i {
               right: 0;
               left: unset;
@@ -1192,6 +1393,7 @@
       }
     }
   }
+
   .down-banner,
   .parallax-banner {
     .banner-contain {
@@ -1205,33 +1407,39 @@
       padding-right: unset;
     }
   }
+
   /*****portfolio layout**/
   .theme-card {
     .slick-prev {
       left: 25px;
       right: unset;
     }
+
     .slick-next {
       right: unset;
     }
   }
+
   .collection-wrapper {
     .theme-card {
       .offer-slider {
         img {
           padding: 15px 0px 15px 15px;
         }
+
         .media {
           .media-body {
             &.ml-3 {
               margin-right: 1rem !important;
             }
+
             a {
               h6 {
                 margin-left: 61px;
                 margin-right: unset;
               }
             }
+
             .rating {
               i {
                 padding-left: 5px;
@@ -1241,6 +1449,7 @@
         }
       }
     }
+
     .image-swatch {
       li {
         img {
@@ -1249,6 +1458,7 @@
       }
     }
   }
+
   .portfolio-creative {
     &.creative3 {
       .portfolio-text {
@@ -1261,6 +1471,7 @@
       }
     }
   }
+
   /*****Typography layout**/
   .typography_section {
     .typography-box {
@@ -1271,6 +1482,7 @@
           }
         }
       }
+
       dl {
         dd {
           margin-right: 0;
@@ -1279,12 +1491,15 @@
       }
     }
   }
+
   .mr-2 {
     margin-left: 0.5rem !important;
   }
+
   .m-r-10 {
     margin-left: 10px;
   }
+
   .alert {
     .fa {
       &.m-r-10 {
@@ -1292,6 +1507,7 @@
       }
     }
   }
+
   .copyright {
     .link-horizontal {
       &.social-link {
@@ -1302,9 +1518,11 @@
           }
         }
       }
+
       img {
         transform: scalex(-1);
       }
+
       ul {
         li {
           padding-right: 0;
@@ -1312,6 +1530,7 @@
         }
       }
     }
+
     &.yoga,
     &.resume,
     &.creative {
@@ -1327,7 +1546,9 @@
       }
     }
   }
+
   .copyright {
+
     &.yoga,
     &.resume,
     &.creative {
@@ -1344,38 +1565,45 @@
       }
     }
   }
+
   .product-right {
     h4 {
       span {
         padding-right: 5px;
       }
     }
+
     .color-variant {
       li {
         margin-left: 5px;
         margin-right: unset;
       }
+
       .slick-slide {
         float: right;
       }
     }
+
     .product-description {
       h6 {
         span {
           float: left;
         }
       }
+
       .qty-box {
         .input-group {
           .form-control {
             border-left: none;
           }
+
           button {
             padding-right: 12px;
           }
         }
       }
     }
+
     .size-box {
       ul {
         li {
@@ -1384,6 +1612,7 @@
         }
       }
     }
+
     .product-buttons {
       a {
         &:last-child {
@@ -1391,6 +1620,7 @@
         }
       }
     }
+
     .product-icon {
       .wishlist-btn {
         i {
@@ -1401,21 +1631,25 @@
           padding-right: 10px;
           padding-left: unset;
         }
+
         span {
           padding-right: 10px;
           padding-left: unset;
         }
       }
+
       .product-social {
         li {
           padding-right: 0;
           padding-left: 30px;
+
           &:last-child {
             padding-left: 0;
           }
         }
       }
     }
+
     .payment-card-bottom {
       ul {
         li {
@@ -1424,16 +1658,19 @@
         }
       }
     }
+
     .product-title {
       &.size-text {
         text-align: right;
       }
     }
   }
+
   .qty-box {
     .input-group {
       .input-group-prepend {
         margin-left: -1px;
+
         .btn {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
@@ -1441,6 +1678,7 @@
       }
     }
   }
+
   .collection-filter-block {
     .product-service {
       .media {
@@ -1451,17 +1689,20 @@
       }
     }
   }
+
   .bundle {
     .theme_checkbox {
       label {
         padding-right: 30px;
         padding-left: unset;
+
         .checkmark {
           right: 0;
           left: unset;
         }
       }
     }
+
     .bundle_detail {
       .price_product {
         padding-right: 3px;
@@ -1469,22 +1710,26 @@
       }
     }
   }
+
   .cart-section,
   .wishlist-section {
     direction: rtl;
+
     tfoot {
       tr {
         td {
           text-align: left;
           padding-left: 63px;
+
           &:first-child {
             padding-right: 10px;
           }
         }
       }
     }
+
     .cart-buttons {
-      > div {
+      >div {
         &:last-child {
           text-align: left;
           padding-left: 59px;
@@ -1492,6 +1737,7 @@
       }
     }
   }
+
   .payment-box {
     .payment-options {
       li {
@@ -1500,6 +1746,7 @@
             right: 0;
             left: unset;
           }
+
           label {
             padding-right: 30px;
             padding-left: unset;
@@ -1508,11 +1755,13 @@
       }
     }
   }
+
   .owl-carousel {
     .owl-stage-outer {
       direction: ltr;
     }
   }
+
   /******* subscribe section : ***/
   .subscribe {
     .form-group {
@@ -1520,28 +1769,33 @@
         padding: 30px 35px 30px 35%;
       }
     }
+
     .button-primary {
       left: 2%;
       right: unset;
     }
+
     &.subscribe-2 {
       .form-group {
         .icon {
           right: 50px;
           left: unset;
         }
+
         input {
           padding-right: 110px;
           padding-left: unset;
         }
       }
     }
+
     &.yoga {
       .button-primary {
         left: 28px;
         right: unset;
       }
     }
+
     &.wedding {
       .button-primary {
         button {
@@ -1550,6 +1804,7 @@
         }
       }
     }
+
     &.app1 {
       .button-primary {
         left: 4%;
@@ -1557,6 +1812,7 @@
       }
     }
   }
+
   .app2 {
     .subscribe {
       .button-primary {
@@ -1565,6 +1821,7 @@
       }
     }
   }
+
   /******* Testimonial section : ***/
   .testimonial {
     .testimonial-slider {
@@ -1574,6 +1831,7 @@
           right: unset;
         }
       }
+
       .owl-carousel {
         .owl-item {
           img {
@@ -1582,6 +1840,7 @@
         }
       }
     }
+
     .testi-profile {
       img {
         padding-right: 25px;
@@ -1590,6 +1849,7 @@
         margin-right: unset;
       }
     }
+
     &.event,
     &.saas2 {
       .testimonial {
@@ -1598,25 +1858,30 @@
             right: 0;
             left: unset;
           }
+
           .owl-next {
             left: 0;
             right: unset;
           }
         }
+
         .quotes {
           .right-quote {
             left: 80px;
             right: unset;
           }
+
           .left-quote {
             right: -33px;
             left: unset;
           }
         }
       }
+
       img {
         transform: scaleX(-1);
       }
+
       .rating {
         .stars {
           margin-left: 25px;
@@ -1625,6 +1890,7 @@
       }
     }
   }
+
   .compare-page {
     .table-wrapper {
       .table {
@@ -1640,6 +1906,7 @@
       }
     }
   }
+
   .checkout-page {
     .checkout-form {
       select {
@@ -1647,6 +1914,7 @@
       }
     }
   }
+
   .compare-section {
     .item {
       .close-btn {
@@ -1655,40 +1923,50 @@
       }
     }
   }
+
   .coming-soon {
     direction: rtl;
+
     .center-content {
       button {
         margin-right: -50px;
       }
     }
   }
+
   .icon-collection {
     direction: rtl;
   }
+
   .text-right {
     text-align: left !important;
   }
+
   .m-l-5 {
     margin-right: 5px;
   }
+
   .mr-3 {
     margin-left: 1rem !important;
   }
+
   .event {
     &.contact {
       .iframe-container {
         border-radius: 0 15px 15px 0;
       }
+
       .bg-white {
         border-radius: 15px 0 0 15px;
       }
     }
   }
+
   .m-r-25 {
     margin-left: 25px;
     margin-right: unset;
   }
+
   .blog {
     .img-container {
       .blog-info {
@@ -1696,6 +1974,7 @@
       }
     }
   }
+
   .speaker {
     .team-img {
       .social {
@@ -1703,6 +1982,7 @@
           li {
             margin-left: 20px;
             margin-right: unset;
+
             &:last-child {
               margin-left: 0;
               margin-right: unset;
@@ -1712,6 +1992,7 @@
       }
     }
   }
+
   .agency {
     &.speaker {
       .team-img {
@@ -1721,27 +2002,32 @@
       }
     }
   }
+
   .schedule {
     .event-container {
       padding-left: 60px;
       padding-right: unset;
     }
   }
+
   .breadcrumb-section-main {
     .breadcrumb-contain {
-      > div {
+      >div {
         &:last-child {
           text-align: left;
         }
+
         ul {
           li {
             margin-left: 15px;
             margin-right: unset;
+
             a {
               i {
                 margin-left: 15px;
               }
             }
+
             &:last-child {
               margin-left: 0;
               margin-right: unset;
@@ -1750,9 +2036,10 @@
         }
       }
     }
+
     &.inner-2 {
       .breadcrumb-contain {
-        > div {
+        >div {
           ul {
             li {
               margin-left: unset;
@@ -1761,9 +2048,10 @@
         }
       }
     }
+
     &.inner-3 {
       .breadcrumb-contain {
-        > div {
+        >div {
           ul {
             li {
               a {
@@ -1777,16 +2065,20 @@
       }
     }
   }
+
   .collection-product-wrapper {
     .product-top-filter {
       .product-filter-content {
+
         .search-count,
         .sidebar-popup {
           border-left: 1px solid #ddd;
           border-right: unset;
         }
       }
+
       .popup-filter {
+
         .search-count,
         .sidebar-popup {
           border-left: 1px solid #ddd;
@@ -1795,10 +2087,13 @@
       }
     }
   }
+
   .collection-product-wrapper {
     .product-top-filter {
+
       .product-filter-content,
       .popup-filter {
+
         .product-page-per-view,
         .product-page-filter {
           select {
@@ -1809,8 +2104,10 @@
       }
     }
   }
+
   .collection-product-wrapper {
     .product-top-filter {
+
       .product-filter-content,
       .popup-filter {
         .collection-grid-view {
@@ -1820,8 +2117,10 @@
       }
     }
   }
+
   .collection-product-wrapper {
     .product-top-filter {
+
       .product-filter-content,
       .popup-filter {
         .product-page-filter {
@@ -1833,6 +2132,7 @@
       }
     }
   }
+
   .agency {
     &.testimonial {
       .testimonial-container {
@@ -1847,16 +2147,18 @@
       }
     }
   }
+
   .owl-theme {
     .owl-nav {
       &.disabled {
-        + .owl-dots {
+        +.owl-dots {
           left: 0;
           margin-left: unset;
         }
       }
     }
   }
+
   .menu-container {
     li {
       a {
@@ -1867,6 +2169,7 @@
       }
     }
   }
+
   .team-sec {
     &.team-grid {
       .team-para {
@@ -1874,6 +2177,7 @@
       }
     }
   }
+
   /* responsive*/
   @media only screen and (max-width: 1199px) and (min-width: 992px) {
     header {
@@ -1889,6 +2193,7 @@
         }
       }
     }
+
     section {
       &.services {
         .offset-lg-3 {
@@ -1898,16 +2203,19 @@
       }
     }
   }
+
   @media only screen and (max-width: 991px) and (min-width: 576px) {
     .resume {
       .counter-container {
-        + .counter-container {
+        +.counter-container {
           border-right: 1px solid;
           border-left: unset;
-          + .counter-container {
+
+          +.counter-container {
             border-right: 0;
             border-left: unset;
-            + .counter-container {
+
+            +.counter-container {
               border-right: 1px solid;
               border-left: unset;
             }
@@ -1916,6 +2224,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 1600px) {
     .header {
       .wedding-content {
@@ -1925,6 +2234,7 @@
         }
       }
     }
+
     .about {
       &.app1 {
         .mobile {
@@ -1933,6 +2243,7 @@
         }
       }
     }
+
     .saas2 {
       .set-center-div {
         .side-img {
@@ -1942,6 +2253,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 480px) {
     .subscribe {
       &.subscribe-2 {
@@ -1954,6 +2266,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 1430px) {
     .collection-product-wrapper {
       .product-top-filter {
@@ -1963,16 +2276,19 @@
             border-left: 1px solid #ddd;
             // border-left : unset;
           }
+
           .collection-view {
             padding-left: 0 !important;
             padding-right: 20px !important;
             border-right: 1px solid #ddd;
             border-left: unset;
           }
+
           .collection-grid-view {
             padding-right: 0 !important;
             padding-left: unset !important;
           }
+
           .product-page-filter {
             border-left: 1px solid #ddd;
             border-right: unset;
@@ -1980,6 +2296,7 @@
         }
       }
     }
+
     .cart-section,
     .wishlist-section {
       tfoot {
@@ -1991,6 +2308,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 1440px) {
     .wedding {
       &.subscribe {
@@ -2003,6 +2321,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 1366px) {
     .header {
       .wedding-content {
@@ -2011,10 +2330,12 @@
           left: unset;
         }
       }
+
       .rotate {
         left: 15%;
         right: unset;
       }
+
       &.agency {
         .center-text {
           margin-right: 50px;
@@ -2022,6 +2343,7 @@
         }
       }
     }
+
     .agency {
       &.agency-content {
         .blue-img {
@@ -2030,6 +2352,7 @@
         }
       }
     }
+
     .about {
       &.app1 {
         .mobile.galaxy {
@@ -2038,6 +2361,7 @@
         }
       }
     }
+
     .saas2 {
       .set-center-div {
         .side-img {
@@ -2046,6 +2370,7 @@
         }
       }
     }
+
     .collection-product-wrapper {
       .product-top-filter {
         .product-filter-content {
@@ -2056,6 +2381,7 @@
         }
       }
     }
+
     .product-right {
       .product-icon {
         .product-social {
@@ -2066,6 +2392,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 1199px) {
     .subscribe {
       .form-group {
@@ -2074,6 +2401,7 @@
         }
       }
     }
+
     .agency {
       &.agency-content {
         .blue-img {
@@ -2082,6 +2410,7 @@
         }
       }
     }
+
     .copyright {
       .link-horizontal {
         ul {
@@ -2092,6 +2421,7 @@
         }
       }
     }
+
     header {
       &.yoga {
         .logo-abs {
@@ -2099,6 +2429,7 @@
         }
       }
     }
+
     .header {
       .wedding-content {
         .girl {
@@ -2106,11 +2437,13 @@
           left: unset;
         }
       }
+
       .rotate {
         left: 12%;
         right: unset;
       }
     }
+
     .cart-section,
     .wishlist-section {
       tfoot {
@@ -2121,12 +2454,14 @@
         }
       }
     }
+
     .payment-box {
       .float-right {
         float: unset !important;
       }
     }
   }
+
   @media only screen and (max-width: 991px) {
     .wedding {
       &.subscribe {
@@ -2136,6 +2471,7 @@
           }
         }
       }
+
       &.header {
         .wedding-content {
           .logo-h1 {
@@ -2144,6 +2480,7 @@
         }
       }
     }
+
     .agency {
       &.header {
         .center-text {
@@ -2151,22 +2488,26 @@
           margin-left: unset;
         }
       }
+
       &.agency-content {
         .blue-img {
           right: -25%;
           left: unset;
         }
       }
+
       &.blog {
         .m-r-25 {
           margin-left: 15px;
           margin-right: unset;
         }
+
         .m-r-10 {
           margin-left: 5px;
           margin-right: unset;
         }
       }
+
       &.footer2 {
         .link-horizontal {
           ul {
@@ -2178,10 +2519,12 @@
         }
       }
     }
+
     header {
       .navbar {
         background-color: #fff !important;
       }
+
       nav {
         ul {
           li {
@@ -2189,6 +2532,7 @@
               text-align: right;
             }
           }
+
           ul {
             li {
               padding-left: unset !important;
@@ -2196,6 +2540,7 @@
             }
           }
         }
+
         .menu-head {
           &:after {
             left: 20px;
@@ -2203,6 +2548,7 @@
           }
         }
       }
+
       &.dark,
       &.resume {
         .responsive-btn {
@@ -2211,19 +2557,22 @@
           }
         }
       }
+
       &.yoga {
         .logo-abs {
           right: 0;
           left: unset;
         }
       }
+
       &.ecommerce {
         .logo-erapper {
-          ~ .responsive-btn {
+          ~.responsive-btn {
             left: 0;
             right: unset;
           }
         }
+
         nav {
           .top-header-right {
             margin-left: 40px;
@@ -2232,6 +2581,7 @@
         }
       }
     }
+
     .copyright {
       .link-horizontal {
         ul {
@@ -2242,6 +2592,7 @@
         }
       }
     }
+
     .saas1 {
       &.subscribe {
         .media {
@@ -2251,18 +2602,21 @@
         }
       }
     }
+
     .header {
       .rotate {
         left: 12%;
         right: unset;
       }
     }
+
     .schedule {
       .event-container {
         padding-left: 30px;
         padding-right: unset;
       }
     }
+
     .collection-product-wrapper {
       .product-top-filter {
         .product-filter-content {
@@ -2274,9 +2628,11 @@
         }
       }
     }
+
     .collection-product-wrapper {
       .product-top-filter {
         .product-filter-content {
+
           .product-page-per-view,
           .product-page-filter {
             select {
@@ -2287,6 +2643,7 @@
         }
       }
     }
+
     .gym {
       .calculate-bmi {
         tr {
@@ -2296,12 +2653,14 @@
         }
       }
     }
+
     .payment-box {
       button {
         margin-left: 0;
         margin-right: 10px;
       }
     }
+
     .product-right {
       .product-icon {
         .product-social {
@@ -2312,6 +2671,7 @@
       }
     }
   }
+
   @media only screen and (max-width: 767px) {
     .modal-no-header {
       &.close-right {
@@ -2320,12 +2680,14 @@
         }
       }
     }
+
     header {
       .responsive-btn {
         i {
           color: #fff !important;
         }
       }
+
       &.agency {
         .responsive-btn {
           i {
@@ -2333,6 +2695,7 @@
           }
         }
       }
+
       &.dark,
       &.resume {
         .responsive-btn {
@@ -2341,6 +2704,7 @@
           }
         }
       }
+
       &.ecommerce {
         .responsive-btn {
           i {
@@ -2349,6 +2713,7 @@
         }
       }
     }
+
     .link-horizontal {
       ul {
         li {
@@ -2357,20 +2722,24 @@
         }
       }
     }
+
     .counter-container {
-      + .counter-container {
+      +.counter-container {
         border-right: 1px solid #ddd;
         border-left: unset;
-        + .counter-container {
+
+        +.counter-container {
           border-right: 0;
           border-left: unset;
-          + .counter-container {
+
+          +.counter-container {
             border-right: 1px solid #ddd;
             border-left: unset;
           }
         }
       }
     }
+
     .event {
       &.testimonial {
         .testimonial {
@@ -2385,32 +2754,39 @@
           }
         }
       }
+
       &.about {
         .text-right {
           text-align: center !important;
         }
       }
+
       &.contact {
+
         .iframe-container,
         .bg-white {
           border-radius: 15px;
         }
       }
     }
+
     .ecommerce-footer {
       .col-md-12 {
         text-align: right;
       }
     }
+
     footer {
       .footer-title {
         text-align: right;
+
         .according-menu {
           &:before {
             left: 2px;
             right: unset;
           }
         }
+
         &.active {
           .according-menu {
             &:before {
@@ -2421,6 +2797,7 @@
         }
       }
     }
+
     .agency {
       &.header {
         .center-text {
@@ -2428,6 +2805,7 @@
           margin-left: unset;
         }
       }
+
       &.speaker {
         .team-img {
           .social {
@@ -2441,20 +2819,23 @@
         }
       }
     }
+
     .schedule {
       .event-container {
         padding-left: 20px;
         padding-right: unset;
       }
     }
+
     .gym {
       .counter-container {
-        + .counter-container {
+        +.counter-container {
           // border-right: 1px solid #ddd;
           border-left: unset;
         }
       }
     }
+
     .breadcrumb-section-main {
       &.inner-2 {
         .breadcrumb-contain {
@@ -2470,8 +2851,9 @@
           }
         }
       }
+
       .breadcrumb-contain {
-        > div {
+        >div {
           ul {
             li {
               a {
@@ -2485,6 +2867,7 @@
         }
       }
     }
+
     .yoga {
       &.format {
         .girl-img-container {
@@ -2494,11 +2877,13 @@
         }
       }
     }
+
     .subscribe {
       .button-primary {
         justify-content: center;
       }
     }
+
     .agency {
       &.blog {
         &.blog-split {
@@ -2512,6 +2897,7 @@
         }
       }
     }
+
     .team-sec {
       &.team-grid {
         .team-para {
@@ -2519,12 +2905,14 @@
         }
       }
     }
+
     .app2 {
       &.format {
         text-align: right;
       }
     }
   }
+
   @media only screen and (max-width: 575px) {
     header {
       &.ecommerce {
@@ -2535,6 +2923,7 @@
         }
       }
     }
+
     .about {
       &.app1 {
         .counters {
@@ -2542,16 +2931,18 @@
         }
       }
     }
+
     .event {
       .wedding-time {
         .row {
-          & > div {
+          &>div {
             &:nth-child(even) {
               .count {
                 margin-left: auto;
                 margin-right: unset;
               }
             }
+
             &:nth-child(odd) {
               .count {
                 margin-right: auto;
@@ -2562,6 +2953,7 @@
         }
       }
     }
+
     .event-countdown {
       .countdown {
         ul {
@@ -2576,6 +2968,7 @@
         }
       }
     }
+
     .copyright {
       .link-horizontal {
         ul {
@@ -2586,6 +2979,7 @@
         }
       }
     }
+
     .subscribe {
       .form-group {
         input {
@@ -2594,6 +2988,7 @@
         }
       }
     }
+
     .collection-product-wrapper {
       .product-top-filter {
         .product-filter-content {
@@ -2606,6 +3001,7 @@
         }
       }
     }
+
     .portfolio-creative {
       &.creative3 {
         .portfolio-text {
@@ -2615,10 +3011,11 @@
         }
       }
     }
+
     .cart-section,
     .wishlist-section {
       .cart-buttons {
-        > div {
+        >div {
           &:last-child {
             padding-left: 15px;
           }
@@ -2626,12 +3023,14 @@
       }
     }
   }
+
   @media (max-width: 420px) {
     .payment-box {
       button {
         margin-right: 0;
       }
     }
+
     .product-right {
       .product-icon {
         .product-social {
@@ -2642,15 +3041,18 @@
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
     .offset-md-1 {
       margin-right: 8.33333%;
       margin-left: unset;
     }
+
     .offset-md-3 {
       margin-right: 25%;
       margin-left: unset;
     }
+
     section {
       &.resume {
         .offset-md-2 {
@@ -2658,6 +3060,7 @@
           margin-left: unset;
         }
       }
+
       &.gym {
         &.pricing {
           .offset-md-1 {
@@ -2665,12 +3068,14 @@
             margin-left: unset;
           }
         }
+
         &.format {
           .offset-md-2 {
             margin-right: 16.6666666667%;
             margin-left: unset;
           }
         }
+
         .header5-content {
           .gym-slider {
             .gym-header {
@@ -2682,6 +3087,7 @@
           }
         }
       }
+
       &.music {
         .offset-md-1 {
           margin-right: 8.3333333333%;
@@ -2694,6 +3100,7 @@
             margin-left: unset;
           }
         }
+
         &.header {
           .music-container {
             .offset-md-1 {
@@ -2702,17 +3109,20 @@
           }
         }
       }
+
       &.saas2 {
         .offset-md-1 {
           margin-right: 8.3333333333%;
           margin-left: unset;
         }
       }
+
       &.wedding {
         .offset-md-2 {
           margin-right: 16.6666666667%;
           margin-left: unset;
         }
+
         &.subscribe {
           .offset-md-2 {
             margin-right: 25%;
@@ -2720,6 +3130,7 @@
           }
         }
       }
+
       &.yoga {
         &.pricing {
           .offset-md-1 {
@@ -2728,17 +3139,20 @@
           }
         }
       }
+
       &.app2 {
         .offset-md-1 {
           margin-right: 8.3333333333%;
           margin-left: unset;
         }
       }
+
       &.app1 {
         .offset-md-2 {
           margin-right: 16.6666666667%;
           margin-left: unset;
         }
+
         &.pricing,
         &.screenshot {
           .offset-md-2 {
@@ -2747,18 +3161,21 @@
           }
         }
       }
+
       &.format {
         .offset-md-1 {
           margin-right: 8.3333333333%;
           margin-left: unset;
         }
       }
+
       &.testimonial {
         .offset-md-2 {
           margin-right: 16.6666666667%;
           margin-left: unset;
         }
       }
+
       &.ecommerce,
       &.ecommerce-tab,
       &.bg-light {
@@ -2768,36 +3185,44 @@
         }
       }
     }
+
     .offset-md-0 {
       margin-right: 0;
       margin-left: unset;
     }
+
     .offset-md-2 {
       margin-right: 16.6666666667%;
       margin-left: unset;
     }
   }
+
   @media only screen and (min-width: 992px) {
     .offset-lg-1 {
       margin-right: 8.3333333333%;
       margin-left: unset;
     }
+
     .offset-lg-2 {
       margin-right: 16.6666666667%;
       margin-left: unset;
     }
+
     .offset-lg-3 {
       margin-right: 25% !important;
       margin-left: unset;
     }
+
     .offset-lg-7 {
       margin-right: 58.3333333333%;
       margin-left: unset;
     }
+
     .offset-lg-0 {
       margin-right: 0;
       margin-left: unset;
     }
+
     header {
       nav {
         ul {
@@ -2810,6 +3235,7 @@
         }
       }
     }
+
     section {
       &.app1 {
         &.about {
@@ -2819,6 +3245,7 @@
           }
         }
       }
+
       &.saas2 {
         &.testimonial {
           .item {
@@ -2830,19 +3257,23 @@
       }
     }
   }
+
   @media only screen and (min-width: 1200px) {
     .offset-xl-3 {
       margin-right: 25%;
       margin-left: unset;
     }
+
     .offset-xl-1 {
       margin-right: 8.3333333333%;
       margin-left: unset;
     }
+
     .offset-xl-2 {
       margin-right: 16.6666666667%;
       margin-left: unset;
     }
+
     section {
       &.wedding {
         .offset-xl-2 {

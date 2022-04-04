@@ -1,139 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
 
-/***/ "./containers/customizer.js":
-/*!**********************************!*\
-  !*** ./containers/customizer.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _this = undefined,
-    _jsxFileName = "D:\\Projects\\React Project\\OTF\\unice_theme\\containers\\customizer.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Customizer = function Customizer() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('RTL'),
-      divName = _useState[0],
-      setDivName = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      themeLayout = _useState2[0],
-      setThemeLayout = _useState2[1];
-
-  var ChangeRtl = function ChangeRtl(divName) {
-    if (divName === 'RTL') {
-      if (true) {
-        document.body.classList.add('rtl');
-      }
-
-      setDivName('LTR');
-    } else {
-      if (true) {
-        document.body.classList.remove('rtl');
-      }
-
-      setDivName('RTL');
-    }
-  };
-
-  var changeThemeLayout = function changeThemeLayout() {
-    setThemeLayout(!themeLayout);
-  };
-
-  if (themeLayout) {
-    if (true) {
-      document.body.classList.add('dark');
-    }
-  } else {
-    if (true) {
-      document.body.classList.remove('dark');
-    }
-  }
-
-  return __jsx("div", {
-    className: "theme-pannel-main",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 13
-    }
-  }, __jsx("li", {
-    id: "rtl_btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 17
-    }
-  }, __jsx("a", {
-    href: null,
-    className: "btn setting_btn",
-    onClick: function onClick() {
-      return ChangeRtl(divName);
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 21
-    }
-  }, __jsx("span", {
-    className: "rtl-txt",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 25
-    }
-  }, divName))), __jsx("li", {
-    className: "sidebar-btn dark-light-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 17
-    }
-  }, __jsx("a", {
-    href: null,
-    className: "dark-light",
-    onClick: function onClick() {
-      return changeThemeLayout();
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 21
-    }
-  }, __jsx("span", {
-    className: "theme-layout-version",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 25
-    }
-  }, themeLayout ? 'Light' : 'Dark')))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Customizer);
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -5004,12 +4870,12 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/next/dist/build/polyfills/object-assign.js");
 
 /***/ }),
 
@@ -9163,12 +9029,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -12703,12 +12569,12 @@ var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_e4329fd01811217614f8 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_f7def7ba0dcb228c444e ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_e4329fd01811217614f8 */ "dll-reference dll_e4329fd01811217614f8"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f7def7ba0dcb228c444e */ "dll-reference dll_f7def7ba0dcb228c444e"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -14343,9 +14209,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_assets_scss_slick_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_public_assets_scss_slick_scss__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../public/assets/scss/slick-theme.scss */ "./public/assets/scss/slick-theme.scss");
 /* harmony import */ var _public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_public_assets_scss_slick_theme_scss__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _containers_customizer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../containers/customizer */ "./containers/customizer.js");
 
-var _jsxFileName = "D:\\Projects\\React Project\\OTF\\unice_theme\\pages\\_app.js";
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -14359,8 +14224,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-
+ // import Customizer from '../containers/customizer';
 
 var _ref = next_config__WEBPACK_IMPORTED_MODULE_5___default()() || {},
     _ref$publicRuntimeCon = _ref.publicRuntimeConfig,
@@ -14433,7 +14297,7 @@ function MyFunctionComponent(_ref2) {
       lineNumber: 67,
       columnNumber: 9
     }
-  }, "Unice")), loader && __jsx("div", {
+  }, "Orange Theory")), loader && __jsx("div", {
     className: "loader-wrapper",
     __self: this,
     __source: {
@@ -14569,14 +14433,7 @@ function MyApp(_ref3) {
       lineNumber: 95,
       columnNumber: 9
     }
-  })), __jsx(_containers_customizer__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 9
-    }
-  })), __jsx(react_toastify__WEBPACK_IMPORTED_MODULE_6__["ToastContainer"], {
+  }))), __jsx(react_toastify__WEBPACK_IMPORTED_MODULE_6__["ToastContainer"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -14588,14 +14445,14 @@ function MyApp(_ref3) {
 
 /***/ }),
 
-/***/ "dll-reference dll_e4329fd01811217614f8":
+/***/ "dll-reference dll_f7def7ba0dcb228c444e":
 /*!*******************************************!*\
-  !*** external "dll_e4329fd01811217614f8" ***!
+  !*** external "dll_f7def7ba0dcb228c444e" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_e4329fd01811217614f8;
+module.exports = dll_f7def7ba0dcb228c444e;
 
 /***/ })
 

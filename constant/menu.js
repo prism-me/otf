@@ -1,6 +1,11 @@
 export const MENUITEMS = [
+   // {
+   //    path: '/page/about-us',
+   //    title: 'About us',
+   //    type: 'link'
+   // },
    {
-      title: 'Home', type: 'sub', children: [
+      title: 'About us', type: 'sub', children: [
          { path: '/layouts/agency', title: 'Agency', type: 'link' },
          { path: '/layouts/app1', title: 'App Landing1', type: 'link' },
          { path: '/layouts/app2', title: 'App Landing2', type: 'link', },
@@ -16,7 +21,7 @@ export const MENUITEMS = [
       ],
    },
    {
-      title: 'Blog', type: 'sub', children: [
+      title: 'Memberships', type: 'sub', children: [
          {
             title: 'Blog Grid View', type: 'sub', children: [
                { path: '/blog/blog-grid/column-no-sidebar', title: 'No Sidebar', type: 'link' },
@@ -72,7 +77,7 @@ export const MENUITEMS = [
       ]
    },
    {
-      title: 'Pages', type: 'sub', children: [
+      title: 'The Workout', type: 'sub', children: [
          { path: '/page/404', title: '404', type: 'link' },
          { path: '/page/faq', title: 'FAQ', type: 'link' },
          { path: '/page/typography', title: 'Typography', type: 'link' },
@@ -93,7 +98,7 @@ export const MENUITEMS = [
          }]
    },
    {
-      title: 'Elements', megaMenu: true, megaMenuType: 'small', type: 'sub', children: [
+      title: 'Offers', megaMenu: true, megaMenuType: 'small', type: 'sub', children: [
          {
             title: 'Elements1', type: 'sub', children: [
                { path: '/elements/alerts', title: 'Alerts', type: 'link', icon: 'alert' },
@@ -121,7 +126,7 @@ export const MENUITEMS = [
       ]
    },
    {
-      title: 'Portfolio', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [
+      title: 'Locations', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [
          {
             title: 'Portfolio-Basic', type: 'link', children: [
                { path: '/portfolio/basic-2-grid', title: 'Basic – 2 Grid', type: 'link' },
@@ -164,7 +169,7 @@ export const MENUITEMS = [
       ]
    },
    {
-      title: 'Features', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [
+      title: 'Support', megaMenu: true, megaMenuType: 'medium', type: 'sub', children: [
          {
             title: 'Header Style', type: 'link', children: [
                { path: '/features/header-light', title: 'Light Header', type: 'link' },
