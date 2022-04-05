@@ -2,9 +2,11 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 
 const Schedule = () => (
-    <section className="gym format bg-schedule" id="schedule"
+    <section className="gym format rightAnimation bg-schedule" id="schedule"
         style={{ backgroundImage: "url('assets/images/OTF/home/health-safetybg.jpg')" }}
     >
+        <div className="animated-bg"><i></i><i></i><i></i></div>
+
         <Container>
             <h3 className="oftHeading">Health and Safety (It's not either/or)</h3>
             <Row>

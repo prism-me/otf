@@ -35,9 +35,11 @@ const featureData = [
 ];
 
 const Format = () => (
-    <section className="gym formatBG"
+    <section className="gym formatBG rightAnimation"
         style={{ backgroundImage: "url('assets/images/OTF/home/features.jpg')" }}
     >
+        <div className="animated-bg"><i></i><i></i><i></i></div>
+
         <Container fluid>
             <div className='bgFeature'>
                 <Row>

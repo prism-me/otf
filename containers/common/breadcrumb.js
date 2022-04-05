@@ -1,17 +1,24 @@
 import React from 'react'
-import {Container,Row,Col} from 'reactstrap'
-const Breadcrumb = ({ list, title }) => {
+import { Container, Row, Col } from 'reactstrap'
+const Breadcrumb = ({ btntext, title, subtitle, bannerImg }) => {
     return (
-        <section className="agency breadcrumb-section ">
+        <section className="agency breadcrumb-section "
+            style={{ background: `url(${bannerImg})` }}
+        >
             <Container>
                 <Row>
                     <Col xs="12">
-                        <h2 className="breadcrumb-text text-center">{title}</h2>
-                        <ul className="breadcrumb justify-content-center">
+                        <div className=" d-flex flex-column justify-content-center align-items-center">
+                            <h2 className="breadcrumb-text">{title}</h2>
+                            <p className="breadcrumb-subtext">{subtitle}</p>
+                            <button className="breadcrumb-btn">{btntext}</button>
+                        </div>
+
+                        {/* <ul className="breadcrumb justify-content-center">
                             {list.map((path, i) => (
                                 <li key={`breadcrumb-${i}`}><a href="#">{path}</a></li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </Col>
                 </Row>
             </Container>

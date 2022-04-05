@@ -7,7 +7,7 @@ const TopHeader = props => {
         <div className='topheader'>
             <Container>
                 <a href="tel:+971 526582020" >
-                    +971 526582020
+                    <i className="fa fa-phone"></i> +971 526582020
                 </a>
             </Container>
         </div>

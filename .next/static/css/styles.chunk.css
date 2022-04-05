@@ -10705,7 +10705,7 @@ section {
   .pricing.gym .price-container.shadows {
     border-radius: 4px; }
   .pricing.gym .price-container .price-features .price-feature {
-    color: #888787;
+    color: #000000;
     margin-bottom: 20px; }
 
 .pricing.wedding .price-container.shadows {
@@ -15011,68 +15011,40 @@ tap to top css end
   background-size: cover;
   background-repeat: no-repeat; }
 
+.saas1.testimonial .oftHeading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #F58220;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.saas1.testimonial.rightAnimation .animated-bg i {
+  left: unset;
+  right: 0; }
+
+.saas1.testimonial .oftsubHeading {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 2rem; }
+
 .saas1.testimonial .testimonial {
   padding: 20px 0 20px 0;
   margin-right: 40px;
   margin-left: 20px; }
-
-.saas1.testimonial .testimonial-box {
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 100%;
-  padding: 35px 50px;
-  border-radius: 10px;
-  -webkit-box-shadow: -5px 2px 22px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: -5px 2px 22px 0 rgba(0, 0, 0, 0.1);
-  position: relative; }
-  .saas1.testimonial .testimonial-box h6 {
-    letter-spacing: 0.05em;
-    text-transform: none;
-    line-height: 28px; }
-  .saas1.testimonial .testimonial-box:before {
-    content: "";
-    position: absolute;
-    left: 12%;
-    bottom: -14px;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    margin-top: -137px;
-    margin-left: -15px;
-    background: #FFFFFF;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.07);
-    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.07); }
-  .saas1.testimonial .testimonial-box img {
-    position: absolute;
-    top: -20px; }
-
-.saas1.testimonial .testi-profile img {
-  padding-top: 25px;
-  padding-left: 25px;
-  margin-right: 20px; }
-
-.saas1.testimonial .testi-profile .media-body {
-  margin-top: 45px; }
-
-.saas1.testimonial .testi-profile h5 {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 0; }
-
-.saas1.testimonial .testi-profile h6 {
-  margin: 0;
-  letter-spacing: 0.05em;
-  font-size: 14px;
-  line-height: unset; }
+  .saas1.testimonial .testimonial .testimonialheading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F58220;
+    margin-bottom: 1rem; }
+  .saas1.testimonial .testimonial .testimonialsubheading {
+    font-size: 15px;
+    text-align: justify; }
 
 .saas1.testimonial .testimonial-slider .slick-slider {
   margin-bottom: -6px; }
   .saas1.testimonial .testimonial-slider .slick-slider .slick-dots {
-    bottom: 60%;
-    left: 95%; }
+    bottom: 40%;
+    left: 100%; }
     .saas1.testimonial .testimonial-slider .slick-slider .slick-dots li {
       width: 6px;
       height: 7px;
@@ -15080,7 +15052,7 @@ tap to top css end
       .saas1.testimonial .testimonial-slider .slick-slider .slick-dots li + li {
         margin-top: 10px; }
       .saas1.testimonial .testimonial-slider .slick-slider .slick-dots li button {
-        background-color: var(--secondary);
+        background-color: #000000;
         width: 6px;
         height: 7px;
         border-radius: 30px;
@@ -15090,7 +15062,8 @@ tap to top css end
       .saas1.testimonial .testimonial-slider .slick-slider .slick-dots li.slick-active {
         height: 16px; }
         .saas1.testimonial .testimonial-slider .slick-slider .slick-dots li.slick-active button {
-          height: 16px; }
+          height: 16px;
+          background-color: #F58220; }
   .saas1.testimonial .testimonial-slider .slick-slider .owl-dots {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
@@ -15165,12 +15138,18 @@ tap to top css end
       padding-right: 0;
       text-align: left; }
 
+.saas1.faq .frequent-text {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem; }
+
 .saas1.faq .faq-block .accordion {
   border: none;
   margin-top: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))); }
   .saas1.faq .faq-block .accordion .accordion-item .title {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     background-color: transparent;
     font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
     font-weight: 500;
@@ -15183,7 +15162,8 @@ tap to top css end
       content: "\F054";
       transition: all 0.5s linear;
       left: 0;
-      top: 20px; }
+      top: 20px;
+      color: #F58220; }
     .saas1.faq .faq-block .accordion .accordion-item .title:after {
       display: none; }
   .saas1.faq .faq-block .accordion .accordion-item .panel p {
@@ -15193,9 +15173,11 @@ tap to top css end
     transform: rotate(270deg); }
 
 .saas1.faq .faq-block .frequent-text {
-  font-size: calc(18px + (48 - 18) * ((100vw - 300px) / (1920 - 300)));
-  margin-bottom: 20px;
-  margin-top: -15px; }
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem; }
 
 .saas1.faq .faq-block h6 {
   font-weight: normal;
@@ -16109,6 +16091,8 @@ gym css start
     background: #F58220;
     color: #FFFFFF;
     border: 1px solid #F58220; }
+  .gym .otfBtn:focus {
+    outline: 0; }
 
 .gym .otfBtn1 {
   color: #FFFFFF;
@@ -16123,6 +16107,8 @@ gym css start
     background: #FFFFFF;
     color: #F58220;
     border: 1px solid #FFFFFF; }
+  .gym .otfBtn1:focus {
+    outline: 0; }
 
 .gym .otfBtn2 {
   color: #F58220;
@@ -16136,6 +16122,8 @@ gym css start
   .gym .otfBtn2:hover {
     background: #FFFFFF;
     color: #F58220; }
+  .gym .otfBtn2:focus {
+    outline: 0; }
 
 .gym.formatBG {
   background-repeat: no-repeat;
@@ -16260,6 +16248,22 @@ gym css start
     .gym .trainers-slider .slick-dots li.slick-active button:before, .gym .trainers-slider .slick-dots li:hover button:before {
       color: #F58220;
       opacity: 1; }
+
+.gym .animated-bg i {
+  background: #2e2e2e40;
+  bottom: 0;
+  box-shadow: 0 15px 30px 0 #dddddd;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  opacity: 0.3;
+  transform: scale(1.3);
+  animation: ripple1 3s linear infinite; }
+
+.gym.rightAnimation .animated-bg i {
+  left: unset;
+  right: 0; }
 
 .gym.brand-slider {
   padding: 50px 0; }
@@ -16665,7 +16669,8 @@ popup css start
     opacity: 1; }
 
 .speaker .employee .e-name {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  color: #F58220;
   margin-bottom: 10px;
   font-weight: 600; }
 
@@ -16731,13 +16736,6 @@ breadcrumb-section css start
   background-size: cover;
   background-blend-mode: overlay;
   padding: 230px 0; }
-  .breadcrumb-section:not(.breadcrumb-left), .breadcrumb-section:not(.breadcrumb-right), .breadcrumb-section:not(.breadcrumb-slider) {
-    background: url("/assets/images/inner-page/breadcrumb.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay; }
-  .breadcrumb-section.breadcrumb-left, .breadcrumb-section.breadcrumb-right {
-    background: url("/assets/images/inner-page/breadcrumb-plain.jpg"); }
   .breadcrumb-section li {
     line-height: normal; }
   .breadcrumb-section.bredcrumb-color {
@@ -16760,11 +16758,35 @@ breadcrumb-section css start
     .breadcrumb-section.bredcrumb-color .breadcrumb li + li:before, .breadcrumb-section.breadcrumb-gradient .breadcrumb li + li:before {
       color: #FFFFFF; }
   .breadcrumb-section .breadcrumb-text {
-    color: #000000;
-    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .breadcrumb-section .breadcrumb-subtext {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 50%; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .breadcrumb-subtext {
+        max-width: 100%; } }
+  .breadcrumb-section .breadcrumb-btn {
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #F58220;
     text-transform: uppercase;
-    margin-bottom: 20px; }
+    background: #F58220;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px; }
+    .breadcrumb-section .breadcrumb-btn:hover {
+      background: #FFFFFF;
+      color: #F58220;
+      border: 1px solid #FFFFFF; }
+    .breadcrumb-section .breadcrumb-btn:focus {
+      outline: 0; }
   .breadcrumb-section .breadcrumb {
     padding: 0;
     background: transparent;
@@ -21130,6 +21152,19 @@ header {
     border: 0; }
     header nav .navbar-container {
       padding: 10px 0; }
+    header nav .navItemStyle {
+      color: #FFFFFF; }
+      @media (max-width: 991px) {
+        header nav .navItemStyle {
+          color: #000000; } }
+      @media (min-width: 991px) and (max-width: 1199px) {
+        header nav .navItemStyle a {
+          font-size: 12px !important;
+          padding: 12px !important; } }
+    @media (min-width: 991px) and (max-width: 1199px) {
+      header nav .otfBtn1 {
+        font-size: 12px !important;
+        padding: 0.5 1rem !important; } }
     header nav ul {
       margin: 0;
       border: 0;
@@ -22301,6 +22336,58 @@ footer.saas1 h5 {
     color: #000000; }
     .footer2 .para-address a:hover {
       color: #F58220; }
+
+.contenedor {
+  /*hovers*/ }
+  .contenedor .container_foto {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 15px; }
+    .contenedor .container_foto:hover {
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 2px solid #F58220;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14); }
+  .contenedor .container_foto article {
+    padding: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .contenedor .container_foto h2 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 1rem; }
+  .contenedor .container_foto p {
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 15px; }
+  .contenedor .container_foto img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    border-radius: 15px; }
+  .contenedor .container_foto:hover {
+    cursor: pointer; }
+  .contenedor .container_foto:hover img {
+    opacity: 0.3; }
+  .contenedor .container_foto:hover article {
+    transform: translate(2px, -69px);
+    -webkit-transform: translate(2px, -69px);
+    -moz-transform: translate(2px, -69px);
+    -o-transform: translate(2px, -69px);
+    -ms-transform: translate(2px, -69px); }
+  .contenedor .container_foto:hover h2 {
+    color: #F58220; }
 
 /**=====================
      63. Responsive CSS Start
@@ -30960,6 +31047,59 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+.accordion {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+.accordion .accordion-item:first-child .title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.accordion .accordion-item:last-child .title {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.accordion .accordion-item .title {
+  background-color: #f6f6f6;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.accordion .accordion-item .title:after {
+  content: '\2795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.accordion .accordion-item .panel {
+  max-height: 0;
+  -webkit-transition: max-height 0.15s ease-out;
+  -o-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+.accordion .accordion-item.active .title {
+  background-color: #eee;
+}
+.accordion .accordion-item.active .title:after {
+  content: '\2796';
+}
+.accordion .accordion-item.active .panel {
+  max-height: 500px;
+  -webkit-transition: max-height 0.25s ease-in;
+  -o-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+/*# sourceMappingURL=index.css.map*/
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -1,361 +1,31 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
-/***/ "./constant/menu.js":
-/*!**************************!*\
-  !*** ./constant/menu.js ***!
-  \**************************/
+/***/ "./constant/navMenu.js":
+/*!*****************************!*\
+  !*** ./constant/navMenu.js ***!
+  \*****************************/
 /*! exports provided: MENUITEMS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MENUITEMS", function() { return MENUITEMS; });
-var MENUITEMS = [// {
-//    path: '/page/about-us',
-//    title: 'About us',
-//    type: 'link'
-// },
-{
+var MENUITEMS = [{
   title: 'About us',
-  type: 'sub',
-  children: [{
-    path: '/layouts/agency',
-    title: 'Agency',
-    type: 'link'
-  }, {
-    path: '/layouts/app1',
-    title: 'App Landing1',
-    type: 'link'
-  }, {
-    path: '/layouts/app2',
-    title: 'App Landing2',
-    type: 'link'
-  }, {
-    path: '/layouts/event',
-    title: 'Event',
-    type: 'link'
-  }, {
-    path: '/layouts/gym',
-    title: 'Gym',
-    type: 'link'
-  }, {
-    path: '/layouts/music',
-    title: 'Music',
-    type: 'link'
-  }, {
-    path: '/layouts/resume',
-    title: 'Resume',
-    type: 'link'
-  }, {
-    path: '/layouts/modern-sass',
-    title: 'Sass1',
-    type: 'link'
-  }, {
-    path: '/layouts/enterprice-sass',
-    title: 'Sass2',
-    type: 'link'
-  }, {
-    path: '/layouts/wedding',
-    title: 'Wedding',
-    type: 'link'
-  }, {
-    path: '/layouts/yoga',
-    title: 'Yoga',
-    type: 'link'
-  }, {
-    path: '/layouts/portfolioLayouts',
-    title: 'Portfolio',
-    type: 'link'
-  }]
+  path: '/page/about-us',
+  type: 'link'
 }, {
   title: 'Memberships',
-  type: 'sub',
-  children: [{
-    title: 'Blog Grid View',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-grid/column-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/column-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/column-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-no-sidebar',
-      title: 'Full Width No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-right-sidebar',
-      title: 'Full Width Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-grid/classic-left-sidebar',
-      title: 'Full Width Left Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog List',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-list/list-no-sidebar',
-      title: 'List No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list/list-left-sidebar',
-      title: 'List Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list/list-right-sidebar',
-      title: 'List Right Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog List Creative',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-list-creative/split-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list-creative/split-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-list-creative/split-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Mix Layout',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-mix-layout/bigpost-list',
-      title: 'List Mix With Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-split',
-      title: 'List Mix With Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-split-no-sidebar',
-      title: 'List Mix With No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-list-no-sidebar',
-      title: 'List Full Width No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-column',
-      title: 'Grid Mix With Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-mix-layout/bigpost-column-no-sidebar',
-      title: 'Grid Mix With No Sidebar',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Details',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-detail/detail-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-gallery',
-      title: 'Detail Page With Gallery',
-      type: 'link'
-    }, {
-      path: '/blog/blog-detail/detail-video',
-      title: 'Detail Page With Video',
-      type: 'link'
-    }]
-  }, {
-    title: 'Blog Masonary',
-    type: 'sub',
-    children: [{
-      path: '/blog/blog-masonary/fullwidth-2',
-      title: 'Full Width 2',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/fullwidth-3',
-      title: 'Full Width 3',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/fullwidth-4',
-      title: 'Full Width 4',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-no-sidebar',
-      title: 'No Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-right-sidebar',
-      title: 'Right Sidebar',
-      type: 'link'
-    }, {
-      path: '/blog/blog-masonary/masonary-left-sidebar',
-      title: 'Left Sidebar',
-      type: 'link'
-    }]
-  }]
+  path: '/layouts/portfolioLayouts',
+  type: 'link'
 }, {
   title: 'The Workout',
-  type: 'sub',
-  children: [{
-    path: '/page/404',
-    title: '404',
-    type: 'link'
-  }, {
-    path: '/page/faq',
-    title: 'FAQ',
-    type: 'link'
-  }, {
-    path: '/page/typography',
-    title: 'Typography',
-    type: 'link'
-  }, {
-    path: '/page/maintenance',
-    title: 'Maintenance',
-    type: 'link'
-  }, {
-    path: '/page/about-us',
-    title: 'About us',
-    type: 'link'
-  }, {
-    title: 'Team',
-    type: 'sub',
-    children: [{
-      path: '/page/team',
-      title: 'Team',
-      type: 'link'
-    }, {
-      path: '/page/team-grid',
-      title: 'Team Grid',
-      type: 'link'
-    }, {
-      path: '/page/team-list',
-      title: 'Team List',
-      type: 'link'
-    }]
-  }, {
-    title: 'Comming Soon',
-    type: 'sub',
-    children: [{
-      path: '/page/commingsoon1',
-      title: 'Comming Soon1',
-      type: 'link'
-    }, {
-      path: '/page/commingsoon2',
-      title: 'Comming Soon2',
-      type: 'link'
-    }]
-  }]
+  path: '/layouts/portfolioLayouts',
+  type: 'link'
 }, {
   title: 'Offers',
-  megaMenu: true,
-  megaMenuType: 'small',
-  type: 'sub',
-  children: [{
-    title: 'Elements1',
-    type: 'sub',
-    children: [{
-      path: '/elements/alerts',
-      title: 'Alerts',
-      type: 'link',
-      icon: 'alert'
-    }, {
-      path: '/elements/accordion',
-      title: 'Accordion',
-      type: 'link',
-      icon: 'layout-accordion-merged'
-    }, {
-      path: '/elements/boxshadow',
-      title: 'Box Shadow',
-      type: 'link',
-      icon: 'layers'
-    }, {
-      path: '/elements/button',
-      title: 'Buttons',
-      type: 'link',
-      icon: 'write'
-    }, {
-      path: '/elements/contact',
-      title: 'Contact',
-      type: 'link',
-      icon: 'map-alt'
-    }]
-  }, {
-    title: 'Elements2',
-    type: 'sub',
-    children: [{
-      path: '/elements/event-schedule',
-      title: 'Event-Schedule',
-      type: 'link',
-      icon: 'list'
-    }, {
-      path: '/elements/gallery',
-      title: 'Gallery',
-      type: 'link',
-      icon: 'gallery'
-    }, {
-      path: '/elements/pricing',
-      title: 'Pricing',
-      type: 'link',
-      icon: 'money'
-    }, {
-      path: '/elements/counter',
-      title: 'Counter',
-      type: 'link',
-      icon: 'time'
-    }, {
-      path: '/elements/count-down',
-      title: 'Countdown',
-      type: 'link',
-      icon: 'alarm-clock'
-    }]
-  }, {
-    title: 'Elements3',
-    type: 'sub',
-    children: [{
-      path: '/elements/progressbar',
-      title: 'Progress Bar',
-      type: 'link',
-      icon: 'bar-chart'
-    }, {
-      path: '/elements/testimonial',
-      title: 'Testimonial',
-      type: 'link',
-      icon: 'thought'
-    }, {
-      path: '/elements/video',
-      title: 'Video',
-      type: 'link',
-      icon: 'video-camera'
-    }, {
-      path: '/elements/service',
-      title: 'Service',
-      type: 'link',
-      icon: 'headphone'
-    }, {
-      path: '/elements/subscribe',
-      title: 'Subscribe',
-      type: 'link',
-      icon: 'share-alt'
-    }]
-  }]
+  path: '/layouts/portfolioLayouts',
+  type: 'link'
 }, {
   title: 'Locations',
   type: 'sub',
@@ -410,126 +80,8 @@ var MENUITEMS = [// {
   }]
 }, {
   title: 'Support',
-  megaMenu: true,
-  megaMenuType: 'medium',
-  type: 'sub',
-  children: [{
-    title: 'Header Style',
-    type: 'link',
-    children: [{
-      path: '/features/header-light',
-      title: 'Light Header',
-      type: 'link'
-    }, {
-      path: '/features/header-dark',
-      title: 'Dark Header',
-      type: 'link'
-    }, {
-      path: '/features/header-transparent',
-      title: 'Glass Header',
-      type: 'link'
-    }, {
-      path: '/features/header-right-navigation',
-      title: 'Header Right Navigation',
-      type: 'link'
-    }, {
-      path: '/features/header-center-logo',
-      title: 'Header Center Logo',
-      type: 'link'
-    }]
-  }, {
-    title: 'Breadcrumb Style',
-    type: 'link',
-    children: [{
-      path: '/features/breadcrumb-big-typography',
-      title: 'Classic Type',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-left',
-      title: 'Breadcrumb Left',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-right',
-      title: 'Breadcrumb Right',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-center',
-      title: 'Breadcrumb Center',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-dark',
-      title: 'Breadcrumb Dark',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-parallex-bg',
-      title: 'Breadcrumb Parallex-Bg',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-bg',
-      title: 'Breadcrumb Bg',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-gallery',
-      title: 'Breadcrumb Gallery',
-      type: 'link'
-    }, {
-      path: '/features/breadcrumb-video',
-      title: 'Breadcrumb Video',
-      type: 'link'
-    }]
-  }, {
-    title: 'Footer Style',
-    type: 'link',
-    children: [{
-      path: '/features/footer-default',
-      title: 'Footer-Default',
-      type: 'link'
-    }, {
-      path: '/features/footer-light',
-      title: 'Footer-Light',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark',
-      title: 'Footer-Dark',
-      type: 'link'
-    }, {
-      path: '/features/footer-light2',
-      title: 'Footer Dark Light',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark2',
-      title: 'Footer Dark Gradient',
-      type: 'link'
-    }, {
-      path: '/features/footer-dark3',
-      title: 'Footer Creative',
-      type: 'link'
-    }]
-  }, {
-    title: 'Gallery',
-    type: 'link',
-    children: [{
-      path: '/features/zoom-gallery',
-      title: 'Zoom Gallery',
-      type: 'link'
-    }, {
-      path: '/features/form-popup',
-      title: 'Form Popup',
-      type: 'link'
-    }, {
-      path: '/features/modal-popup',
-      title: 'Modal Popup',
-      type: 'link'
-    }, {
-      path: '/features/youtube-popup',
-      title: 'Youtube Popup',
-      type: 'link'
-    }, {
-      path: '/features/map-popup',
-      title: 'Map Popup',
-      type: 'link'
-    }]
-  }]
+  path: '/layouts/portfolioLayouts',
+  type: 'link'
 }];
 
 /***/ }),
@@ -577,7 +129,15 @@ var TopHeader = function TopHeader(props) {
       lineNumber: 9,
       columnNumber: 17
     }
-  }, "+971 526582020")));
+  }, __jsx("i", {
+    className: "fa fa-phone",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 21
+    }
+  }), " +971 526582020")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TopHeader);
@@ -728,12 +288,11 @@ var Header = function Header(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _constant_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constant/menu */ "./constant/menu.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constant/navMenu */ "./constant/navMenu.js");
 var _this = undefined,
     _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\common\\nav.js";
 
@@ -742,9 +301,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 var Nav = function Nav() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]),
       mainmenu = _useState[0],
       setMainMenu = _useState[1];
 
@@ -773,7 +331,7 @@ var Nav = function Nav() {
   }, []);
 
   var setNavActive = function setNavActive(item) {
-    _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].filter(function (menuItem) {
+    _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].filter(function (menuItem) {
       if (menuItem != item) menuItem.active = false;
       if (menuItem.children && menuItem.children.includes(item)) menuItem.active = true;
 
@@ -788,15 +346,15 @@ var Nav = function Nav() {
     });
     item.active = !item.active;
     setMainMenu({
-      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
+      mainmenu: _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
     });
   }; // Click Toggle menu
 
 
   var toggletNavActive = function toggletNavActive(item) {
     if (!item.active) {
-      _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].forEach(function (a) {
-        if (_constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].includes(item)) a.active = false;
+      _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].forEach(function (a) {
+        if (_constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].includes(item)) a.active = false;
         if (!a.children) return false;
         a.children.forEach(function (b) {
           if (a.children.includes(item)) {
@@ -815,7 +373,7 @@ var Nav = function Nav() {
 
     item.active = !item.active;
     setMainMenu({
-      mainmenu: _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
+      mainmenu: _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"]
     });
   };
 
@@ -825,7 +383,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -833,7 +391,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -842,14 +400,14 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 21
     }
   }, "close"))), __jsx("ul", {
@@ -857,175 +415,48 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 86,
       columnNumber: 13
     }
-  }, _constant_menu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
+  }, _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
     return __jsx("li", {
       key: i,
-      className: " ".concat(menuItem.megaMenu ? 'mega-menu' : ''),
+      className: "navItemStyle",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 89,
-        columnNumber: 29
+        columnNumber: 25
       }
-    }, menuItem.sidebartitle ? __jsx("div", {
+    }, menuItem.type === 'sub' ? __jsx("a", {
       className: "dropdown",
+      href: "#",
+      onClick: function onClick() {
+        return toggletNavActive(menuItem);
+      },
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91,
+        columnNumber: 33
+      }
+    }, __jsx("span", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 92,
         columnNumber: 37
       }
-    }, menuItem.sidebartitle) : '', menuItem.type === 'sub' ? __jsx("a", {
-      className: "dropdown",
-      href: "#javascript",
-      onClick: function onClick() {
-        return toggletNavActive(menuItem);
-      },
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
+    }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: menuItem.path,
+      className: "".concat(menuItem.active ? 'active' : '', " astyle"),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 96,
-        columnNumber: 41
-      }
-    }, menuItem.title)) : '', menuItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "".concat(process.env.PUBLIC_URL).concat(menuItem.path),
-      className: "".concat(menuItem.active ? 'active' : ''),
-      onClick: function onClick() {
-        return toggletNavActive(menuItem);
-      },
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 100,
-        columnNumber: 37
-      }
-    }, __jsx("span", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 106,
-        columnNumber: 41
-      }
-    }, menuItem.title), menuItem.children ? __jsx("i", {
-      className: "fa fa-angle-right pull-right",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 108,
-        columnNumber: 45
-      }
-    }) : '') : '', __jsx("div", {
-      className: "mega-menu-container resize ".concat(menuItem.active ? 'opensubmenu' : ''),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 113,
         columnNumber: 33
       }
-    }, menuItem.megaMenu === true ? __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 117,
-        columnNumber: 45
-      }
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 118,
-        columnNumber: 49
-      }
-    }, menuItem.children.map(function (megaMenuItem, i) {
-      return __jsx("div", {
-        className: "".concat(menuItem.megaMenuType == 'small' ? 'col-lg-4' : menuItem.megaMenuType == 'medium' ? 'col-lg-3' : menuItem.megaMenuType == 'large' ? 'col' : '', " "),
-        key: i,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 122,
-          columnNumber: 65
-        }
-      }, __jsx("div", {
-        className: "menu-container",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 123,
-          columnNumber: 69
-        }
-      }, __jsx("a", {
-        className: "menu-head",
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 124,
-          columnNumber: 73
-        }
-      }, megaMenuItem.title), __jsx("ul", {
-        className: "menu-icon ".concat(megaMenuItem.title ? 'openSubChildMenu' : ''),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 125,
-          columnNumber: 73
-        }
-      }, menuItem.title === 'Elements' ? megaMenuItem.children.map(function (subMegaMenuItem, i) {
-        return __jsx("li", {
-          key: i,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 130,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 131,
-            columnNumber: 93
-          }
-        }, __jsx("i", {
-          className: "icon-".concat(subMegaMenuItem.icon),
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 132,
-            columnNumber: 97
-          }
-        }), subMegaMenuItem.title));
-      }) : megaMenuItem.children.map(function (subMegaMenuItem, i) {
-        return __jsx("li", {
-          key: i,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 138,
-            columnNumber: 89
-          }
-        }, __jsx("a", {
-          href: subMegaMenuItem.path,
-          __self: _this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 139,
-            columnNumber: 93
-          }
-        }, subMegaMenuItem.title));
-      }))));
-    }))) : ''), menuItem.children && !menuItem.megaMenu ? __jsx("ul", {
+    }, menuItem.title), menuItem.children && __jsx("ul", {
       className: "".concat(menuItem.active ? 'menu-open activeSubmenu' : ''),
       style: menuItem.active ? {
         opacity: 1,
@@ -1034,8 +465,8 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 157,
-        columnNumber: 37
+        lineNumber: 104,
+        columnNumber: 33
       }
     }, menuItem.children.map(function (childrenItem, index) {
       return __jsx("li", {
@@ -1044,8 +475,8 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162,
-          columnNumber: 45
+          lineNumber: 109,
+          columnNumber: 41
         }
       }, childrenItem.type === 'sub' ? __jsx("a", {
         href: "#javascript",
@@ -1055,31 +486,31 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164,
-          columnNumber: 53
+          lineNumber: 111,
+          columnNumber: 49
         }
       }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "".concat(childrenItem.path),
+        href: "".concat(childrenItem.path, " astyle"),
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169,
-          columnNumber: 53
+          lineNumber: 116,
+          columnNumber: 49
         }
       }, __jsx("a", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170,
-          columnNumber: 57
+          lineNumber: 117,
+          columnNumber: 53
         }
       }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
         className: "".concat(childrenItem.active ? 'menu-open' : 'active'),
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174,
-          columnNumber: 53
+          lineNumber: 121,
+          columnNumber: 49
         }
       }, childrenItem.children.map(function (childrenSubItem, key) {
         return __jsx("li", {
@@ -1087,33 +518,47 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 176,
-            columnNumber: 61
+            lineNumber: 123,
+            columnNumber: 57
           }
         }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           href: "".concat(childrenSubItem.path),
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 178,
-            columnNumber: 69
+            lineNumber: 125,
+            columnNumber: 65
           }
         }, __jsx("a", {
           className: "sub-menu-title",
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 179,
-            columnNumber: 73
+            lineNumber: 126,
+            columnNumber: 69
           }
         }, childrenSubItem.title)) : '');
       })) : '');
-    })) : '');
-  })));
+    })));
+  }), __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 17
+    }
+  }, "  ", __jsx("button", {
+    className: "otfBtn1 ml-3",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 23
+    }
+  }, "Free Class"), " ")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -14332,201 +13777,6 @@ Popper.Defaults = Defaults;
 //# sourceMappingURL=popper.js.map
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
-/***/ "./node_modules/process/browser.js":
-/*!*****************************************!*\
-  !*** ./node_modules/process/browser.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
 
 /***/ }),
 
@@ -33772,11 +33022,40 @@ var About = function About() {
       lineNumber: 4,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5,
+      columnNumber: 9
+    }
+  }, __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 38
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 45
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 52
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx("h3", {
@@ -33784,14 +33063,14 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 8,
       columnNumber: 13
     }
   }, "What happens in class doesn\u2019t stay in class?"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -33799,7 +33078,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -33807,7 +33086,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 21
     }
   }, __jsx("img", {
@@ -33817,7 +33096,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 25
     }
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -33825,7 +33104,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -33833,14 +33112,14 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 21
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 25
     }
   }, __jsx("div", {
@@ -33848,7 +33127,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 29
     }
   }, __jsx("p", {
@@ -33856,7 +33135,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 33
     }
   }, "Orangetheory is a heart-rate based HIIT total-body group workout that combines science, coaching and technology to guarantee maximum results from the inside out. It\u2019s designed to charge your metabolism for MORE caloric afterburn, MORE results, and MORE confidence, all to deliver you MORE LIFE.  Orangetheory is more than a gym because the work you do here in our studio will make all the difference out there in your world.")), __jsx("a", {
@@ -33865,7 +33144,7 @@ var About = function About() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 29
     }
   }, "learn more")))))));
@@ -34144,7 +33423,7 @@ var Calculate = function Calculate() {
     sm: 6,
     className: "BGImgLocation p-0",
     style: {
-      backgroundImage: "url('assets/images/OTF/home/locationbg.jpg')"
+      backgroundImage: "url('/assets/images/OTF/home/locationbg.jpg')"
     },
     __self: _this,
     __source: {
@@ -34375,7 +33654,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Counter = function Counter() {
   return __jsx("section", {
-    className: "gym counter  bg-img3 bg1",
+    className: "gym counter rightAnimation  bg-img3 bg1",
     style: {
       backgroundImage: "url('assets/images/OTF/home/get-off.jpg')"
     },
@@ -34385,11 +33664,40 @@ var Counter = function Counter() {
       lineNumber: 5,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 38
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 45
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 52
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -34397,7 +33705,7 @@ var Counter = function Counter() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, __jsx("h3", {
@@ -34405,7 +33713,7 @@ var Counter = function Counter() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 17
     }
   }, "Get 10% off during this festive season!"), __jsx("p", {
@@ -34413,7 +33721,7 @@ var Counter = function Counter() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, "Senectus viverra laoreet proin eget. Ullamcorper in lorem nisl aliquet orci enim vel, a. Ut quis luctus massa."), __jsx("a", {
@@ -34422,7 +33730,7 @@ var Counter = function Counter() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 17
     }
   }, "BOOK YOUR SESSIONS NOW!"))));
@@ -35142,7 +34450,7 @@ var featureData = [{
 
 var Format = function Format() {
   return __jsx("section", {
-    className: "gym formatBG",
+    className: "gym formatBG rightAnimation",
     style: {
       backgroundImage: "url('assets/images/OTF/home/features.jpg')"
     },
@@ -35152,12 +34460,41 @@ var Format = function Format() {
       lineNumber: 38,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-    fluid: true,
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41,
+      columnNumber: 9
+    }
+  }, __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 38
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 45
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 52
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    fluid: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -35165,14 +34502,14 @@ var Format = function Format() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 44,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 45,
       columnNumber: 17
     }
   }, featureData.map(function (x, i) {
@@ -35183,14 +34520,14 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 48,
         columnNumber: 29
       }
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 49,
         columnNumber: 33
       }
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -35198,7 +34535,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 50,
         columnNumber: 37
       }
     }, __jsx("img", {
@@ -35208,7 +34545,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 51,
         columnNumber: 41
       }
     })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -35217,7 +34554,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 53,
         columnNumber: 37
       }
     }, __jsx("h4", {
@@ -35225,7 +34562,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 54,
         columnNumber: 41
       }
     }, x.title), __jsx("p", {
@@ -35233,7 +34570,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
+        lineNumber: 55,
         columnNumber: 41
       }
     }, x.subtitle))));
@@ -35507,7 +34844,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Schedule = function Schedule() {
   return __jsx("section", {
-    className: "gym format bg-schedule",
+    className: "gym format rightAnimation bg-schedule",
     id: "schedule",
     style: {
       backgroundImage: "url('assets/images/OTF/home/health-safetybg.jpg')"
@@ -35518,11 +34855,40 @@ var Schedule = function Schedule() {
       lineNumber: 5,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 38
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 45
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 52
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("h3", {
@@ -35530,14 +34896,14 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, "Health and Safety (It's not either/or)"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -35545,7 +34911,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -35553,14 +34919,14 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 21
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 25
     }
   }, __jsx("div", {
@@ -35568,7 +34934,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 29
     }
   }, __jsx("p", {
@@ -35576,7 +34942,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 17,
       columnNumber: 33
     }
   }, "Orangetheory is a heart-rate based HIIT total-body group workout that combines science, coaching and technology to guarantee maximum results from the inside out. It\u2019s designed to charge your metabolism for MORE caloric afterburn, MORE results, and MORE confidence, all to deliver you MORE LIFE.  Orangetheory is more than a gym because the work you do here in our studio will make all the difference out there in your world.")), __jsx("ul", {
@@ -35584,7 +34950,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 29
     }
   }, __jsx("li", {
@@ -35592,7 +34958,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 22,
       columnNumber: 33
     }
   }, __jsx("a", {
@@ -35601,7 +34967,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 37
     }
   }, __jsx("img", {
@@ -35611,7 +34977,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 24,
       columnNumber: 41
     }
   }))), __jsx("li", {
@@ -35619,7 +34985,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 27,
       columnNumber: 33
     }
   }, __jsx("a", {
@@ -35628,7 +34994,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 37
     }
   }, __jsx("img", {
@@ -35638,7 +35004,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 41
     }
   }))), __jsx("li", {
@@ -35646,7 +35012,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 32,
       columnNumber: 33
     }
   }, __jsx("a", {
@@ -35655,7 +35021,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 33,
       columnNumber: 37
     }
   }, __jsx("img", {
@@ -35665,7 +35031,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 34,
       columnNumber: 41
     }
   }))))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -35673,7 +35039,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 41,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -35681,7 +35047,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 42,
       columnNumber: 21
     }
   }, __jsx("img", {
@@ -35691,7 +35057,7 @@ var Schedule = function Schedule() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 43,
       columnNumber: 25
     }
   }))))));

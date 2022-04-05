@@ -66,6 +66,7 @@
 /**************************
  1. general css start
 *************************/
+
 .center-header {
   z-index: 1;
 }
@@ -1875,7 +1876,8 @@ section {
 
       .price-features {
         .price-feature {
-          color: $light-gray;
+          // color: $light-gray;
+          color: $black;
           margin-bottom: 20px;
         }
       }
@@ -9006,74 +9008,42 @@ tap to top css end
   }
 
   &.testimonial {
+    .oftHeading {
+      font-size: 25px;
+      font-weight: 700;
+      color: $orange;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    &.rightAnimation {
+      .animated-bg i {
+        left: unset;
+        right: 0;
+      }
+    }
+
+    .oftsubHeading {
+      font-size: 16px;
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
+
     .testimonial {
       padding: 20px 0 20px 0;
       margin-right: 40px;
       margin-left: 20px;
-    }
 
-    .testimonial-box {
-      background-color: $white;
-      width: 100%;
-      height: 100%;
-      padding: 35px 50px;
-      border-radius: 10px;
-      -webkit-box-shadow: -5px 2px 22px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: -5px 2px 22px 0 rgba(0, 0, 0, 0.1);
-      position: relative;
-
-      h6 {
-        letter-spacing: 0.05em;
-        text-transform: none;
-        line-height: 28px;
+      .testimonialheading {
+        font-size: 20px;
+        font-weight: 700;
+        color: $orange;
+        margin-bottom: 1rem;
       }
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 12%;
-        bottom: -14px;
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-        margin-top: -137px;
-        margin-left: -15px;
-        background: $white;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        -webkit-box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.07);
-        box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.07);
-      }
-
-      & img {
-        position: absolute;
-        top: -20px;
-      }
-    }
-
-    .testi-profile {
-      img {
-        padding-top: 25px;
-        padding-left: 25px;
-        margin-right: 20px;
-      }
-
-      .media-body {
-        margin-top: 45px;
-      }
-
-      h5 {
-        font-weight: 600;
-        font-size: 18px;
-        margin-bottom: 0;
-      }
-
-      h6 {
-        margin: 0;
-        letter-spacing: 0.05em;
-        font-size: 14px;
-        line-height: unset;
+      .testimonialsubheading {
+        font-size: 15px;
+        text-align: justify;
       }
     }
 
@@ -9082,8 +9052,8 @@ tap to top css end
         margin-bottom: -6px;
 
         .slick-dots {
-          bottom: 60%;
-          left: 95%;
+          bottom: 40%;
+          left: 100%;
 
           li {
             width: 6px;
@@ -9094,7 +9064,7 @@ tap to top css end
             }
 
             button {
-              background-color: $secondary;
+              background-color: $black;
               width: 6px;
               height: 7px;
               border-radius: 30px;
@@ -9112,6 +9082,7 @@ tap to top css end
 
               button {
                 height: 16px;
+                background-color: $orange;
               }
             }
           }
@@ -9226,6 +9197,14 @@ tap to top css end
   }
 
   &.faq {
+    .frequent-text {
+      font-size: 25px;
+      font-weight: 700;
+      color: $black;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     .faq-block {
       .accordion {
         border: none;
@@ -9234,7 +9213,7 @@ tap to top css end
         .accordion-item {
           .title {
             margin-bottom: 0;
-            border-bottom: 1px solid rgba($black, 0.125);
+            // border-bottom: 1px solid rgba($black, 0.125);
             background-color: transparent;
             font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
             font-weight: 500;
@@ -9249,6 +9228,7 @@ tap to top css end
               transition: all 0.5s linear;
               left: 0;
               top: 20px;
+              color: $orange;
             }
 
             &:after {
@@ -9274,9 +9254,11 @@ tap to top css end
       }
 
       .frequent-text {
-        font-size: calc(18px + (48 - 18) * ((100vw - 300px) / (1920 - 300)));
-        margin-bottom: 20px;
-        margin-top: -15px;
+        font-size: 25px;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        margin-bottom: 2rem;
       }
 
       h6 {
@@ -10736,6 +10718,10 @@ gym css start
       color: $white;
       border: 1px solid $orange;
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .otfBtn1 {
@@ -10753,6 +10739,10 @@ gym css start
       color: $orange;
       border: 1px solid $white;
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .otfBtn2 {
@@ -10768,6 +10758,10 @@ gym css start
     &:hover {
       background: $white;
       color: $orange;
+    }
+
+    &:focus {
+      outline: 0;
     }
   }
 
@@ -11010,6 +11004,25 @@ gym css start
     }
   }
 
+  .animated-bg i {
+    background: #2e2e2e40;
+    bottom: 0;
+    box-shadow: 0 15px 30px 0 #dddddd;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    opacity: 0.3;
+    transform: scale(1.3);
+    animation: ripple1 3s linear infinite;
+  }
+
+  &.rightAnimation {
+    .animated-bg i {
+      left: unset;
+      right: 0;
+    }
+  }
 
   &.brand-slider {
     padding: 50px 0;
@@ -11671,7 +11684,8 @@ popup css start
 
   .employee {
     .e-name {
-      text-transform: uppercase;
+      text-transform: capitalize;
+      color: $orange;
       margin-bottom: 10px;
       font-weight: 600;
     }
@@ -11768,21 +11782,7 @@ breadcrumb-section css start
 }
 
 .breadcrumb-section {
-
-  &:not(.breadcrumb-left),
-  &:not(.breadcrumb-right),
-  &:not(.breadcrumb-slider) {
-    background: url("/assets/images/inner-page/breadcrumb.jpg");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay;
-  }
-
-  &.breadcrumb-left,
-  &.breadcrumb-right {
-    background: url("/assets/images/inner-page/breadcrumb-plain.jpg");
-  }
-
+  // background: url("/assets/images/inner-page/breadcrumb.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -11831,11 +11831,44 @@ breadcrumb-section css start
   }
 
   .breadcrumb-text {
-    color: $black;
-    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .breadcrumb-subtext {
+    color: $white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 50%;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+
+  .breadcrumb-btn {
+    color: $white;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid $orange;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    background: $orange;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:hover {
+      background: $white;
+      color: $orange;
+      border: 1px solid $white;
+    }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .breadcrumb {
@@ -18413,6 +18446,29 @@ header {
       padding: 10px 0;
     }
 
+    .navItemStyle {
+      color: $white;
+
+      @media (max-width: 991px) {
+        color: $black;
+      }
+
+      a {
+        @media (min-width: 991px) and (max-width: 1199px) {
+          font-size: 12px !important;
+          padding: 12px !important;
+        }
+      }
+    }
+
+    .otfBtn1 {
+      @media (min-width: 991px) and (max-width: 1199px) {
+        font-size: 12px !important;
+        padding: 0.5 1rem !important;
+      }
+    }
+
+
     ul {
       margin: 0;
       border: 0;
@@ -20227,5 +20283,80 @@ footer {
         color: $orange;
       }
     }
+  }
+}
+
+.contenedor {
+
+  .container_foto {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 2px solid $orange;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+    }
+  }
+
+  .container_foto article {
+    padding: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .container_foto h2 {
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .container_foto p {
+    font-weight: 300;
+    color: $white;
+    font-size: 15px;
+  }
+
+  .container_foto img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    border-radius: 15px;
+  }
+
+
+  /*hovers*/
+
+  .container_foto:hover {
+    cursor: pointer;
+  }
+
+  .container_foto:hover img {
+    opacity: 0.3;
+  }
+
+  .container_foto:hover article {
+    transform: translate(2px, -69px);
+    -webkit-transform: translate(2px, -69px);
+    -moz-transform: translate(2px, -69px);
+    -o-transform: translate(2px, -69px);
+    -ms-transform: translate(2px, -69px);
+  }
+
+  .container_foto:hover h2 {
+    color: $orange;
   }
 }

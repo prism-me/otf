@@ -3,81 +3,70 @@ import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 import { Container, Row, Col } from 'reactstrap'
 const Faq = () => {
-    const DummyContent1 = () => (
+
+    const DummyContent = (props) => (
         <div className="collapse show" id="collapseicon" aria-labelledby="collapseicon" data-parent="#accordionoc">
             <div className="card-body">
-                No one cares about products. People care about ideas. Is a product an idea?
-                Noup. Is a brand? A good one is. No one cares about products. People care about
-                ideas. Is a product an idea?
-                Noup. Is a brand? A good one is.
+                {props.answer}
             </div>
         </div>
     );
-    const DummyContent2 = () => (
-        <div className="collapse show" id="collapseicon1" aria-labelledby="collapseicon1" data-parent="#accordionoc">
-            <div className="card-body">
-                No one cares about products. People care about ideas. Is a product an idea?
-                Noup. Is a brand? A good one is. No one cares about products. People care about
-                ideas. Is a product an idea?
-                Noup. Is a brand? A good one is.
-            </div>
-        </div>
-    );
-    const DummyContent3 = () => (
-        <div className="collapse show" id="collapseicon2" data-parent="#accordionoc">
-            <div className="card-body">
-                No one cares about products. People care about ideas. Is a product an idea?
-                Noup. Is a brand? A good one is. No one cares about products. People care about
-                ideas. Is a product an idea?
-                Noup. Is a brand? A good one is.
-            </div>
-        </div>
-    );
-    const DummyContent4 = () => (
-        <div className="collapse show" id="collapseicon3" data-parent="#accordionoc">
-            <div className="card-body">
-                No one cares about products. People care about ideas. Is a product an idea?
-                Noup. Is a brand? A good one is. No one cares about products. People care about
-                ideas. Is a product an idea?
-                Noup. Is a brand? A good one is.
-            </div>
-        </div>
-    );
+
+    const faqData = [
+        {
+            question: "How early should I arrive for my first Orangetheory class?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "I haven't worked out in a long time? Can I still do the workout?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "I have issues with (part of the body). Can I still do your workout?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "What do the 5 zones mean, and why is the Orange zone so important?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "What equipment do you use at Orangetheory?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        }
+    ];
     return (
         <section className="saas1 faq" id="faq">
             <Container>
-                <Row>
-                    <Col md="8">
-                        <div className="faq-block">
-                            <div>
-                                <h3 className="frequent-text">Frequently Asked Questions</h3>
-                                <h6>Our users are impatient. They're probably distracted too. Keep it simple and beautiful, fun
-                                and
-                                functional. Clean aesthetics supported by a strong concept is what we stand for.</h6>
-                                <Accordion atomic={true}>
-                                    <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                        <DummyContent1 className="active" />
+                <h3 className="frequent-text">Frequently Asked Questions</h3>
+
+                <div className="faq-block">
+                    <div>
+                        <Accordion atomic={true}>
+                            {
+                                faqData.map((x, i) => (
+                                    <AccordionItem className="card-header bg-primary" title={x.question} key={i}>
+                                        <DummyContent className="active" answer={x.answer} />
                                     </AccordionItem>
-                                    <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                        <DummyContent2 />
-                                    </AccordionItem>
-                                    <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                        <DummyContent3 />
-                                    </AccordionItem>
-                                    <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                        <DummyContent4 />
-                                    </AccordionItem>
-                                </Accordion>
-                                <h6 className="link">Still have a question? Reach out to us: <a>demo@123.com</a></h6>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col md="4">
-                        <div className="faq-img-block">
-                            <img alt="faq-person" className="img-fluid" src="/assets/images/saas1/faq-img.png" />
-                        </div>
-                    </Col>
-                </Row>
+                                ))
+                            }
+                        </Accordion>
+                    </div>
+                </div>
+                <center>
+                    <button
+                        style={{
+                            background: "transparent",
+                            border: "0",
+                            borderBottom: "1px solid #F58220",
+                            color: "#F58220",
+                            textTransform: "uppercase",
+                            fontWeight: "700",
+                            outline: "0",
+                            marginTop: "2rem"
+
+                        }}
+                    >read more</button>
+                </center>
             </Container>
         </section>
     )

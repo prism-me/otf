@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 const About = () => (
     <section className="gym format" id="about">
+        <div className="animated-bg"><i></i><i></i><i></i></div>
+
         <Container>
             <h3 className="oftHeading">What happens in class doesn’t stay in class?</h3>
             <Row>

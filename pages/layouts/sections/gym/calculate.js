@@ -5,7 +5,7 @@ const Calculate = () => (
         <Container fluid>
             <Row>
                 <Col sm={6} className={"BGImgLocation p-0"}
-                    style={{ backgroundImage: "url('assets/images/OTF/home/locationbg.jpg')" }}
+                    style={{ backgroundImage: "url('/assets/images/OTF/home/locationbg.jpg')" }}
                 >
                     <div className={"p-5 mx-5 mb-4"}>
                         <h3 className="text-left oftHeading">Our Locations</h3>
