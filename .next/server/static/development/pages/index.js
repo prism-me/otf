@@ -538,7 +538,7 @@ const Nav = () => {
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: menuItem.path,
-      className: `${menuItem.active ? 'active' : ''} astyle`,
+      className: `${menuItem.active ? 'active' : ''}`,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,

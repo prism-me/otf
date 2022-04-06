@@ -630,7 +630,7 @@ var Nav = function Nav() {
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: menuItem.path,
-      className: "".concat(menuItem.active ? 'active' : '', " astyle"),
+      className: "".concat(menuItem.active ? 'active' : ''),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -740,35 +740,6 @@ var Nav = function Nav() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./database/pages/aboutus/database.js":
-/*!********************************************!*\
-  !*** ./database/pages/aboutus/database.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-  CounterData: [{
-    img: '/assets/images/resume/icon/1.png',
-    count: 1510,
-    desc: 'Satisfied Customers'
-  }, {
-    img: '/assets/images/resume/icon/2.png',
-    count: 320,
-    desc: 'Total Speaker'
-  }, {
-    img: '/assets/images/resume/icon/3.png',
-    count: 45810,
-    desc: 'Hours Worked'
-  }, {
-    img: '/assets/images/resume/icon/4.png',
-    count: 563,
-    desc: 'Awwards Winning'
-  }]
-};
 
 /***/ }),
 
@@ -1167,6 +1138,36 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 
 /***/ }),
 
@@ -5986,21 +5987,6 @@ for (var i = 0; i < DOMIterables.length; i++) {
   Iterators[NAME] = Iterators.Array;
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/countup.js/dist/countUp.min.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/countup.js/dist/countUp.min.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a,n){ true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (n),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):undefined}(this,function(a,n,t){var e=function(a,n,t,e,i,r){function o(a){var n,t,e,i,r,o,s=a<0;if(a=Math.abs(a).toFixed(l.decimals),a+="",n=a.split("."),t=n[0],e=n.length>1?l.options.decimal+n[1]:"",l.options.useGrouping){for(i="",r=0,o=t.length;r<o;++r)0!==r&&r%3===0&&(i=l.options.separator+i),i=t[o-r-1]+i;t=i}return l.options.numerals.length&&(t=t.replace(/[0-9]/g,function(a){return l.options.numerals[+a]}),e=e.replace(/[0-9]/g,function(a){return l.options.numerals[+a]})),(s?"-":"")+l.options.prefix+t+e+l.options.suffix}function s(a,n,t,e){return t*(-Math.pow(2,-10*a/e)+1)*1024/1023+n}function u(a){return"number"==typeof a&&!isNaN(a)}var l=this;if(l.version=function(){return"1.9.3"},l.options={useEasing:!0,useGrouping:!0,separator:",",decimal:".",easingFn:s,formattingFn:o,prefix:"",suffix:"",numerals:[]},r&&"object"==typeof r)for(var m in l.options)r.hasOwnProperty(m)&&null!==r[m]&&(l.options[m]=r[m]);""===l.options.separator?l.options.useGrouping=!1:l.options.separator=""+l.options.separator;for(var d=0,c=["webkit","moz","ms","o"],f=0;f<c.length&&!window.requestAnimationFrame;++f)window.requestAnimationFrame=window[c[f]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[c[f]+"CancelAnimationFrame"]||window[c[f]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,n){var t=(new Date).getTime(),e=Math.max(0,16-(t-d)),i=window.setTimeout(function(){a(t+e)},e);return d=t+e,i}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)}),l.initialize=function(){return!!l.initialized||(l.error="",l.d="string"==typeof a?document.getElementById(a):a,l.d?(l.startVal=Number(n),l.endVal=Number(t),u(l.startVal)&&u(l.endVal)?(l.decimals=Math.max(0,e||0),l.dec=Math.pow(10,l.decimals),l.duration=1e3*Number(i)||2e3,l.countDown=l.startVal>l.endVal,l.frameVal=l.startVal,l.initialized=!0,!0):(l.error="[CountUp] startVal ("+n+") or endVal ("+t+") is not a number",!1)):(l.error="[CountUp] target is null or undefined",!1))},l.printValue=function(a){var n=l.options.formattingFn(a);"INPUT"===l.d.tagName?this.d.value=n:"text"===l.d.tagName||"tspan"===l.d.tagName?this.d.textContent=n:this.d.innerHTML=n},l.count=function(a){l.startTime||(l.startTime=a),l.timestamp=a;var n=a-l.startTime;l.remaining=l.duration-n,l.options.useEasing?l.countDown?l.frameVal=l.startVal-l.options.easingFn(n,0,l.startVal-l.endVal,l.duration):l.frameVal=l.options.easingFn(n,l.startVal,l.endVal-l.startVal,l.duration):l.countDown?l.frameVal=l.startVal-(l.startVal-l.endVal)*(n/l.duration):l.frameVal=l.startVal+(l.endVal-l.startVal)*(n/l.duration),l.countDown?l.frameVal=l.frameVal<l.endVal?l.endVal:l.frameVal:l.frameVal=l.frameVal>l.endVal?l.endVal:l.frameVal,l.frameVal=Math.round(l.frameVal*l.dec)/l.dec,l.printValue(l.frameVal),n<l.duration?l.rAF=requestAnimationFrame(l.count):l.callback&&l.callback()},l.start=function(a){l.initialize()&&(l.callback=a,l.rAF=requestAnimationFrame(l.count))},l.pauseResume=function(){l.paused?(l.paused=!1,delete l.startTime,l.duration=l.remaining,l.startVal=l.frameVal,requestAnimationFrame(l.count)):(l.paused=!0,cancelAnimationFrame(l.rAF))},l.reset=function(){l.paused=!1,delete l.startTime,l.initialized=!1,l.initialize()&&(cancelAnimationFrame(l.rAF),l.printValue(l.startVal))},l.update=function(a){if(l.initialize()){if(a=Number(a),!u(a))return void(l.error="[CountUp] update() - new endVal is not a number: "+a);l.error="",a!==l.frameVal&&(cancelAnimationFrame(l.rAF),l.paused=!1,delete l.startTime,l.startVal=l.frameVal,l.endVal=a,l.countDown=l.startVal>l.endVal,l.rAF=requestAnimationFrame(l.count))}},l.initialize()&&l.printValue(l.startVal)};return e});
 
 /***/ }),
 
@@ -15021,618 +15007,6 @@ var objectKeys = Object.keys || function (obj) {
 
 exports.decode = exports.parse = __webpack_require__(/*! ./decode */ "./node_modules/querystring-es3/decode.js");
 exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node_modules/querystring-es3/encode.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/react-countup/build/index.js":
-/*!***************************************************!*\
-  !*** ./node_modules/react-countup/build/index.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var PropTypes = _interopDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var React__default = _interopDefault(React);
-var warning = _interopDefault(__webpack_require__(/*! warning */ "./node_modules/warning/warning.js"));
-var CountUp$1 = _interopDefault(__webpack_require__(/*! countup.js */ "./node_modules/countup.js/dist/countUp.min.js"));
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly) symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    });
-    keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-
-  return target;
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (typeof call === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-
-var createCountUpInstance = function createCountUpInstance(el, props) {
-  var decimal = props.decimal,
-      decimals = props.decimals,
-      duration = props.duration,
-      easingFn = props.easingFn,
-      end = props.end,
-      formattingFn = props.formattingFn,
-      prefix = props.prefix,
-      separator = props.separator,
-      start = props.start,
-      suffix = props.suffix,
-      useEasing = props.useEasing;
-  return new CountUp$1(el, start, end, decimals, duration, {
-    decimal: decimal,
-    easingFn: easingFn,
-    formattingFn: formattingFn,
-    separator: separator,
-    prefix: prefix,
-    suffix: suffix,
-    useEasing: useEasing,
-    useGrouping: !!separator
-  });
-};
-
-var CountUp =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(CountUp, _Component);
-
-  function CountUp() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, CountUp);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(CountUp)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "createInstance", function () {
-      if (typeof _this.props.children === 'function') {
-        // Warn when user didn't use containerRef at all
-        warning(_this.containerRef.current && (_this.containerRef.current instanceof HTMLElement || _this.containerRef.current instanceof SVGTextElement || _this.containerRef.current instanceof SVGTSpanElement), "Couldn't find attached element to hook the CountUp instance into! Try to attach \"containerRef\" from the render prop to a an HTMLElement, eg. <span ref={containerRef} />.");
-      }
-
-      return createCountUpInstance(_this.containerRef.current, _this.props);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "pauseResume", function () {
-      var _assertThisInitialize = _assertThisInitialized(_this),
-          reset = _assertThisInitialize.reset,
-          start = _assertThisInitialize.restart,
-          update = _assertThisInitialize.update;
-
-      var onPauseResume = _this.props.onPauseResume;
-
-      _this.instance.pauseResume();
-
-      onPauseResume({
-        reset: reset,
-        start: start,
-        update: update
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "reset", function () {
-      var _assertThisInitialize2 = _assertThisInitialized(_this),
-          pauseResume = _assertThisInitialize2.pauseResume,
-          start = _assertThisInitialize2.restart,
-          update = _assertThisInitialize2.update;
-
-      var onReset = _this.props.onReset;
-
-      _this.instance.reset();
-
-      onReset({
-        pauseResume: pauseResume,
-        start: start,
-        update: update
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "restart", function () {
-      _this.reset();
-
-      _this.start();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "start", function () {
-      var _assertThisInitialize3 = _assertThisInitialized(_this),
-          pauseResume = _assertThisInitialize3.pauseResume,
-          reset = _assertThisInitialize3.reset,
-          start = _assertThisInitialize3.restart,
-          update = _assertThisInitialize3.update;
-
-      var _this$props = _this.props,
-          delay = _this$props.delay,
-          onEnd = _this$props.onEnd,
-          onStart = _this$props.onStart;
-
-      var run = function run() {
-        return _this.instance.start(function () {
-          return onEnd({
-            pauseResume: pauseResume,
-            reset: reset,
-            start: start,
-            update: update
-          });
-        });
-      }; // Delay start if delay prop is properly set
-
-
-      if (delay > 0) {
-        _this.timeoutId = setTimeout(run, delay * 1000);
-      } else {
-        run();
-      }
-
-      onStart({
-        pauseResume: pauseResume,
-        reset: reset,
-        update: update
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "update", function (newEnd) {
-      var _assertThisInitialize4 = _assertThisInitialized(_this),
-          pauseResume = _assertThisInitialize4.pauseResume,
-          reset = _assertThisInitialize4.reset,
-          start = _assertThisInitialize4.restart;
-
-      var onUpdate = _this.props.onUpdate;
-
-      _this.instance.update(newEnd);
-
-      onUpdate({
-        pauseResume: pauseResume,
-        reset: reset,
-        start: start
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "containerRef", React__default.createRef());
-
-    return _this;
-  }
-
-  _createClass(CountUp, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this$props2 = this.props,
-          children = _this$props2.children,
-          delay = _this$props2.delay;
-      this.instance = this.createInstance(); // Don't invoke start if component is used as a render prop
-
-      if (typeof children === 'function' && delay !== 0) return; // Otherwise just start immediately
-
-      this.start();
-    }
-  }, {
-    key: "shouldComponentUpdate",
-    value: function shouldComponentUpdate(nextProps) {
-      var _this$props3 = this.props,
-          end = _this$props3.end,
-          start = _this$props3.start,
-          suffix = _this$props3.suffix,
-          prefix = _this$props3.prefix,
-          redraw = _this$props3.redraw,
-          duration = _this$props3.duration,
-          separator = _this$props3.separator,
-          decimals = _this$props3.decimals,
-          decimal = _this$props3.decimal;
-      var hasCertainPropsChanged = duration !== nextProps.duration || end !== nextProps.end || start !== nextProps.start || suffix !== nextProps.suffix || prefix !== nextProps.prefix || separator !== nextProps.separator || decimals !== nextProps.decimals || decimal !== nextProps.decimal;
-      return hasCertainPropsChanged || redraw;
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      // If duration, suffix, prefix, separator or start has changed
-      // there's no way to update the values.
-      // So we need to re-create the CountUp instance in order to
-      // restart it.
-      var _this$props4 = this.props,
-          end = _this$props4.end,
-          start = _this$props4.start,
-          suffix = _this$props4.suffix,
-          prefix = _this$props4.prefix,
-          duration = _this$props4.duration,
-          separator = _this$props4.separator,
-          decimals = _this$props4.decimals,
-          decimal = _this$props4.decimal,
-          preserveValue = _this$props4.preserveValue;
-
-      if (duration !== prevProps.duration || start !== prevProps.start || suffix !== prevProps.suffix || prefix !== prevProps.prefix || separator !== prevProps.separator || decimals !== prevProps.decimals || decimal !== prevProps.decimal) {
-        this.instance.reset();
-        this.instance = this.createInstance();
-        this.start();
-      } // Only end value has changed, so reset and and re-animate with the updated
-      // end value.
-
-
-      if (end !== prevProps.end) {
-        if (!preserveValue) {
-          this.instance.reset();
-        }
-
-        this.instance.update(end);
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
-      }
-
-      this.instance.reset();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props5 = this.props,
-          children = _this$props5.children,
-          className = _this$props5.className,
-          style = _this$props5.style;
-      var containerRef = this.containerRef,
-          pauseResume = this.pauseResume,
-          reset = this.reset,
-          restart = this.restart,
-          update = this.update;
-
-      if (typeof children === 'function') {
-        return children({
-          countUpRef: containerRef,
-          pauseResume: pauseResume,
-          reset: reset,
-          start: restart,
-          update: update
-        });
-      }
-
-      return React__default.createElement("span", {
-        className: className,
-        ref: containerRef,
-        style: style
-      });
-    }
-  }]);
-
-  return CountUp;
-}(React.Component);
-
-_defineProperty(CountUp, "propTypes", {
-  decimal: PropTypes.string,
-  decimals: PropTypes.number,
-  delay: PropTypes.number,
-  easingFn: PropTypes.func,
-  end: PropTypes.number.isRequired,
-  formattingFn: PropTypes.func,
-  onEnd: PropTypes.func,
-  onStart: PropTypes.func,
-  prefix: PropTypes.string,
-  redraw: PropTypes.bool,
-  separator: PropTypes.string,
-  start: PropTypes.number,
-  startOnMount: PropTypes.bool,
-  suffix: PropTypes.string,
-  style: PropTypes.object,
-  useEasing: PropTypes.bool,
-  preserveValue: PropTypes.bool
-});
-
-_defineProperty(CountUp, "defaultProps", {
-  decimal: '.',
-  decimals: 0,
-  delay: null,
-  duration: null,
-  easingFn: null,
-  formattingFn: null,
-  onEnd: function onEnd() {},
-  onPauseResume: function onPauseResume() {},
-  onReset: function onReset() {},
-  onStart: function onStart() {},
-  onUpdate: function onUpdate() {},
-  prefix: '',
-  redraw: false,
-  separator: '',
-  start: 0,
-  startOnMount: true,
-  suffix: '',
-  style: undefined,
-  useEasing: true,
-  preserveValue: false
-});
-
-// and just sets the innerHTML of the element.
-
-var MOCK_ELEMENT = {
-  innerHTML: null
-};
-
-var useCountUp = function useCountUp(props) {
-  var _props = _objectSpread2({}, CountUp.defaultProps, {}, props);
-
-  var start = _props.start,
-      formattingFn = _props.formattingFn;
-
-  var _useState = React.useState(typeof formattingFn === 'function' ? formattingFn(start) : start),
-      _useState2 = _slicedToArray(_useState, 2),
-      count = _useState2[0],
-      setCount = _useState2[1];
-
-  var countUpRef = React.useRef(null);
-
-  var createInstance = function createInstance() {
-    var countUp = createCountUpInstance(MOCK_ELEMENT, _props);
-    var formattingFnRef = countUp.options.formattingFn;
-
-    countUp.options.formattingFn = function () {
-      var result = formattingFnRef.apply(void 0, arguments);
-      setCount(result);
-    };
-
-    return countUp;
-  };
-
-  var getCountUp = function getCountUp() {
-    var countUp = countUpRef.current;
-
-    if (countUp !== null) {
-      return countUp;
-    }
-
-    var newCountUp = createInstance();
-    countUpRef.current = newCountUp;
-    return newCountUp;
-  };
-
-  var reset = function reset() {
-    var onReset = _props.onReset;
-    getCountUp().reset();
-    onReset({
-      pauseResume: pauseResume,
-      start: restart,
-      update: update
-    });
-  };
-
-  var restart = function restart() {
-    var onStart = _props.onStart,
-        onEnd = _props.onEnd;
-    getCountUp().reset();
-    getCountUp().start(function () {
-      onEnd({
-        pauseResume: pauseResume,
-        reset: reset,
-        start: restart,
-        update: update
-      });
-    });
-    onStart({
-      pauseResume: pauseResume,
-      reset: reset,
-      update: update
-    });
-  };
-
-  var pauseResume = function pauseResume() {
-    var onPauseResume = _props.onPauseResume;
-    getCountUp().pauseResume();
-    onPauseResume({
-      reset: reset,
-      start: restart,
-      update: update
-    });
-  };
-
-  var update = function update(newEnd) {
-    var onUpdate = _props.onUpdate;
-    getCountUp().update(newEnd);
-    onUpdate({
-      pauseResume: pauseResume,
-      reset: reset,
-      start: restart
-    });
-  };
-
-  React.useEffect(function () {
-    var delay = _props.delay,
-        onStart = _props.onStart,
-        onEnd = _props.onEnd,
-        startOnMount = _props.startOnMount;
-
-    if (startOnMount) {
-      var timeout = setTimeout(function () {
-        onStart({
-          pauseResume: pauseResume,
-          reset: reset,
-          update: update
-        });
-        getCountUp().start(function () {
-          clearTimeout(timeout);
-          onEnd({
-            pauseResume: pauseResume,
-            reset: reset,
-            start: restart,
-            update: update
-          });
-        });
-      }, delay * 1000);
-    }
-
-    return reset;
-  }, []);
-  return {
-    countUp: count,
-    start: restart,
-    pauseResume: pauseResume,
-    reset: reset,
-    update: update
-  };
-};
-
-exports.default = CountUp;
-exports.useCountUp = useCountUp;
 
 
 /***/ }),
@@ -34521,7 +33895,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var About = function About() {
   return __jsx("section", {
-    className: "gym format about-detail",
+    className: "gym format about-detail pb-2",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -34600,7 +33974,7 @@ var About = function About() {
       columnNumber: 33
     }
   }, "Orangetheory is a 1 hour, full body workout, focused on training Endurance, Strength and/or Power. We use Heart Rate Based Interval Training, which burns more calories post workout than a traditional exercise. When wearing our Heart Rate monitors, your real time results are displayed on large screens throughout the studio. Intensity is based on your individual Heart Rate zones, making the workout effective for all fitness levels. To top it off, our fitness coaches to lead the workout to prevent you from over or under training.")))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    className: "contenedor",
+    className: "contenedor justify-content-center",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -34743,109 +34117,220 @@ var About = function About() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_countup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-countup */ "./node_modules/react-countup/build/index.js");
-/* harmony import */ var react_countup__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_countup__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../database/pages/aboutus/database */ "./database/pages/aboutus/database.js");
-/* harmony import */ var _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+
+
 var _this = undefined,
     _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\about-us\\counter.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  arrows: false,
+  autoplay: true,
+  swipeToSlide: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+var otfData = [{
+  img: "/assets/images/OTF/about/otbbg.jpg",
+  title: "Orange Theory Beat - OTBEAT",
+  detail1: "OTbeat is our exclusive heart rate monitoring technology. Members have the unique experience of seeing real time data during their workout, enabling them to push themselves to new limits. After class, they can then monitor their improvements through emailed results and by using the OTbeat APP.",
+  detail2: "Risus in facilisi sem nulla vitae sagittis eget tellus.Adipiscing cursus duis accumsan, id tellus et blandit lectus.Nibh magna augue tellus, est!"
+}, {
+  img: "/assets/images/OTF/about/otbbg.jpg",
+  title: "Orange Theory Beat - OTBEAT",
+  detail1: "OTbeat is our exclusive heart rate monitoring technology. Members have the unique experience of seeing real time data during their workout, enabling them to push themselves to new limits. After class, they can then monitor their improvements through emailed results and by using the OTbeat APP.",
+  detail2: "Risus in facilisi sem nulla vitae sagittis eget tellus.Adipiscing cursus duis accumsan, id tellus et blandit lectus.Nibh magna augue tellus, est!"
+}];
 
 var Counter = function Counter() {
   return __jsx("section", {
-    className: "resume counter bg-pink",
+    className: "OTbeatStyle p-0",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 31,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: "default-dots otbeat-slider",
+    id: "gym-slider"
+  }, settings, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 32,
       columnNumber: 9
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 13
-    }
-  }, _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__["CounterData"].map(function (item, i) {
-    return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-      xl: "3",
-      xs: "6",
-      className: "counter-container",
+  }), otfData.map(function (x, i) {
+    return __jsx("div", {
+      className: "item",
       key: i,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 25
+        lineNumber: 35,
+        columnNumber: 21
       }
     }, __jsx("div", {
-      className: "counters",
+      className: "otbBgImg",
+      style: {
+        backgroundImage: "url(".concat(x.img, ")")
+      },
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12,
+        lineNumber: 36,
+        columnNumber: 25
+      }
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
         columnNumber: 29
+      }
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 33
+      }
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
+      md: "6",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 37
+      }
+    }, __jsx("h3", {
+      className: "oftHeading",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 41
+      }
+    }, "Health and Safety (It's not either/or)"), __jsx("p", {
+      className: "p-light oftsubHeading text-white",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 41
+      }
+    }, x.detail1), __jsx("p", {
+      className: "p-light oftsubHeading text-white",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 41
+      }
+    }, x.detail2), __jsx("ul", {
+      className: "icon-collection",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 41
+      }
+    }, __jsx("li", {
+      className: "about-icongym",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 45
+      }
+    }, __jsx("a", {
+      className: "center-content",
+      href: "#",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52,
+        columnNumber: 49
       }
     }, __jsx("img", {
       alt: "",
-      className: "img-fluid counter-img",
-      src: item.img,
+      className: "img-fluid icons",
+      src: "/assets/images/OTF/icons/heatl1.png",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
-        columnNumber: 33
+        lineNumber: 53,
+        columnNumber: 53
       }
-    }), __jsx("div", {
-      className: "counter-text",
+    }))), __jsx("li", {
+      className: "about-icongym",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 33
+        lineNumber: 56,
+        columnNumber: 45
       }
-    }, __jsx("h3", {
-      className: "count-text counts",
+    }, __jsx("a", {
+      className: "center-content",
+      href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 37
+        lineNumber: 57,
+        columnNumber: 49
       }
-    }, __jsx(react_countup__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      end: item.count,
+    }, __jsx("img", {
+      alt: "",
+      className: "img-fluid icons",
+      src: "/assets/images/OTF/icons/heatl2.png",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 41
+        lineNumber: 58,
+        columnNumber: 53
       }
-    })), __jsx("h5", {
-      className: "count-desc",
+    }))), __jsx("li", {
+      className: "about-icongym",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 37
+        lineNumber: 61,
+        columnNumber: 45
       }
-    }, item.desc))));
-  }))));
+    }, __jsx("a", {
+      className: "center-content",
+      href: "#",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 49
+      }
+    }, __jsx("img", {
+      alt: "",
+      className: "img-fluid icons",
+      src: "/assets/images/OTF/icons/heatl3.png",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 53
+      }
+    })))))))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Counter);
@@ -34861,15 +34346,45 @@ var Counter = function Counter() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-var _this = undefined,
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+var _settings,
+    _this = undefined,
     _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\about-us\\speaker.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
+
+var settings = (_settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500
+}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "arrows", false), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "slidesToShow", 4), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "autoplay", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "centerMode", true), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "centerPadding", '0'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "slidesToScroll", 1), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(_settings, "responsive", [{
+  breakpoint: 490,
+  settings: {
+    slidesToShow: 1
+  }
+}, {
+  breakpoint: 767,
+  settings: {
+    slidesToShow: 2
+  }
+}, {
+  breakpoint: 991,
+  settings: {
+    slidesToShow: 3
+  }
+}]), _settings);
 var speaker = [{
   img: "../assets/images/OTF/team/team1.png",
   title: "Management Member",
@@ -34886,38 +34401,42 @@ var speaker = [{
   img: "../assets/images/OTF/team/team4.png",
   title: "Management Member",
   subtitle: "Designation example"
+}, {
+  img: "../assets/images/OTF/team/team4.png",
+  title: "Management Member",
+  subtitle: "Designation example"
 }];
 
 var Speaker = function Speaker() {
   return __jsx("section", {
-    className: "event speaker set-relative",
+    className: "event speaker set-relative pb-2",
     id: "speaker",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 62,
       columnNumber: 5
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 63,
       columnNumber: 9
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 64,
       columnNumber: 13
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
     xs: "12",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 65,
       columnNumber: 17
     }
   }, __jsx("div", {
@@ -34925,7 +34444,7 @@ var Speaker = function Speaker() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 66,
       columnNumber: 21
     }
   }, __jsx("div", {
@@ -34933,7 +34452,7 @@ var Speaker = function Speaker() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 67,
       columnNumber: 25
     }
   }, __jsx("h2", {
@@ -34941,43 +34460,59 @@ var Speaker = function Speaker() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 68,
       columnNumber: 29
     }
   }, __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 69,
       columnNumber: 33
     }
-  }, "Our team"))))), speaker.map(function (x, i) {
-    return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-      md: "3",
-      sm: "6",
-      className: "speker-container",
+  }, "Our team"))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
+    xs: "12",
+    className: "speker-container",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 17
+    }
+  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: "speaker-slider "
+  }, settings, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 21
+    }
+  }), speaker.map(function (x, i) {
+    return __jsx("div", {
+      className: "item",
       key: i,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
-        columnNumber: 25
+        lineNumber: 78,
+        columnNumber: 33
       }
     }, __jsx("div", {
       className: "text-center",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
-        columnNumber: 29
+        lineNumber: 79,
+        columnNumber: 37
       }
     }, __jsx("div", {
       className: "team-img",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
-        columnNumber: 33
+        lineNumber: 80,
+        columnNumber: 41
       }
     }, __jsx("img", {
       alt: "",
@@ -34986,46 +34521,46 @@ var Speaker = function Speaker() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 37
+        lineNumber: 81,
+        columnNumber: 45
       }
     }), __jsx("div", {
       className: "overlay",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 37
+        lineNumber: 82,
+        columnNumber: 45
       }
     }), __jsx("div", {
       className: "social",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 37
+        lineNumber: 83,
+        columnNumber: 45
       }
     }, __jsx("ul", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 41
+        lineNumber: 84,
+        columnNumber: 49
       }
     }, __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 45
+        lineNumber: 85,
+        columnNumber: 53
       }
     }, __jsx("a", {
       href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 49
+        lineNumber: 86,
+        columnNumber: 57
       }
     }, __jsx("i", {
       "aria-hidden": "true",
@@ -35033,23 +34568,23 @@ var Speaker = function Speaker() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 53
+        lineNumber: 87,
+        columnNumber: 61
       }
     }))), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 45
+        lineNumber: 90,
+        columnNumber: 53
       }
     }, __jsx("a", {
       href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 49
+        lineNumber: 91,
+        columnNumber: 57
       }
     }, __jsx("i", {
       "aria-hidden": "true",
@@ -35057,23 +34592,23 @@ var Speaker = function Speaker() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55,
-        columnNumber: 53
+        lineNumber: 92,
+        columnNumber: 61
       }
     }))), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
-        columnNumber: 45
+        lineNumber: 95,
+        columnNumber: 53
       }
     }, __jsx("a", {
       href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 49
+        lineNumber: 96,
+        columnNumber: 57
       }
     }, __jsx("i", {
       "aria-hidden": "true",
@@ -35081,23 +34616,23 @@ var Speaker = function Speaker() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 53
+        lineNumber: 97,
+        columnNumber: 61
       }
     }))), __jsx("li", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63,
-        columnNumber: 45
+        lineNumber: 100,
+        columnNumber: 53
       }
     }, __jsx("a", {
       href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64,
-        columnNumber: 49
+        lineNumber: 101,
+        columnNumber: 57
       }
     }, __jsx("i", {
       "aria-hidden": "true",
@@ -35105,35 +34640,35 @@ var Speaker = function Speaker() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 53
+        lineNumber: 102,
+        columnNumber: 61
       }
     })))))), __jsx("div", {
       className: "employee",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
-        columnNumber: 33
+        lineNumber: 108,
+        columnNumber: 41
       }
     }, __jsx("h5", {
       className: "e-name text-center",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
-        columnNumber: 37
+        lineNumber: 109,
+        columnNumber: 45
       }
     }, x.title), __jsx("h6", {
       className: "post text-center ",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
-        columnNumber: 37
+        lineNumber: 110,
+        columnNumber: 45
       }
     }, x.subtitle))));
-  }))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Speaker);

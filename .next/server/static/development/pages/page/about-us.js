@@ -718,7 +718,7 @@ const Nav = () => {
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: menuItem.path,
-      className: `${menuItem.active ? 'active' : ''} astyle`,
+      className: `${menuItem.active ? 'active' : ''}`,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -822,35 +822,6 @@ const Nav = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./database/pages/aboutus/database.js":
-/*!********************************************!*\
-  !*** ./database/pages/aboutus/database.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-  CounterData: [{
-    img: '/assets/images/resume/icon/1.png',
-    count: 1510,
-    desc: 'Satisfied Customers'
-  }, {
-    img: '/assets/images/resume/icon/2.png',
-    count: 320,
-    desc: 'Total Speaker'
-  }, {
-    img: '/assets/images/resume/icon/3.png',
-    count: 45810,
-    desc: 'Hours Worked'
-  }, {
-    img: '/assets/images/resume/icon/4.png',
-    count: 563,
-    desc: 'Awwards Winning'
-  }]
-};
 
 /***/ }),
 
@@ -4354,7 +4325,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const About = () => __jsx("section", {
-  className: "gym format about-detail",
+  className: "gym format about-detail pb-2",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -4433,7 +4404,7 @@ const About = () => __jsx("section", {
     columnNumber: 33
   }
 }, "Orangetheory is a 1 hour, full body workout, focused on training Endurance, Strength and/or Power. We use Heart Rate Based Interval Training, which burns more calories post workout than a traditional exercise. When wearing our Heart Rate monitors, your real time results are displayed on large screens throughout the studio. Intensity is based on your individual Heart Rate zones, making the workout effective for all fitness levels. To top it off, our fitness coaches to lead the workout to prevent you from over or under training.")))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-  className: "contenedor",
+  className: "contenedor justify-content-center",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -4575,107 +4546,215 @@ const About = () => __jsx("section", {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_countup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-countup */ "react-countup");
-/* harmony import */ var react_countup__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_countup__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../database/pages/aboutus/database */ "./database/pages/aboutus/database.js");
-/* harmony import */ var _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
+
 var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\about-us\\counter.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  arrows: false,
+  autoplay: true,
+  swipeToSlide: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+const otfData = [{
+  img: "/assets/images/OTF/about/otbbg.jpg",
+  title: "Orange Theory Beat - OTBEAT",
+  detail1: "OTbeat is our exclusive heart rate monitoring technology. Members have the unique experience of seeing real time data during their workout, enabling them to push themselves to new limits. After class, they can then monitor their improvements through emailed results and by using the OTbeat APP.",
+  detail2: "Risus in facilisi sem nulla vitae sagittis eget tellus.Adipiscing cursus duis accumsan, id tellus et blandit lectus.Nibh magna augue tellus, est!"
+}, {
+  img: "/assets/images/OTF/about/otbbg.jpg",
+  title: "Orange Theory Beat - OTBEAT",
+  detail1: "OTbeat is our exclusive heart rate monitoring technology. Members have the unique experience of seeing real time data during their workout, enabling them to push themselves to new limits. After class, they can then monitor their improvements through emailed results and by using the OTbeat APP.",
+  detail2: "Risus in facilisi sem nulla vitae sagittis eget tellus.Adipiscing cursus duis accumsan, id tellus et blandit lectus.Nibh magna augue tellus, est!"
+}];
 
 const Counter = () => __jsx("section", {
-  className: "resume counter bg-pink",
+  className: "OTbeatStyle p-0",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 31,
     columnNumber: 5
+  }
+}, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  className: "default-dots otbeat-slider",
+  id: "gym-slider"
+}, settings, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32,
+    columnNumber: 9
+  }
+}), otfData.map((x, i) => __jsx("div", {
+  className: "item",
+  key: i,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 21
+  }
+}, __jsx("div", {
+  className: "otbBgImg",
+  style: {
+    backgroundImage: `url(${x.img})`
+  },
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36,
+    columnNumber: 25
   }
 }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 9
+    lineNumber: 39,
+    columnNumber: 29
   }
 }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 13
+    lineNumber: 40,
+    columnNumber: 33
   }
-}, _database_pages_aboutus_database__WEBPACK_IMPORTED_MODULE_2__["CounterData"].map((item, i) => {
-  return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xl: "3",
-    xs: "6",
-    className: "counter-container",
-    key: i,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "counters",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid counter-img",
-    src: item.img,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 33
-    }
-  }), __jsx("div", {
-    className: "counter-text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 33
-    }
-  }, __jsx("h3", {
-    className: "count-text counts",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 37
-    }
-  }, __jsx(react_countup__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    end: item.count,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 41
-    }
-  })), __jsx("h5", {
-    className: "count-desc",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 37
-    }
-  }, item.desc))));
-}))));
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
+  md: "6",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41,
+    columnNumber: 37
+  }
+}, __jsx("h3", {
+  className: "oftHeading",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 42,
+    columnNumber: 41
+  }
+}, "Health and Safety (It's not either/or)"), __jsx("p", {
+  className: "p-light oftsubHeading text-white",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44,
+    columnNumber: 41
+  }
+}, x.detail1), __jsx("p", {
+  className: "p-light oftsubHeading text-white",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 47,
+    columnNumber: 41
+  }
+}, x.detail2), __jsx("ul", {
+  className: "icon-collection",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 50,
+    columnNumber: 41
+  }
+}, __jsx("li", {
+  className: "about-icongym",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 51,
+    columnNumber: 45
+  }
+}, __jsx("a", {
+  className: "center-content",
+  href: "#",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 52,
+    columnNumber: 49
+  }
+}, __jsx("img", {
+  alt: "",
+  className: "img-fluid icons",
+  src: "/assets/images/OTF/icons/heatl1.png",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 53,
+    columnNumber: 53
+  }
+}))), __jsx("li", {
+  className: "about-icongym",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 56,
+    columnNumber: 45
+  }
+}, __jsx("a", {
+  className: "center-content",
+  href: "#",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 57,
+    columnNumber: 49
+  }
+}, __jsx("img", {
+  alt: "",
+  className: "img-fluid icons",
+  src: "/assets/images/OTF/icons/heatl2.png",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 58,
+    columnNumber: 53
+  }
+}))), __jsx("li", {
+  className: "about-icongym",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 61,
+    columnNumber: 45
+  }
+}, __jsx("a", {
+  className: "center-content",
+  href: "#",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 62,
+    columnNumber: 49
+  }
+}, __jsx("img", {
+  alt: "",
+  className: "img-fluid icons",
+  src: "/assets/images/OTF/icons/heatl3.png",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 63,
+    columnNumber: 53
+  }
+}))))))))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Counter);
 
@@ -4690,14 +4769,47 @@ const Counter = () => __jsx("section", {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-slick */ "react-slick");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_3__);
+
 var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\about-us\\speaker.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
+
+var settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  arrows: false,
+  slidesToShow: 4,
+  autoplay: true,
+  centerMode: true,
+  centerPadding: '0',
+  slidesToScroll: 1,
+  responsive: [{
+    breakpoint: 490,
+    settings: {
+      slidesToShow: 1
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 2
+    }
+  }, {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 3
+    }
+  }]
+};
 const speaker = [{
   img: "../assets/images/OTF/team/team1.png",
   title: "Management Member",
@@ -4714,37 +4826,41 @@ const speaker = [{
   img: "../assets/images/OTF/team/team4.png",
   title: "Management Member",
   subtitle: "Designation example"
+}, {
+  img: "../assets/images/OTF/team/team4.png",
+  title: "Management Member",
+  subtitle: "Designation example"
 }];
 
 const Speaker = () => __jsx("section", {
-  className: "event speaker set-relative",
+  className: "event speaker set-relative pb-2",
   id: "speaker",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27,
+    lineNumber: 62,
     columnNumber: 5
   }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 28,
+    lineNumber: 63,
     columnNumber: 9
   }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29,
+    lineNumber: 64,
     columnNumber: 13
   }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
   xs: "12",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30,
+    lineNumber: 65,
     columnNumber: 17
   }
 }, __jsx("div", {
@@ -4752,7 +4868,7 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31,
+    lineNumber: 66,
     columnNumber: 21
   }
 }, __jsx("div", {
@@ -4760,7 +4876,7 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 32,
+    lineNumber: 67,
     columnNumber: 25
   }
 }, __jsx("h2", {
@@ -4768,42 +4884,58 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33,
+    lineNumber: 68,
     columnNumber: 29
   }
 }, __jsx("span", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34,
+    lineNumber: 69,
     columnNumber: 33
   }
-}, "Our team"))))), speaker.map((x, i) => __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "3",
-  sm: "6",
+}, "Our team"))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  xs: "12",
   className: "speker-container",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 74,
+    columnNumber: 17
+  }
+}, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_3___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  className: "speaker-slider "
+}, settings, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 75,
+    columnNumber: 21
+  }
+}), speaker.map((x, i) => __jsx("div", {
+  className: "item",
   key: i,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 25
+    lineNumber: 78,
+    columnNumber: 33
   }
 }, __jsx("div", {
   className: "text-center",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42,
-    columnNumber: 29
+    lineNumber: 79,
+    columnNumber: 37
   }
 }, __jsx("div", {
   className: "team-img",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43,
-    columnNumber: 33
+    lineNumber: 80,
+    columnNumber: 41
   }
 }, __jsx("img", {
   alt: "",
@@ -4812,46 +4944,46 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 37
+    lineNumber: 81,
+    columnNumber: 45
   }
 }), __jsx("div", {
   className: "overlay",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 37
+    lineNumber: 82,
+    columnNumber: 45
   }
 }), __jsx("div", {
   className: "social",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46,
-    columnNumber: 37
+    lineNumber: 83,
+    columnNumber: 45
   }
 }, __jsx("ul", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47,
-    columnNumber: 41
+    lineNumber: 84,
+    columnNumber: 49
   }
 }, __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 45
+    lineNumber: 85,
+    columnNumber: 53
   }
 }, __jsx("a", {
   href: "#",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49,
-    columnNumber: 49
+    lineNumber: 86,
+    columnNumber: 57
   }
 }, __jsx("i", {
   "aria-hidden": "true",
@@ -4859,23 +4991,23 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50,
-    columnNumber: 53
+    lineNumber: 87,
+    columnNumber: 61
   }
 }))), __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 53,
-    columnNumber: 45
+    lineNumber: 90,
+    columnNumber: 53
   }
 }, __jsx("a", {
   href: "#",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 49
+    lineNumber: 91,
+    columnNumber: 57
   }
 }, __jsx("i", {
   "aria-hidden": "true",
@@ -4883,23 +5015,23 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 53
+    lineNumber: 92,
+    columnNumber: 61
   }
 }))), __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 58,
-    columnNumber: 45
+    lineNumber: 95,
+    columnNumber: 53
   }
 }, __jsx("a", {
   href: "#",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 59,
-    columnNumber: 49
+    lineNumber: 96,
+    columnNumber: 57
   }
 }, __jsx("i", {
   "aria-hidden": "true",
@@ -4907,23 +5039,23 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 60,
-    columnNumber: 53
+    lineNumber: 97,
+    columnNumber: 61
   }
 }))), __jsx("li", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 63,
-    columnNumber: 45
+    lineNumber: 100,
+    columnNumber: 53
   }
 }, __jsx("a", {
   href: "#",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 64,
-    columnNumber: 49
+    lineNumber: 101,
+    columnNumber: 57
   }
 }, __jsx("i", {
   "aria-hidden": "true",
@@ -4931,34 +5063,34 @@ const Speaker = () => __jsx("section", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 65,
-    columnNumber: 53
+    lineNumber: 102,
+    columnNumber: 61
   }
 })))))), __jsx("div", {
   className: "employee",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 71,
-    columnNumber: 33
+    lineNumber: 108,
+    columnNumber: 41
   }
 }, __jsx("h5", {
   className: "e-name text-center",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 72,
-    columnNumber: 37
+    lineNumber: 109,
+    columnNumber: 45
   }
 }, x.title), __jsx("h6", {
   className: "post text-center ",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 73,
-    columnNumber: 37
+    lineNumber: 110,
+    columnNumber: 45
   }
-}, x.subtitle))))))));
+}, x.subtitle))))))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Speaker);
 
@@ -5105,17 +5237,6 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-countup":
-/*!********************************!*\
-  !*** external "react-countup" ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-countup");
 
 /***/ }),
 

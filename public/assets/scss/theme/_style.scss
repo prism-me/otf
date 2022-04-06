@@ -10390,6 +10390,41 @@ event css start
   }
 
   &.speaker {
+    .speaker-slider {
+      .slick-dots {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+
+        li {
+          width: 34px;
+
+          button {
+            background: $black;
+            width: 34px;
+            height: 3px;
+            padding: 0;
+            border-radius: unset;
+            opacity: 1;
+
+            &:before {
+              display: none;
+            }
+          }
+
+          &.slick-active {
+            button {
+              background: $orange;
+            }
+          }
+
+          +li {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
     .team-img {
       .social {
         ul {
@@ -18454,6 +18489,14 @@ header {
       }
 
       a {
+        &:active {
+          color: $orange !important;
+        }
+
+        &:hover {
+          color: $orange !important;
+        }
+
         @media (min-width: 991px) and (max-width: 1199px) {
           font-size: 12px !important;
           padding: 12px !important;
@@ -20358,5 +20401,97 @@ footer {
 
   .container_foto:hover h2 {
     color: $orange;
+  }
+}
+
+.OTbeatStyle {
+
+  .otbeat-slider {
+    .slick-list {
+      margin: 0;
+
+      .slick-track {
+        .slick-slide {
+          >div {
+            .item {
+              padding: 0;
+
+              .otbBgImg {
+                padding: 100px 0;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .oftHeading {
+                font-size: 25px;
+                font-weight: 700;
+                color: $orange;
+                margin-bottom: 2rem;
+              }
+
+              .oftsubHeading {
+                font-size: 16px;
+                text-align: justify;
+                margin-bottom: 2rem;
+              }
+
+              .icon-collection {
+                .about-icongym {
+                  background-color: $white;
+                  border: 1px solid $orange;
+                  border-radius: 15px;
+                  margin-right: 1rem;
+
+                  a {
+                    padding: 0.5rem;
+
+                    img {
+                      width: 35px;
+                    }
+                  }
+
+                  &:hover {
+                    background-color: $orange;
+                    box-shadow: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      bottom: 40px;
+
+      li {
+        width: 34px;
+
+        button {
+          background: $white;
+          width: 34px;
+          height: 3px;
+          padding: 0;
+          border-radius: unset;
+          opacity: 1;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          button {
+            box-shadow: 0 0 10px 1px #c1c0c0;
+          }
+        }
+
+        +li {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }

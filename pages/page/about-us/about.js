@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap'
 const About = () => (
-    <section className="gym format about-detail">
+    <section className="gym format about-detail pb-2">
         <Container>
             <Row>
                 <Col md="8" className="offset-md-2">
@@ -19,7 +19,7 @@ const About = () => (
                     </div>
                 </Col>
             </Row>
-            <Row className="contenedor">
+            <Row className="contenedor justify-content-center">
                 <Col sm={4} className="container_foto">
                     <article className="text-left">
                         <h2>Our Mission</h2>

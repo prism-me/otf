@@ -449,7 +449,7 @@ var Nav = function Nav() {
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: menuItem.path,
-      className: "".concat(menuItem.active ? 'active' : '', " astyle"),
+      className: "".concat(menuItem.active ? 'active' : ''),
       __self: _this,
       __source: {
         fileName: _jsxFileName,

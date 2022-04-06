@@ -95,7 +95,7 @@ const Nav = () => {
                             {(menuItem.type === 'link') &&
                                 <Link
                                     href={menuItem.path}
-                                    className={`${menuItem.active ? 'active' : ''} astyle`}
+                                    className={`${menuItem.active ? 'active' : ''}`}
                                 >
                                     {menuItem.title}
                                 </Link>

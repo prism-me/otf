@@ -15903,6 +15903,26 @@ event css start
 .event .format .format-sub-text p {
   font-weight: 300; }
 
+.event.speaker .speaker-slider .slick-dots {
+  position: relative;
+  bottom: 0;
+  margin-top: 40px; }
+  .event.speaker .speaker-slider .slick-dots li {
+    width: 34px; }
+    .event.speaker .speaker-slider .slick-dots li button {
+      background: #000000;
+      width: 34px;
+      height: 3px;
+      padding: 0;
+      border-radius: unset;
+      opacity: 1; }
+      .event.speaker .speaker-slider .slick-dots li button:before {
+        display: none; }
+    .event.speaker .speaker-slider .slick-dots li.slick-active button {
+      background: #F58220; }
+    .event.speaker .speaker-slider .slick-dots li + li {
+      margin-left: 10px; }
+
 .event.speaker .team-img .social ul li a i {
   transition: all 0.4s; }
   .event.speaker .team-img .social ul li a i:hover {
@@ -21157,6 +21177,10 @@ header {
       @media (max-width: 991px) {
         header nav .navItemStyle {
           color: #000000; } }
+      header nav .navItemStyle a:active {
+        color: #F58220 !important; }
+      header nav .navItemStyle a:hover {
+        color: #F58220 !important; }
       @media (min-width: 991px) and (max-width: 1199px) {
         header nav .navItemStyle a {
           font-size: 12px !important;
@@ -22388,6 +22412,55 @@ footer.saas1 h5 {
     -ms-transform: translate(2px, -69px); }
   .contenedor .container_foto:hover h2 {
     color: #F58220; }
+
+.OTbeatStyle .otbeat-slider .slick-list {
+  margin: 0; }
+  .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item {
+    padding: 0; }
+    .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .otbBgImg {
+      padding: 100px 0;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .oftHeading {
+      font-size: 25px;
+      font-weight: 700;
+      color: #F58220;
+      margin-bottom: 2rem; }
+    .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .oftsubHeading {
+      font-size: 16px;
+      text-align: justify;
+      margin-bottom: 2rem; }
+    .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .icon-collection .about-icongym {
+      background-color: #FFFFFF;
+      border: 1px solid #F58220;
+      border-radius: 15px;
+      margin-right: 1rem; }
+      .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .icon-collection .about-icongym a {
+        padding: 0.5rem; }
+        .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .icon-collection .about-icongym a img {
+          width: 35px; }
+      .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .icon-collection .about-icongym:hover {
+        background-color: #F58220;
+        box-shadow: none; }
+
+.OTbeatStyle .otbeat-slider .slick-dots {
+  bottom: 40px; }
+  .OTbeatStyle .otbeat-slider .slick-dots li {
+    width: 34px; }
+    .OTbeatStyle .otbeat-slider .slick-dots li button {
+      background: #FFFFFF;
+      width: 34px;
+      height: 3px;
+      padding: 0;
+      border-radius: unset;
+      opacity: 1; }
+      .OTbeatStyle .otbeat-slider .slick-dots li button:before {
+        display: none; }
+    .OTbeatStyle .otbeat-slider .slick-dots li.slick-active button {
+      box-shadow: 0 0 10px 1px #c1c0c0; }
+    .OTbeatStyle .otbeat-slider .slick-dots li + li {
+      margin-left: 10px; }
 
 /**=====================
      63. Responsive CSS Start
