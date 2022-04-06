@@ -24,29 +24,29 @@ var settings = {
 
 const PricingResume2 = [
     {
-        icon: "assets/images/OTF/icons/Premier.png",
-        iconW: "assets/images/OTF/icons/PremierW.png",
+        icon: "/assets/images/OTF/icons/Premier.png",
+        iconW: "/assets/images/OTF/icons/PremierW.png",
         title: "Orange Premier",
         feature1: "Unlimited classes",
         feature2: 'Reduced rate for families'
     },
     {
-        icon: "assets/images/OTF/icons/Orange-elite.png",
-        iconW: "assets/images/OTF/icons/eliteW.png",
+        icon: "/assets/images/OTF/icons/Orange-elite.png",
+        iconW: "/assets/images/OTF/icons/eliteW.png",
         title: "Orange Elite",
         feature1: "8 classes/month",
         feature2: 'Extra classes at reduced rate'
     },
     {
-        icon: "assets/images/OTF/icons/Basic.png",
-        iconW: "assets/images/OTF/icons/BasicW.png",
+        icon: "/assets/images/OTF/icons/Basic.png",
+        iconW: "/assets/images/OTF/icons/BasicW.png",
         title: "Orange Basic",
         feature1: "4 classes/month",
         feature2: 'Extra classes at reduced rate'
     },
     {
-        icon: "assets/images/OTF/icons/Basic.png",
-        iconW: "assets/images/OTF/icons/BasicW.png",
+        icon: "/assets/images/OTF/icons/Basic.png",
+        iconW: "/assets/images/OTF/icons/BasicW.png",
         title: "Orange Basic",
         feature1: "4 classes/month",
         feature2: 'Extra classes at reduced rate'

@@ -3148,6 +3148,37 @@ header {
           padding: 0 95px;
         }
       }
+
+      .viewbtn {
+        border: 0;
+        border-bottom: 1px solid $white;
+        color: $white;
+        background: transparent;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        outline: 0;
+      }
+
+      .otfBtn1 {
+        color: $white;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid $orange;
+        text-transform: uppercase;
+        background: $orange;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 14px;
+
+        &:hover {
+          background: $white;
+          color: $orange;
+          border: 1px solid $white;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
     }
 
     &.music-bg {
@@ -4113,6 +4144,9 @@ footer {
 .videos {
   .video {
     background-image: url("/assets/images/app_landing1/video-pic.jpg");
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     z-index: 1;
     padding: 125px 0;
     border-radius: 10px;
@@ -10867,6 +10901,76 @@ gym css start
           color: $white;
           background: $orange;
         }
+      }
+    }
+  }
+
+  &.locations {
+    .locationImg {
+      position: relative;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 370px;
+    }
+
+    .overlaylocation {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid $orange;
+
+      a {
+        color: white;
+      }
+    }
+
+    .locationImg:hover .overlaylocation {
+      opacity: 1;
+    }
+
+    .locationtext {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: left;
+
+      .headingL {
+        font-size: 20px;
+        font-weight: 700;
+        color: $white;
+        text-transform: capitalize;
+
+      }
+
+      .subheadingL1 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: $white;
+        text-transform: capitalize;
+
+      }
+
+      .callL1 {
+        color: $orange;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
       }
     }
   }

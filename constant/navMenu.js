@@ -6,7 +6,7 @@ export const MENUITEMS = [
     },
     {
         title: 'Memberships',
-        path: '/layouts/portfolioLayouts',
+        path: '/page/memberships',
         type: 'link'
     },
     {
@@ -37,7 +37,7 @@ export const MENUITEMS = [
     },
     {
         title: 'Support',
-        path: '/layouts/portfolioLayouts',
+        path: '/page/faq',
         type: 'link'
     },
 ]

@@ -16,7 +16,7 @@ var MENUITEMS = [{
   type: 'link'
 }, {
   title: 'Memberships',
-  path: '/layouts/portfolioLayouts',
+  path: '/page/memberships',
   type: 'link'
 }, {
   title: 'The Workout',
@@ -80,7 +80,7 @@ var MENUITEMS = [{
   }]
 }, {
   title: 'Support',
-  path: '/layouts/portfolioLayouts',
+  path: '/page/faq',
   type: 'link'
 }];
 

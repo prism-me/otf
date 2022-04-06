@@ -11451,6 +11451,29 @@ header.saas1 nav .main-menu li > a > span {
         padding: 0 85px; }
         .header .bg.gym-header .header-sub-text p {
           padding: 0 95px; }
+      .header .bg.gym-header .viewbtn {
+        border: 0;
+        border-bottom: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        background: transparent;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        outline: 0; }
+      .header .bg.gym-header .otfBtn1 {
+        color: #FFFFFF;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid #F58220;
+        text-transform: uppercase;
+        background: #F58220;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 14px; }
+        .header .bg.gym-header .otfBtn1:hover {
+          background: #FFFFFF;
+          color: #F58220;
+          border: 1px solid #FFFFFF; }
+        .header .bg.gym-header .otfBtn1:focus {
+          outline: 0; }
     .header .bg.music-bg {
       background-image: url("/assets/images/music/slider.jpg");
       background-attachment: fixed; }
@@ -12006,6 +12029,9 @@ footer {
 *************************/
 .videos .video {
   background-image: url("/assets/images/app_landing1/video-pic.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   z-index: 1;
   padding: 125px 0;
   border-radius: 10px; }
@@ -16191,6 +16217,59 @@ gym css start
     .gym.bg-location .locationDiv .iconstyelLocation:hover {
       color: #FFFFFF;
       background: #F58220; }
+
+.gym.locations .locationImg {
+  position: relative; }
+
+.gym.locations .image {
+  display: block;
+  width: 100%;
+  height: 370px; }
+
+.gym.locations .overlaylocation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #F58220; }
+  .gym.locations .overlaylocation a {
+    color: white; }
+
+.gym.locations .locationImg:hover .overlaylocation {
+  opacity: 1; }
+
+.gym.locations .locationtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left; }
+  .gym.locations .locationtext .headingL {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: capitalize; }
+  .gym.locations .locationtext .subheadingL1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    text-transform: capitalize; }
+  .gym.locations .locationtext .callL1 {
+    color: #F58220;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase; }
 
 .gym .borders-before span:before {
   border-top: 2px solid var(--secondary); }

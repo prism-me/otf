@@ -109,7 +109,7 @@ const MENUITEMS = [{
   type: 'link'
 }, {
   title: 'Memberships',
-  path: '/layouts/portfolioLayouts',
+  path: '/page/memberships',
   type: 'link'
 }, {
   title: 'The Workout',
@@ -173,7 +173,7 @@ const MENUITEMS = [{
   }]
 }, {
   title: 'Support',
-  path: '/layouts/portfolioLayouts',
+  path: '/page/faq',
   type: 'link'
 }];
 

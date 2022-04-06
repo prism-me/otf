@@ -12,24 +12,7 @@ var settings = {
     slidesToScroll: 1,
 };
 
-const sliderData = [
-    {
-        bannerImg: "assets/images/OTF/banner/homeBannerSlider.jpg",
-        title: "The Smartest Workout for More Results",
-        detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-        btn1: "book class now",
-        btn2: "view membership details"
-    },
-    {
-        bannerImg: "assets/images/OTF/banner/homeBannerSlider.jpg",
-        title: "The Smartest Workout for More Results",
-        detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-        btn1: "book class now",
-        btn2: "view membership details"
-    }
-];
-
-const Banner = () => (
+const Banner = ({ sliderData }) => (
     <section className="gym header" id="home">
         <div className="header5-content">
             <Slider className="default-dots gym-slider" id="gym-slider" {...settings}>
@@ -52,20 +35,37 @@ const Banner = () => (
                                                             {x.detail}
                                                         </p>
                                                     </div>
+                                                    {
+                                                        x.btnm &&
+                                                        <button className='otfBtn1'>
+                                                            {x.btnm}
+                                                        </button>
+                                                    }
                                                     <div className="link-horizontal">
                                                         <ul className="justify-content-center">
-                                                            <li>
-                                                                <a className=" btn btn-default">
-                                                                    {x.btn1}
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a className=" btn btn-default">
-                                                                    {x.btn2}
-                                                                </a>
-                                                            </li>
+                                                            {
+                                                                x.btn1 &&
+                                                                <li>
+                                                                    <a className=" btn btn-default">
+                                                                        {x.btn1}
+                                                                    </a>
+                                                                </li>
+                                                            }
+                                                            {x.btn2 &&
+                                                                <li>
+                                                                    <a className=" btn btn-default">
+                                                                        {x.btn2}
+                                                                    </a>
+                                                                </li>
+                                                            }
                                                         </ul>
                                                     </div>
+                                                    {
+                                                        x.viewbtn &&
+                                                        <button className='viewbtn'>
+                                                            {x.viewbtn}
+                                                        </button>
+                                                    }
                                                 </div>
                                             </div>
                                         </Col>

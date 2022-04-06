@@ -1,9 +1,9 @@
 import React from 'react'
-import CountUp from 'react-countup';
 import { Container, Row, Col } from 'reactstrap'
+
 const Counter = () => (
     <section className="gym counter rightAnimation  bg-img3 bg1"
-        style={{ backgroundImage: "url('assets/images/OTF/home/get-off.jpg')" }}
+        style={{ backgroundImage: "url('/assets/images/OTF/home/get-off.jpg')" }}
     >
         <div className="animated-bg"><i></i><i></i><i></i></div>
 
