@@ -77,6 +77,7 @@ const Nav = () => {
         setMainMenu({ mainmenu: MENUITEMS })
     }
 
+
     return (
         <div className={`navbar`} id="togglebtn">
             <div className="responsive-btn">
@@ -88,19 +89,19 @@ const Nav = () => {
                 {MENUITEMS.map((menuItem, i) => {
                     return (
                         <li key={i} className={"navItemStyle"}>
+
                             {(menuItem.type === 'sub') ?
-                                <a className="dropdown" href="#" onClick={() => toggletNavActive(menuItem)}>
+                                <a className="dropdown" href="/page/locations" onClick={() => toggletNavActive(menuItem)}>
                                     <span>{menuItem.title}</span>
                                 </a>
                                 : ''}
                             {(menuItem.type === 'link') &&
-                                <Link
+                                <a
                                     href={menuItem.path}
-                                    className={"navbarlink"}
-                                // className={`${menuItem.active ? 'active' : ''}`}
+                                    className={`${menuItem.active ? 'active' : ''}`}
                                 >
                                     {menuItem.title}
-                                </Link>
+                                </a>
                             }
                             {menuItem.children &&
                                 <ul
@@ -115,7 +116,7 @@ const Nav = () => {
                                                 </a>
                                                 : ''}
                                             {(childrenItem.type === 'link') ?
-                                                <Link href={`${childrenItem.path} astyle`}>
+                                                <Link href={`${childrenItem.path}`}>
                                                     <a>    {childrenItem.title} </a>
                                                 </Link>
                                                 : ''}

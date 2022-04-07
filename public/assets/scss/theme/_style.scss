@@ -18625,8 +18625,9 @@ header {
       }
 
       a {
-        &:active {
-          color: $orange !important;
+        &.active {
+          color: $orange;
+          font-weight: 700;
         }
 
         &:hover {

@@ -30,52 +30,24 @@ var MENUITEMS = [{
   title: 'Locations',
   type: 'sub',
   children: [{
-    path: '/layouts/agency',
-    title: 'Agency',
+    path: '/page/location1',
+    title: 'Location1',
     type: 'link'
   }, {
-    path: '/layouts/app1',
-    title: 'App Landing1',
+    path: '/page/location2',
+    title: 'Location2',
     type: 'link'
   }, {
-    path: '/layouts/app2',
-    title: 'App Landing2',
+    path: '/page/location3',
+    title: 'Location3',
     type: 'link'
   }, {
-    path: '/layouts/event',
-    title: 'Event',
+    path: '/page/location4',
+    title: 'Location4',
     type: 'link'
   }, {
-    path: '/layouts/gym',
-    title: 'Gym',
-    type: 'link'
-  }, {
-    path: '/layouts/music',
-    title: 'Music',
-    type: 'link'
-  }, {
-    path: '/layouts/resume',
-    title: 'Resume',
-    type: 'link'
-  }, {
-    path: '/layouts/modern-sass',
-    title: 'Sass1',
-    type: 'link'
-  }, {
-    path: '/layouts/enterprice-sass',
-    title: 'Sass2',
-    type: 'link'
-  }, {
-    path: '/layouts/wedding',
-    title: 'Wedding',
-    type: 'link'
-  }, {
-    path: '/layouts/yoga',
-    title: 'Yoga',
-    type: 'link'
-  }, {
-    path: '/layouts/portfolioLayouts',
-    title: 'Portfolio',
+    path: '/page/location5',
+    title: 'Location5',
     type: 'link'
   }]
 }, {
@@ -583,7 +555,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -591,7 +563,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -600,14 +572,14 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 21
     }
   }, "close"))), __jsx("ul", {
@@ -615,7 +587,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 13
     }
   }, _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
@@ -625,36 +597,35 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
+        lineNumber: 91,
         columnNumber: 25
       }
     }, menuItem.type === 'sub' ? __jsx("a", {
       className: "dropdown",
-      href: "#",
+      href: "/page/locations",
       onClick: function onClick() {
         return toggletNavActive(menuItem);
       },
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 94,
         columnNumber: 33
       }
     }, __jsx("span", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 95,
         columnNumber: 37
       }
-    }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }, menuItem.title)) : '', menuItem.type === 'link' && __jsx("a", {
       href: menuItem.path,
-      className: "navbarlink" // className={`${menuItem.active ? 'active' : ''}`}
-      ,
+      className: "".concat(menuItem.active ? 'active' : ''),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 99,
         columnNumber: 33
       }
     }, menuItem.title), menuItem.children && __jsx("ul", {
@@ -666,7 +637,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 107,
         columnNumber: 33
       }
     }, menuItem.children.map(function (childrenItem, index) {
@@ -676,7 +647,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 112,
           columnNumber: 41
         }
       }, childrenItem.type === 'sub' ? __jsx("a", {
@@ -687,22 +658,22 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 114,
           columnNumber: 49
         }
       }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "".concat(childrenItem.path, " astyle"),
+        href: "".concat(childrenItem.path),
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 119,
           columnNumber: 49
         }
       }, __jsx("a", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 120,
           columnNumber: 53
         }
       }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
@@ -710,7 +681,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123,
+          lineNumber: 124,
           columnNumber: 49
         }
       }, childrenItem.children.map(function (childrenSubItem, key) {
@@ -719,7 +690,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125,
+            lineNumber: 126,
             columnNumber: 57
           }
         }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -727,7 +698,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 127,
+            lineNumber: 128,
             columnNumber: 65
           }
         }, __jsx("a", {
@@ -735,7 +706,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 128,
+            lineNumber: 129,
             columnNumber: 69
           }
         }, childrenSubItem.title)) : '');
@@ -745,7 +716,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 142,
       columnNumber: 17
     }
   }, "  ", __jsx("button", {
@@ -753,7 +724,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 142,
       columnNumber: 23
     }
   }, "Free Class"), " ")));
@@ -28649,7 +28620,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
@@ -28657,14 +28628,14 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 11,
       columnNumber: 9
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 12,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -28673,7 +28644,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, __jsx("iframe", {
@@ -28689,7 +28660,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 14,
       columnNumber: 21
     }
   })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -28701,7 +28672,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
       columnNumber: 17
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
@@ -28709,7 +28680,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 20,
       columnNumber: 21
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -28717,7 +28688,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 21,
       columnNumber: 25
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -28725,14 +28696,14 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 22,
       columnNumber: 29
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 23,
       columnNumber: 33
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -28744,7 +28715,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 24,
       columnNumber: 37
     }
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -28752,14 +28723,14 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 33,
       columnNumber: 29
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 33
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -28771,14 +28742,14 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 35,
       columnNumber: 37
     }
   })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 45,
       columnNumber: 25
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -28795,7 +28766,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 46,
       columnNumber: 29
     }
   })), __jsx("button", {
@@ -28803,7 +28774,7 @@ var Faqform = function Faqform() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 56,
       columnNumber: 25
     }
   }, "Submit"))))));

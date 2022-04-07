@@ -24,8 +24,10 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/page/workout": [
+    "/page/locations": [
       "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
       "static/runtime/main.js"
     ]
   }

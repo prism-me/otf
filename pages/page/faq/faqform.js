@@ -1,11 +1,9 @@
 import React from 'react'
 import {
-    Container, Row, Col, Button,
+    Container, Row, Col,
     Form,
     FormGroup,
-    Label,
     Input,
-    FormText
 } from 'reactstrap'
 
 const Faqform = () => (
