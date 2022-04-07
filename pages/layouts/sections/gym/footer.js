@@ -11,22 +11,22 @@ const Footer = () => (
                                 <img alt="" className="img-fluid footer-logo" src="/assets/images/OTF/logo/footer_logo.png" />
                                 <ul className="d-flex footer-social social">
                                     <li className="footer-social-list">
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/orangetheory/" target={"_blank"}>
                                             <i aria-hidden="true" className="fa fa-instagram"></i>
                                         </a>
                                     </li>
                                     <li className="footer-social-list">
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/OrangetheoryFitness/" target={"_blank"}>
                                             <i aria-hidden="true" className="fa fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li className="footer-social-list">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHB6rwn1JfoIwAAAYADKMRIRbmDSr01qAQt0NDCj3xmyxOni_Oals07utfzDUhFAPsFqL1Uo6pXz5uaI_6j7n11OuWi6OI229bWFL4oQbuTC8F8tvpELsBNAgd2UFDtJi4LsY0=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Forangetheory-fitness" target={"_blank"}>
                                             <i aria-hidden="true" className="fa fa-linkedin"></i>
                                         </a>
                                     </li>
                                     <li className="footer-social-list">
-                                        <a href="#">
+                                        <a href="https://twitter.com/orangetheory" target={"_blank"}>
                                             <i aria-hidden="true" className="fa fa-twitter"></i>
                                         </a>
                                     </li>

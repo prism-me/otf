@@ -11842,7 +11842,10 @@ footer {
     display: flex;
     line-height: 0; }
     footer .logo-sec .footer-social .footer-social-list {
-      padding: 0 15px; }
+      padding: 0 20px; }
+      @media (max-width: 992px) {
+        footer .logo-sec .footer-social .footer-social-list {
+          padding: 0 15px; } }
       footer .logo-sec .footer-social .footer-social-list:first-child {
         padding-left: 0; }
       footer .logo-sec .footer-social .footer-social-list:last-child {
@@ -11850,7 +11853,10 @@ footer {
       footer .logo-sec .footer-social .footer-social-list a {
         color: #000000; }
         footer .logo-sec .footer-social .footer-social-list a i {
-          font-size: 20px; }
+          font-size: 24px; }
+          @media (max-width: 992px) {
+            footer .logo-sec .footer-social .footer-social-list a i {
+              font-size: 20px; } }
         footer .logo-sec .footer-social .footer-social-list a:hover {
           color: #F58220; }
   footer .footer-headings {
@@ -14635,6 +14641,10 @@ tap to top css end
   .saas1 span.theme-color {
     color: var(--primary); }
 
+.saas1.rightAnimation .animated-bg i {
+  left: unset;
+  right: 0; }
+
 .saas1 .title img {
   display: inline-block;
   margin-right: 7px;
@@ -15174,29 +15184,31 @@ tap to top css end
 .saas1.faq .faq-block .accordion {
   border: none;
   margin-top: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))); }
-  .saas1.faq .faq-block .accordion .accordion-item .title {
-    margin-bottom: 0;
-    background-color: transparent;
-    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 500;
-    position: relative;
-    color: #071828;
-    padding: 12px 20px; }
-    .saas1.faq .faq-block .accordion .accordion-item .title:before {
-      position: absolute;
-      font: normal normal normal 10px/1 FontAwesome;
-      content: "\F054";
+  .saas1.faq .faq-block .accordion .accordion-item {
+    border-bottom: 1px solid #F58220; }
+    .saas1.faq .faq-block .accordion .accordion-item .title {
+      margin-bottom: 0;
+      background-color: transparent;
+      font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
+      font-weight: 500;
+      position: relative;
+      color: #071828;
+      padding: 12px 20px; }
+      .saas1.faq .faq-block .accordion .accordion-item .title:before {
+        position: absolute;
+        font: normal normal normal 10px/1 FontAwesome;
+        content: "\F054";
+        transition: all 0.5s linear;
+        left: 0;
+        top: 20px;
+        color: #F58220; }
+      .saas1.faq .faq-block .accordion .accordion-item .title:after {
+        display: none; }
+    .saas1.faq .faq-block .accordion .accordion-item .panel p {
+      padding: 20px; }
+    .saas1.faq .faq-block .accordion .accordion-item.active .title:before {
       transition: all 0.5s linear;
-      left: 0;
-      top: 20px;
-      color: #F58220; }
-    .saas1.faq .faq-block .accordion .accordion-item .title:after {
-      display: none; }
-  .saas1.faq .faq-block .accordion .accordion-item .panel p {
-    padding: 20px; }
-  .saas1.faq .faq-block .accordion .accordion-item.active .title:before {
-    transition: all 0.5s linear;
-    transform: rotate(270deg); }
+      transform: rotate(270deg); }
 
 .saas1.faq .faq-block .frequent-text {
   font-size: 25px;
@@ -16194,6 +16206,14 @@ gym css start
   background-position: right;
   background-size: cover;
   background-color: #000000; }
+  .gym.bg-location .BGImgLocation .formStyle {
+    padding: 8rem 4rem; }
+    .gym.bg-location .BGImgLocation .formStyle .inputStyle {
+      background: #FFFFFF;
+      border-radius: 0;
+      padding: 1rem; }
+      .gym.bg-location .BGImgLocation .formStyle .inputStyle:focus {
+        border: 1px solid #F58220; }
 
 .gym.bg-location .locationDiv {
   background: #FFFFFF;

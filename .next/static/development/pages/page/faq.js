@@ -167,7 +167,8 @@ var Breadcrumb = function Breadcrumb(_ref) {
   var btntext = _ref.btntext,
       title = _ref.title,
       subtitle = _ref.subtitle,
-      bannerImg = _ref.bannerImg;
+      bannerImg = _ref.bannerImg,
+      promtext = _ref.promtext;
   return __jsx("section", {
     className: "agency breadcrumb-section ",
     style: {
@@ -217,23 +218,38 @@ var Breadcrumb = function Breadcrumb(_ref) {
       lineNumber: 12,
       columnNumber: 29
     }
-  }, title), __jsx("p", {
+  }, title), subtitle && __jsx("p", {
     className: "breadcrumb-subtext",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 29
+      lineNumber: 15,
+      columnNumber: 33
     }
   }, subtitle), __jsx("button", {
     className: "breadcrumb-btn",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 17,
       columnNumber: 29
     }
-  }, btntext))))));
+  }, btntext), promtext && __jsx("p", {
+    className: "text-white mt-3",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 33
+    }
+  }, __jsx("small", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 64
+    }
+  }, promtext)))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Breadcrumb);
@@ -271,7 +287,9 @@ var CommonLayout = function CommonLayout(_ref) {
       btntext = _ref.btntext,
       title = _ref.title,
       subtitle = _ref.subtitle,
-      bannerImg = _ref.bannerImg;
+      bannerImg = _ref.bannerImg,
+      metaTitle = _ref.metaTitle,
+      promtext = _ref.promtext;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     document.body.style.setProperty('--primary', '#000');
     document.body.style.setProperty('--secondary', '#000');
@@ -292,12 +310,12 @@ var CommonLayout = function CommonLayout(_ref) {
       lineNumber: 20,
       columnNumber: 17
     }
-  }, "About Us")), __jsx(_containers_common_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, metaTitle)), __jsx(_containers_common_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "gym nav-lg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 13
     }
   }), __jsx(_breadcrumb__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -305,17 +323,18 @@ var CommonLayout = function CommonLayout(_ref) {
     title: title,
     bannerImg: bannerImg,
     btntext: btntext,
+    promtext: promtext,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 27,
       columnNumber: 13
     }
   }), __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, children), __jsx(_pages_layouts_sections_gym_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 37,
       columnNumber: 13
     }
   }));
@@ -564,7 +583,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -572,7 +591,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 13
     }
   }, __jsx("a", {
@@ -581,14 +600,14 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 21
     }
   }, "close"))), __jsx("ul", {
@@ -596,7 +615,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 87,
       columnNumber: 13
     }
   }, _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
@@ -606,7 +625,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 90,
         columnNumber: 25
       }
     }, menuItem.type === 'sub' ? __jsx("a", {
@@ -618,23 +637,24 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 92,
         columnNumber: 33
       }
     }, __jsx("span", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 93,
         columnNumber: 37
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: menuItem.path,
-      className: "".concat(menuItem.active ? 'active' : ''),
+      className: "navbarlink" // className={`${menuItem.active ? 'active' : ''}`}
+      ,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 33
       }
     }, menuItem.title), menuItem.children && __jsx("ul", {
@@ -646,7 +666,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 106,
         columnNumber: 33
       }
     }, menuItem.children.map(function (childrenItem, index) {
@@ -656,7 +676,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109,
+          lineNumber: 111,
           columnNumber: 41
         }
       }, childrenItem.type === 'sub' ? __jsx("a", {
@@ -667,7 +687,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 113,
           columnNumber: 49
         }
       }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -675,14 +695,14 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116,
+          lineNumber: 118,
           columnNumber: 49
         }
       }, __jsx("a", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117,
+          lineNumber: 119,
           columnNumber: 53
         }
       }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
@@ -690,7 +710,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121,
+          lineNumber: 123,
           columnNumber: 49
         }
       }, childrenItem.children.map(function (childrenSubItem, key) {
@@ -699,7 +719,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123,
+            lineNumber: 125,
             columnNumber: 57
           }
         }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -707,7 +727,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125,
+            lineNumber: 127,
             columnNumber: 65
           }
         }, __jsx("a", {
@@ -715,7 +735,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 126,
+            lineNumber: 128,
             columnNumber: 69
           }
         }, childrenSubItem.title)) : '');
@@ -725,7 +745,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 141,
       columnNumber: 17
     }
   }, "  ", __jsx("button", {
@@ -733,7 +753,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 141,
       columnNumber: 23
     }
   }, "Free Class"), " ")));
@@ -27851,7 +27871,8 @@ var Footer = function Footer() {
       columnNumber: 37
     }
   }, __jsx("a", {
-    href: "#",
+    href: "https://www.instagram.com/orangetheory/",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -27876,7 +27897,8 @@ var Footer = function Footer() {
       columnNumber: 37
     }
   }, __jsx("a", {
-    href: "#",
+    href: "https://www.facebook.com/OrangetheoryFitness/",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -27901,7 +27923,8 @@ var Footer = function Footer() {
       columnNumber: 37
     }
   }, __jsx("a", {
-    href: "#",
+    href: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHB6rwn1JfoIwAAAYADKMRIRbmDSr01qAQt0NDCj3xmyxOni_Oals07utfzDUhFAPsFqL1Uo6pXz5uaI_6j7n11OuWi6OI229bWFL4oQbuTC8F8tvpELsBNAgd2UFDtJi4LsY0=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Forangetheory-fitness",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -27926,7 +27949,8 @@ var Footer = function Footer() {
       columnNumber: 37
     }
   }, __jsx("a", {
-    href: "#",
+    href: "https://twitter.com/orangetheory",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -28429,6 +28453,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
 /* harmony import */ var _containers_common_common_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../containers/common/common-layout */ "./containers/common/common-layout.js");
+/* harmony import */ var _faq_faqform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faq/faqform */ "./pages/page/faq/faqform.js");
 var _this = undefined,
     _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\faq.js";
 
@@ -28440,6 +28465,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var FAQ = function FAQ() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     document.querySelector(".accordion .accordion-item").classList.add("active");
@@ -28448,220 +28474,342 @@ var FAQ = function FAQ() {
     };
   }, []);
 
-  var DummyContent1 = function DummyContent1() {
+  var DummyContent1 = function DummyContent1(props) {
     return __jsx("p", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 9
       }
-    }, "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas.");
+    }, props.answer);
   };
 
+  var faqData = [{
+    question: "How early should I arrive for my first Orangetheory class?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "I haven't worked out in a long time? Can I still do the workout?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "I have issues with (part of the body). Can I still do your workout?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "What do the 5 zones mean, and why is the Orange zone so important?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "What equipment do you use at Orangetheory?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }];
   return __jsx(_containers_common_common_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    pathList: ['pages', 'faqs'],
-    pathTitle: "Pages With FAQS",
+    title: "Try Us For Free.Yes, Free!",
+    btntext: "book a free class now",
+    promtext: "*Promotion Terms. Limited Time Offer.",
+    bannerImg: "/assets/images/OTF/banner/faqbanner.jpg",
+    metaTitle: "Support",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 47,
       columnNumber: 9
     }
   }, __jsx("section", {
-    className: "saas1 faq testimonial-bg inner-container",
+    className: "saas1 faq testimonial-bg inner-container rightAnimation",
     id: "faq",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 54,
       columnNumber: 13
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 56,
       columnNumber: 17
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
+  }, __jsx("i", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 21
+      lineNumber: 56,
+      columnNumber: 46
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    md: "8",
+  }), __jsx("i", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 25
+      lineNumber: 56,
+      columnNumber: 53
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 60
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 17
     }
   }, __jsx("div", {
     className: "faq-block",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 29
+      lineNumber: 60,
+      columnNumber: 21
     }
   }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 33
+      lineNumber: 61,
+      columnNumber: 25
     }
   }, __jsx("h3", {
     className: "frequent-text",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 37
+      lineNumber: 62,
+      columnNumber: 29
     }
-  }, "Frequently Asked Questions"), __jsx("h6", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 37
-    }
-  }, "Our users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and functional. Clean aesthetics supported by a strong concept is what we stand for."), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["Accordion"], {
+  }, "Frequently Asked Questions"), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["Accordion"], {
     atomic: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 63,
+      columnNumber: 29
+    }
+  }, faqData.map(function (x, i) {
+    return __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
+      className: "card-header bg-primary",
+      title: x.question,
+      key: i,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 41
+      }
+    }, __jsx(DummyContent1, {
+      answer: x.answer,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67,
+        columnNumber: 45
+      }
+    }));
+  })))))), __jsx(_faq_faqform__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 13
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FAQ);
+
+/***/ }),
+
+/***/ "./pages/page/faq/faqform.js":
+/*!***********************************!*\
+  !*** ./pages/page/faq/faqform.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+var _this = undefined,
+    _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\faq\\faqform.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var Faqform = function Faqform() {
+  return __jsx("section", {
+    className: "gym format bg-location p-0",
+    id: "bmi",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 5
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    fluid: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: 6,
+    className: "p-0",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 17
+    }
+  }, __jsx("iframe", {
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6032486928893!2d55.25071151432762!3d25.216599037102654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4362916220b1%3A0x175f64a16111cae7!2sOrangetheory%20Fitness%20at%20Mercato%20Mall!5e0!3m2!1sen!2s!4v1649050081764!5m2!1sen!2s",
+    width: "100%",
+    height: "100%",
+    style: {
+      border: "0"
+    },
+    allowfullscreen: "",
+    loading: "lazy",
+    referrerpolicy: "no-referrer-when-downgrade",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 21
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: 6,
+    className: "BGImgLocation p-0",
+    style: {
+      backgroundImage: "url('/assets/images/OTF/faq/faqformBg.jpg')"
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 17
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    className: "formStyle",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 21
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    form: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 25
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    md: 6,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 29
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 33
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    type: "email",
+    name: "email",
+    id: "email",
+    placeholder: "Email address",
+    className: "inputStyle",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
       columnNumber: 37
     }
-  }, __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
-    className: "card-header bg-primary",
-    title: "Do I need to make a payment?",
+  }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    md: 6,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35,
-      columnNumber: 41
+      columnNumber: 29
     }
-  }, __jsx(DummyContent1, {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36,
-      columnNumber: 45
+      columnNumber: 33
     }
-  })), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
-    className: "card-header bg-primary",
-    title: "Do I need to make a payment?",
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    type: "text",
+    name: "phone",
+    id: "phone",
+    placeholder: "Phone number",
+    className: "inputStyle",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 41
+      lineNumber: 37,
+      columnNumber: 37
     }
-  }, __jsx(DummyContent1, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 45
-    }
-  })), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
-    className: "card-header bg-primary",
-    title: "Do I need to make a payment?",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 41
-    }
-  }, __jsx(DummyContent1, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 45
-    }
-  })), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
-    className: "card-header bg-primary",
-    title: "Do I need to make a payment?",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 41
-    }
-  }, __jsx(DummyContent1, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 45
-    }
-  })), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
-    className: "card-header bg-primary",
-    title: "Do I need to make a payment?",
+  })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47,
-      columnNumber: 41
+      columnNumber: 25
     }
-  }, __jsx(DummyContent1, {
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    type: "textarea",
+    name: "Message",
+    id: "Message",
+    placeholder: "Message",
+    className: "inputStyle",
+    style: {
+      resize: "none"
+    },
+    rows: "4",
+    cols: "50",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48,
-      columnNumber: 45
-    }
-  }))), __jsx("h6", {
-    className: "link",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 37
-    }
-  }, "Still have a question? Reach out to us: ", __jsx("a", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 98
-    }
-  }, "demo@123.com"))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    md: "4",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "faq-img-block",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
       columnNumber: 29
     }
-  }, __jsx("img", {
-    alt: "faq-person",
-    className: "img-fluid",
-    src: "/assets/images/saas1/faq-img.png",
+  })), __jsx("button", {
+    className: "otfBtn1 px-5 mt-3",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 33
+      lineNumber: 58,
+      columnNumber: 25
     }
-  })))))));
+  }, "Submit"))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (FAQ);
+/* harmony default export */ __webpack_exports__["default"] = (Faqform);
 
 /***/ }),
 

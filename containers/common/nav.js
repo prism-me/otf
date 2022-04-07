@@ -12,6 +12,7 @@ const Nav = () => {
         document.querySelector('.navbar').classList.remove('openSidebar')
     }
 
+
     useEffect(() => {
         const currentUrl = location.pathname;
         mainmenu.filter(items => {
@@ -95,7 +96,8 @@ const Nav = () => {
                             {(menuItem.type === 'link') &&
                                 <Link
                                     href={menuItem.path}
-                                    className={`${menuItem.active ? 'active' : ''}`}
+                                    className={"navbarlink"}
+                                // className={`${menuItem.active ? 'active' : ''}`}
                                 >
                                     {menuItem.title}
                                 </Link>

@@ -16,6 +16,7 @@ const AboutUs = () => (
         subtitle="You don’t need to be a scientist to understand how spending 12 minutes or more in the Orange Zone gives you more strength, more energy and more life. You just need to be a member."
         btntext="Book your Free class!"
         bannerImg="/assets/images/OTF/banner/aboutbanner.jpg"
+        metaTitle={"About Us"}
     >
 
         <AbouSection

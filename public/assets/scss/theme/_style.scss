@@ -3802,7 +3802,12 @@ footer {
       line-height: 0;
 
       .footer-social-list {
-        padding: 0 15px;
+        padding: 0 20px;
+
+        @media (max-width: 992px) {
+          padding: 0 15px;
+
+        }
 
         &:first-child {
           padding-left: 0;
@@ -3816,7 +3821,11 @@ footer {
           color: $black;
 
           i {
-            font-size: 20px;
+            font-size: 24px;
+
+            @media (max-width: 992px) {
+              font-size: 20px;
+            }
           }
 
           &:hover {
@@ -8354,6 +8363,14 @@ tap to top css end
     }
   }
 
+
+  &.rightAnimation {
+    .animated-bg i {
+      left: unset;
+      right: 0;
+    }
+  }
+
   .title {
     img {
       display: inline-block;
@@ -9245,9 +9262,10 @@ tap to top css end
         margin-top: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
 
         .accordion-item {
+          border-bottom: 1px solid $orange;
+
           .title {
             margin-bottom: 0;
-            // border-bottom: 1px solid rgba($black, 0.125);
             background-color: transparent;
             font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
             font-weight: 500;
@@ -10866,6 +10884,20 @@ gym css start
       background-position: right;
       background-size: cover;
       background-color: $black;
+
+      .formStyle {
+        padding: 8rem 4rem;
+
+        .inputStyle {
+          background: $white;
+          border-radius: 0;
+          padding: 1rem;
+
+          &:focus {
+            border: 1px solid $orange;
+          }
+        }
+      }
     }
 
     .locationDiv {

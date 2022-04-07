@@ -5,7 +5,7 @@ import FooterSection from '../../pages/layouts/sections/gym/footer'
 import Head from 'next/head'
 
 
-const CommonLayout = ({ children, btntext, title, subtitle, bannerImg }) => {
+const CommonLayout = ({ children, btntext, title, subtitle, bannerImg, metaTitle, promtext }) => {
 
     useEffect(() => {
         document.body.style.setProperty('--primary', '#000')
@@ -17,12 +17,20 @@ const CommonLayout = ({ children, btntext, title, subtitle, bannerImg }) => {
     return (
         <>
             <Head>
-                <title>About Us</title>
+                <title>
+                    {metaTitle}
+                </title>
             </Head>
 
             <Header className="gym nav-lg" />
 
-            <Breadcrumb subtitle={subtitle} title={title} bannerImg={bannerImg} btntext={btntext} />
+            <Breadcrumb
+                subtitle={subtitle}
+                title={title}
+                bannerImg={bannerImg}
+                btntext={btntext}
+                promtext={promtext}
+            />
 
             <>{children}</>
 

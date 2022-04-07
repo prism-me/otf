@@ -4,6 +4,7 @@ import 'react-light-accordion/demo/css/index.css';
 import { Container, Row, Col } from 'reactstrap'
 // import Custom Components
 import Layout from '../../containers/common/common-layout'
+import Faqform from './faq/faqform';
 
 const FAQ = () => {
 
@@ -14,52 +15,65 @@ const FAQ = () => {
         }
     }, []);
 
-    const DummyContent1 = () => (
-        <p>No one cares about products. People care about ideas. Is a product an idea?
-        Noup. Is a brand? A good one is. No one cares about products. People care about
-        ideas.</p>
+    const DummyContent1 = (props) => (
+        <p>
+            {props.answer}
+        </p>
     );
 
+    const faqData = [
+        {
+            question: "How early should I arrive for my first Orangetheory class?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "I haven't worked out in a long time? Can I still do the workout?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "I have issues with (part of the body). Can I still do your workout?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "What do the 5 zones mean, and why is the Orange zone so important?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        },
+        {
+            question: "What equipment do you use at Orangetheory?",
+            answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+        }
+    ];
     return (
-        <Layout pathList={['pages', 'faqs']} pathTitle="Pages With FAQS">
-            <section className="saas1 faq testimonial-bg inner-container" id="faq">
+        <Layout
+            title="Try Us For Free.Yes, Free!"
+            btntext="book a free class now"
+            promtext="*Promotion Terms. Limited Time Offer."
+            bannerImg="/assets/images/OTF/banner/faqbanner.jpg"
+            metaTitle={"Support"}
+        >
+            <section className="saas1 faq testimonial-bg inner-container rightAnimation" id="faq">
+
+                <div className="animated-bg"><i></i><i></i><i></i></div>
+
                 <Container>
-                    <Row>
-                        <Col md="8">
-                            <div className="faq-block">
-                                <div>
-                                    <h3 className="frequent-text">Frequently Asked Questions</h3>
-                                    <h6>Our users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and
-                                    functional. Clean aesthetics supported by a strong concept is what we stand for.</h6>
-                                    <Accordion atomic={true}>
-                                        <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                            <DummyContent1 />
+
+                    <div className="faq-block">
+                        <div>
+                            <h3 className="frequent-text">Frequently Asked Questions</h3>
+                            <Accordion atomic={true}>
+                                {
+                                    faqData.map((x, i) => (
+                                        <AccordionItem className="card-header bg-primary" title={x.question} key={i} >
+                                            <DummyContent1 answer={x.answer} />
                                         </AccordionItem>
-                                        <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                            <DummyContent1 />
-                                        </AccordionItem>
-                                        <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                            <DummyContent1 />
-                                        </AccordionItem>
-                                        <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                            <DummyContent1 />
-                                        </AccordionItem>
-                                        <AccordionItem className="card-header bg-primary" title="Do I need to make a payment?">
-                                            <DummyContent1 />
-                                        </AccordionItem>
-                                    </Accordion>
-                                    <h6 className="link">Still have a question? Reach out to us: <a>demo@123.com</a></h6>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md="4">
-                            <div className="faq-img-block">
-                                <img alt="faq-person" className="img-fluid" src="/assets/images/saas1/faq-img.png" />
-                            </div>
-                        </Col>
-                    </Row>
+                                    ))
+                                }
+                            </Accordion>
+                        </div>
+                    </div>
                 </Container>
             </section>
+            <Faqform />
         </Layout>
     )
 }
