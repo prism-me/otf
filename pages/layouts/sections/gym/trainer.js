@@ -27,49 +27,12 @@ var settings = {
     ]
 };
 
-
-const testimonial = [
-    {
-        img: "/assets/images/OTF/testimonial/testimonial1.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial2.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial3.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial4.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial5.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial6.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    },
-    {
-        img: "/assets/images/OTF/testimonial/testimonial7.png",
-        title: "Client name example",
-        subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-    }
-]
-
-const Trainer = () => (
+const Trainer = ({ testimonial, title }) => (
     <section className="gym trainers">
         <Container className="overflow-hide">
-            <h3 className="oftHeading text-dark mb-0">Testimonials</h3>
+            <h3 className="oftHeading text-dark mb-0">
+                {title}
+            </h3>
             <Row>
                 <Col xs="12">
                     <Slider className="owl-carousel owl-theme trainers-slider" id="trainers-slider" {...settings}>

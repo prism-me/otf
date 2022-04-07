@@ -11,7 +11,7 @@ export const MENUITEMS = [
     },
     {
         title: 'The Workout',
-        path: '/layouts/portfolioLayouts',
+        path: '/page/workout',
         type: 'link'
     },
     {

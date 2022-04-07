@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap'
-const About = () => (
+const About = ({ title, detail, info1title, info1detail, info2title, info2detail, info3title, info3detail }) => (
     <section className="gym format about-detail pb-2">
         <Container>
             <Row>
@@ -8,11 +8,13 @@ const About = () => (
                     <div className="center-text">
                         <div className="text-center">
                             <div className="format-head-text">
-                                <h3 className="oftHeading">a little about orange theory</h3>
+                                <h3 className="oftHeading">
+                                    {title}
+                                </h3>
                             </div>
                             <div className="format-sub-text mb-5">
                                 <p className="p-light oftsubHeading text-center">
-                                    Orangetheory is a 1 hour, full body workout, focused on training Endurance, Strength and/or Power. We use Heart Rate Based Interval Training, which burns more calories post workout than a traditional exercise. When wearing our Heart Rate monitors, your real time results are displayed on large screens throughout the studio. Intensity is based on your individual Heart Rate zones, making the workout effective for all fitness levels. To top it off, our fitness coaches to lead the workout to prevent you from over or under training.
+                                    {detail}
                                 </p>
                             </div>
                         </div>
@@ -22,24 +24,34 @@ const About = () => (
             <Row className="contenedor justify-content-center">
                 <Col sm={4} className="container_foto">
                     <article className="text-left">
-                        <h2>Our Mission</h2>
-                        <p>Aliquam felis augue non nisl morbi elit. Eu pharetra, scelerisque varius amet vulputate porta vitae. Facilisi.</p>
+                        <h2>{info1title}</h2>
+                        <p>
+                            {info1detail}
+                        </p>
+                    </article>
+                    <img src="/assets/images/OTF/about/mission.png" alt="" />
+                </Col>
+                <Col sm={4} className="container_foto">
+                    <article className="text-left">
+                        <h2>
+                            {info2title}
+                        </h2>
+                        <p>
+                            {info2detail}
+                        </p>
                     </article>
                     <img src="/assets/images/OTF/about/vision.png" alt="" />
                 </Col>
                 <Col sm={4} className="container_foto">
                     <article className="text-left">
-                        <h2>Our Vision</h2>
-                        <p>Vitae quisque facilisis vel aliquam dolor enim ut risus. Diam aliquam faucibus semper habitasse parturient.</p>
+                        <h2>
+                            {info3title}
+                        </h2>
+                        <p>
+                            {info3detail}
+                        </p>
                     </article>
-                    <img src="/assets/images/OTF/about/vision.png" alt="" />
-                </Col>
-                <Col sm={4} className="container_foto">
-                    <article className="text-left">
-                        <h2>Our Values</h2>
-                        <p>Molestie dui posuere amet, nunc, placerat. Ullamcorper at ultrices lorem malesuada arcu nisi.</p>
-                    </article>
-                    <img src="/assets/images/OTF/about/vision.png" alt="" />
+                    <img src="/assets/images/OTF/about/values.png" alt="" />
                 </Col>
             </Row>
         </Container >

@@ -18639,7 +18639,7 @@ header {
           display: inline-block;
           padding: 18px;
           font-size: 14px;
-          text-transform: uppercase;
+          text-transform: capitalize;
           transition: all 0.4s ease-in-out;
           font-weight: 500;
           letter-spacing: 0;
@@ -18649,7 +18649,7 @@ header {
           color: white;
 
           &:hover {
-            color: white;
+            color: $orange;
           }
         }
 
@@ -18724,7 +18724,7 @@ header {
             font-size: 13px;
 
             &:hover {
-              color: $primary !important;
+              color: $orange;
               transition: all 0.5s ease;
             }
           }
@@ -18733,7 +18733,7 @@ header {
           &:focus,
           &:active {
             >a {
-              color: $gray15;
+              color: $orange;
               transform: translateX(2%);
             }
           }

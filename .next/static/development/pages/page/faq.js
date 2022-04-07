@@ -20,7 +20,7 @@ var MENUITEMS = [{
   type: 'link'
 }, {
   title: 'The Workout',
-  path: '/layouts/portfolioLayouts',
+  path: '/page/workout',
   type: 'link'
 }, {
   title: 'Offers',
@@ -28665,7 +28665,7 @@ var FAQ = function FAQ() {
 
 /***/ }),
 
-/***/ 7:
+/***/ 13:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpage%2Ffaq&absolutePagePath=I%3A%5CPrism%20Projects%5COTF%5Cotf%5Cpages%5Cpage%5Cfaq.js ***!
   \**************************************************************************************************************************************/
@@ -28688,5 +28688,5 @@ module.exports = dll_f7def7ba0dcb228c444e;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
+},[[13,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=faq.js.map

@@ -45,7 +45,45 @@ const Gym = () => {
     "/assets/images/OTF/icons/heatl1.png",
     "/assets/images/OTF/icons/heatl2.png",
     "/assets/images/OTF/icons/heatl3.png"
-  ]
+  ];
+
+  const testimonial = [
+    {
+      img: "/assets/images/OTF/testimonial/testimonial1.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial2.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial3.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial4.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial5.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial6.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    },
+    {
+      img: "/assets/images/OTF/testimonial/testimonial7.png",
+      title: "Client name example",
+      subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
+    }
+  ];
 
   return (
     <div>
@@ -63,7 +101,8 @@ const Gym = () => {
 
       <ScheduleSection
         title={"Health and Safety (It's not either/or)"}
-        detail={"As the pandemic continues, it’s incredibly important Orangetheory studios operate with an abundance of caution. We continually review and evaluate our safety and disinfection protocols to align with the latest recommendations and local government mandates. The Orangetheory studio design, structured class schedule, block interval training and tight-knit community of franchisees enables us to have a more controlled environment in comparison to other fitness gyms."}
+        detail={"As the pandemic continues, it’s incredibly important Orangetheory studios operate with an abundance of caution. We continually review and evaluate our safety and disinfection protocols to align with the latest recommendations and local government mandates."}
+        detail2="The Orangetheory studio design, structured class schedule, block interval training and tight-knit community of franchisees enables us to have a more controlled environment in comparison to other fitness gyms."
         listImg={listImg}
         bgImg="/assets/images/OTF/home/health-safetybg.jpg"
       />
@@ -72,7 +111,10 @@ const Gym = () => {
 
       <CounterSection />
 
-      <TrainerSection />
+      <TrainerSection
+        testimonial={testimonial}
+        title="Testimonials"
+      />
 
       {/* <TestimonialSection /> */}
 
