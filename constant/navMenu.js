@@ -16,7 +16,7 @@ export const MENUITEMS = [
     },
     {
         title: 'Offers',
-        path: '/layouts/portfolioLayouts',
+        path: '/page/offers',
         type: 'link'
     },
     {
