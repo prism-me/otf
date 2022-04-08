@@ -5,7 +5,8 @@ import {
 
 const Workouteveryone = () => {
     return (
-        <section className="coaching">
+        <section className="coaching rightAnimation">
+            <div className="animated-bg"><i></i><i></i><i></i></div>
 
             <Container>
                 <h2 className="oftHeading text-center">

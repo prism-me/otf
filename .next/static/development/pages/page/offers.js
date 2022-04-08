@@ -29026,18 +29026,47 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Workouteveryone = function Workouteveryone() {
   return __jsx("section", {
-    className: "coaching",
+    className: "coaching rightAnimation",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
       columnNumber: 9
     }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  }, __jsx("div", {
+    className: "animated-bg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 9,
+      columnNumber: 13
+    }
+  }, __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 42
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 49
+    }
+  }), __jsx("i", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 56
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
       columnNumber: 13
     }
   }, __jsx("h2", {
@@ -29045,14 +29074,14 @@ var Workouteveryone = function Workouteveryone() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 17
     }
   }, __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 21
     }
   }, "A Workout for everyone")), __jsx("p", {
@@ -29060,7 +29089,7 @@ var Workouteveryone = function Workouteveryone() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 17
     }
   }, "Whether you\u2019re an athlete or just starting your fitness journey, Orangetheory is designed for all fitness levels. Our experienced coaches provide options that allow you to safely perform movements that work around any physical issues. Walk, jog, run, or ride, you set your own pace. Well\u2026technically your heart rate does.")));

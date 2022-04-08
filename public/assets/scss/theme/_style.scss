@@ -20784,6 +20784,15 @@ footer {
 }
 
 .coaching {
+
+
+  &.rightAnimation {
+    .animated-bg i {
+      left: unset;
+      right: 0;
+    }
+  }
+
   .oftHeading {
     font-size: 25px;
     font-weight: 700;
