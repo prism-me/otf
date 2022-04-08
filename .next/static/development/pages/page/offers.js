@@ -28813,14 +28813,12 @@ var plansData = [{
   icon: "/assets/images/OTF/icons/Premier.png",
   iconW: "/assets/images/OTF/icons/PremierW.png",
   title: "March 1 Offer",
-  feature1: "Buy 2 Months Membership and get",
-  feature2: 'the 3rd Month for 10dhs only.'
+  feature1: "Buy 2 Months Membership and get the 3rd Month for 10dhs only."
 }, {
   icon: "/assets/images/OTF/icons/Premier.png",
   iconW: "/assets/images/OTF/icons/eliteW.png",
   title: "March 2 Offer",
-  feature1: "Refer FRIENDS and get a month ",
-  feature2: 'membership free.'
+  feature1: "Refer FRIENDS and get a month membership free."
 }];
 
 var Plans = function Plans() {
@@ -28829,21 +28827,21 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 23,
       columnNumber: 9
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 25,
       columnNumber: 17
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -28851,7 +28849,7 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 26,
       columnNumber: 21
     }
   }, __jsx("div", {
@@ -28859,7 +28857,7 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 27,
       columnNumber: 25
     }
   }, __jsx("div", {
@@ -28867,7 +28865,7 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 28,
       columnNumber: 29
     }
   }, __jsx("h2", {
@@ -28875,14 +28873,14 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 29,
       columnNumber: 33
     }
   }, __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 30,
       columnNumber: 37
     }
   }, "plans to meet any need")))), __jsx("p", {
@@ -28890,17 +28888,18 @@ var Plans = function Plans() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 25
     }
   }, "Ready to change the way you look, the way you feel, and your life? From free trial workout to monthly packages, Orangetheory has a plan perfect for you. By investing in your health today, you\u2019re also investing in a longer, stronger and more vibrant future.")), plansData.map(function (item, i) {
     return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
       sm: 4,
       key: i,
+      className: "mb-3",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 40,
         columnNumber: 29
       }
     }, __jsx("div", {
@@ -28908,7 +28907,7 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 41,
         columnNumber: 33
       }
     }, __jsx("div", {
@@ -28916,7 +28915,7 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 42,
         columnNumber: 37
       }
     }, __jsx("div", {
@@ -28924,14 +28923,14 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 43,
         columnNumber: 41
       }
     }, __jsx("center", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 44,
         columnNumber: 45
       }
     }, __jsx("img", {
@@ -28941,7 +28940,7 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 45,
         columnNumber: 49
       }
     })), __jsx("h4", {
@@ -28949,7 +28948,7 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 47,
         columnNumber: 45
       }
     }, item.title)), __jsx("div", {
@@ -28957,45 +28956,37 @@ var Plans = function Plans() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 49,
         columnNumber: 41
       }
     }, __jsx("h5", {
-      className: "plans-feature p-light text-center mb-1",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 45
-      }
-    }, item.feature1), __jsx("h5", {
       className: "plans-feature p-light text-center",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
+        lineNumber: 50,
         columnNumber: 45
       }
-    }, item.feature2), __jsx("a", {
+    }, item.feature1), __jsx("a", {
       className: "otfBtn2",
       href: "#",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 51,
         columnNumber: 45
       }
     }, "Book offer")))));
   }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 4,
-    className: "imgOfferContainer",
+    className: "imgOfferContainer mb-3",
     style: {
       backgroundImage: "url(\"/assets/images/OTF/offer/plan.png\")"
     },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 58,
       columnNumber: 21
     }
   }))));

@@ -9,15 +9,13 @@ const plansData = [
         icon: "/assets/images/OTF/icons/Premier.png",
         iconW: "/assets/images/OTF/icons/PremierW.png",
         title: "March 1 Offer",
-        feature1: "Buy 2 Months Membership and get",
-        feature2: 'the 3rd Month for 10dhs only.'
+        feature1: "Buy 2 Months Membership and get the 3rd Month for 10dhs only."
     },
     {
         icon: "/assets/images/OTF/icons/Premier.png",
         iconW: "/assets/images/OTF/icons/eliteW.png",
         title: "March 2 Offer",
-        feature1: "Refer FRIENDS and get a month ",
-        feature2: 'membership free.'
+        feature1: "Refer FRIENDS and get a month membership free."
     }
 ];
 const Plans = () => {
@@ -39,7 +37,7 @@ const Plans = () => {
                     </Col>
                     {
                         plansData.map((item, i) => (
-                            <Col sm={4} key={i}>
+                            <Col sm={4} key={i} className="mb-3">
                                 <div className="plans-container hover-overlay text-center">
                                     <div className="plans-feature-container">
                                         <div className="plans-text">
@@ -49,8 +47,7 @@ const Plans = () => {
                                             <h4 className="plans-text-heading">{item.title}</h4>
                                         </div>
                                         <div className="plans-features">
-                                            <h5 className="plans-feature p-light text-center mb-1">{item.feature1}</h5>
-                                            <h5 className="plans-feature p-light text-center">{item.feature2}</h5>
+                                            <h5 className="plans-feature p-light text-center">{item.feature1}</h5>
                                             <a className="otfBtn2" href="#">Book offer</a>
                                         </div>
                                     </div>
@@ -59,7 +56,7 @@ const Plans = () => {
                         ))
                     }
                     <Col sm={4}
-                        className={"imgOfferContainer"}
+                        className={"imgOfferContainer mb-3"}
                         style={{ backgroundImage: `url("/assets/images/OTF/offer/plan.png")` }}
                     >
                         {/* <img src="/assets/images/OTF/offer/plan.png" className='img-fluid' alt={"img"} /> */}
