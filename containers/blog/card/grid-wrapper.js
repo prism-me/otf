@@ -24,11 +24,11 @@ const CardGridWrapper = ({
                                 <div className="m-b-20">
                                     <div className="center-text">
                                         {blogDate && <>
-                                        <i aria-hidden="true" className="fa fa-clock-o m-r-10"></i>
-                                        <h6 className="m-r-25 font-blog">{blogDate}</h6> </>}
+                                            <i aria-hidden="true" className="fa fa-clock-o m-r-10"></i>
+                                            <h6 className="m-r-25 font-blog">{blogDate}</h6> </>}
                                         {place && <>
-                                        <i aria-hidden="true" className="fa fa-map-marker m-r-10"></i>
-                                        <h6 className="font-blog">{place}</h6> </>}
+                                            <i aria-hidden="true" className="fa fa-map-marker m-r-10"></i>
+                                            <h6 className="font-blog">{place}</h6> </>}
                                     </div>
                                 </div>
                                 <h5 className="blog-head font-600">{title}</h5>
@@ -42,7 +42,19 @@ const CardGridWrapper = ({
                                 }
 
                                 <div className="btn-bottom m-t-20">
-                                    <Link href={readUrl} ><a>read more</a></Link>
+                                    <Link href={readUrl} >
+                                        <button
+                                            style={{
+                                                background: "transparent",
+                                                border: "0",
+                                                borderBottom: "1px solid #F58220",
+                                                color: "#F58220",
+                                                textTransform: "uppercase",
+                                                fontWeight: "700",
+                                                outline: "0"
+                                            }}
+                                        >read more</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +66,7 @@ const CardGridWrapper = ({
 };
 
 CardGridWrapper.propTypes = {
-    
+
     className: PropTypes.string.isRequired,
 
     image: PropTypes.string.isRequired,
@@ -66,7 +78,7 @@ CardGridWrapper.propTypes = {
     title: PropTypes.string.isRequired,
 
     description: PropTypes.string.isRequired,
-    
+
     readUrl: PropTypes.string.isRequired,
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PopularPosts = ({}) => {
+const PopularPosts = ({ }) => {
 
     return (
         <div>
@@ -8,7 +8,7 @@ const PopularPosts = ({}) => {
             <div className="sidebar-container">
                 <div className="post-container d-flex">
                     <div className="w-35 m-r-25">
-                        <img alt="" className="img-fluid" src="/assets/images/inner-page/side-img/1.jpg" />
+                        <img alt="" className="img-fluid" src="/assets/images/OTF/articleinner/pp1.png" />
                         <div className="badge">2020</div>
                     </div>
                     <div>
@@ -18,7 +18,7 @@ const PopularPosts = ({}) => {
                 </div>
                 <div className="post-container d-flex">
                     <div className="w-35 m-r-25">
-                        <img alt="" className="img-fluid" src="/assets/images/inner-page/side-img/2.jpg" />
+                        <img alt="" className="img-fluid" src="/assets/images/OTF/articleinner/pp2.png" />
                         <div className="badge badge-red">2020</div>
                     </div>
                     <div>
@@ -28,7 +28,7 @@ const PopularPosts = ({}) => {
                 </div>
                 <div className="post-container d-flex">
                     <div className="w-35 m-r-25">
-                        <img alt="" className="img-fluid" src="/assets/images/inner-page/side-img/3.jpg" />
+                        <img alt="" className="img-fluid" src="/assets/images/OTF/articleinner/pp3.png" />
                         <div className="badge badge-yellow">2020</div>
                     </div>
                     <div>
@@ -38,7 +38,7 @@ const PopularPosts = ({}) => {
                 </div>
                 <div className="post-container d-flex">
                     <div className="w-35 m-r-25">
-                        <img alt="" className="img-fluid" src="/assets/images/inner-page/side-img/4.jpg" />
+                        <img alt="" className="img-fluid" src="/assets/images/OTF/articleinner/pp4.png" />
                         <div className="badge badge-blue">2020</div>
                     </div>
                     <div>

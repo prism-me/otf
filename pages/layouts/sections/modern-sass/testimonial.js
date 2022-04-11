@@ -45,10 +45,28 @@ const Testimonial = () => {
     return (
         <section className="saas1 testimonial rightAnimation videos testimonial-bg">
 
-            <div className="animated-bg"><i></i><i></i><i></i></div>
+            <div className="animated-bg"><i
+                style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}
+            ></i>
+                <i
+                    style={{
+                        background: "#f5822091",
+                        boxShadow: "0 15px 30px 0 #f5822091"
+                    }}
+                ></i>
+                <i style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}></i>
+            </div>
 
             <Container>
-                <h3 className="oftHeading">a little about orange theory</h3>
+                <h3 className="oftHeading">
+                    Things we do differently
+                </h3>
                 <p className="p-light oftsubHeading text-center p-padding">
                     Blandit neque fringilla eget faucibus fringilla euismod. Varius ullamcorper massa tortor, pretium massa justo enim tincidunt praesent. Iaculis lectus lectus ut ac. Cum eu velit venenatis tellus porttitor in. Vitae quis tortor massa dolor porttitor. Nec aliquet urna ut blandit vitae porttitor. Vel sed.
                 </p>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import {Col,Modal,ModalHeader, ModalBody,Form,FormGroup,Input,Label } from 'reactstrap';
+import { Col, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
 
 var settings = {
     dots: false,
@@ -25,7 +25,7 @@ const ImageWrapper = () => (
     <div className="blog-block">
         <div className="blog-box">
             <div className="overflow-hidden">
-                <img alt="blog" className="img-fluid blur-up lazyload " src="/assets/images/agency/blog/20.jpg" /></div>
+                <img alt="blog" className="img-fluid blur-up lazyload " src="/assets/images/OTF/articleinner/articaldetail.png" /></div>
         </div>
     </div>
 )
@@ -59,7 +59,7 @@ const VideoWrapper = () => {
         setModal(!modal)
     }
     return (
-        <Col md="12"  className="m-b-50 p-0">
+        <Col md="12" className="m-b-50 p-0">
             <div className="video w-100">
                 <a className="button center-content" onClick={toggle}>
                     <img alt="video" className="img-fluid" src="/assets/images/saas1/testimonial-video-icon.png" />
@@ -96,50 +96,37 @@ const DetailWrapper = ({ className, showcaseType }) => {
 
             <div className="blog-text m-t-20">
                 <h6>July, 24th 2019</h6><a href="#">
-                    <h3 className="blog-head">Sandford Stadium Improvements</h3></a>
+                    <h3 className="oftHeading text-dark text-left mb-4 mt-1">
+                        Lorem Ipsum
+                    </h3></a>
                 <div className="blog-divider"></div>
                 <div className="blog-description">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of
-                        type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but
-                        also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the
-                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                        with desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                        with the release
-                        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                        publishing software like
-                        Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-                    <h5>Mark jkcno</h5>
+                    <p className='p-light oftsubHeading'>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p className='p-light oftsubHeading'>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <h5>Author Example</h5>
                     <h5 className="pull-right">10<i className="fa fa-heart-o ml-1"></i>, 50<i className="fa fa-comments-o ml-1"></i></h5>
                 </div>
             </div>
             {/* <!-- Comment Sec Start --> */}
 
-            <h3 className="page-header-comment">Comments :</h3>
-            <div className="comment-list blog_comment">
+            <h3 className="oftHeading text-dark text-left mb-0 mt-3 mb-1">Comments :</h3>
+            <div className="comment-list blog_comment"
+                style={{
+                    padding: "0 0 1rem 0",
+                    borderBottom: "1px solid #F58220"
+                }}
+            >
                 <div className="comment_sec">
                     <article className="row">
                         <Col xs="12">
                             <div className="blog_center">
                                 <div>
                                     <figure className="thumbnail">
-                                        <img alt="" src="/assets/images/app_landing2/team/1.png" />
+                                        <img alt="" src="/assets/images/OTF/articleinner/comment1.png" />
                                     </figure>
                                 </div>
                                 <div className="blog_user arrow left">
@@ -148,15 +135,12 @@ const DetailWrapper = ({ className, showcaseType }) => {
                                             <div className="comment-user"><i className="fa fa-user"></i><h6>That Guy</h6>
                                             </div>
                                             <div className="comment-date"><i className="fa fa-clock-o"></i><h6> Dec 16,
-                                    2014 </h6></div>
+                                                2014 </h6></div>
                                         </div>
                                         <div className="comment-post">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                aliquip ex ea commodo consequat.
-                                </p>
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
+                                            </p>
                                         </div>
                                         <a className="link-btn" href="#"><i className="fa fa-reply pr-2"></i>reply</a>
                                     </div>
@@ -170,7 +154,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                             <div className="blog_center re_comment">
                                 <div>
                                     <figure className="thumbnail">
-                                        <img alt="" src="/assets/images/app_landing2/team/2.png" />
+                                        <img alt="" src="/assets/images/OTF/articleinner/comment2.png" />
                                     </figure>
                                 </div>
                                 <div className="blog_user arrow left">
@@ -186,7 +170,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                                         <div className="comment-post">
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                </p>
+                                            </p>
                                         </div>
                                         <a className="link-btn" href="#"><i className="fa fa-reply pr-2"></i>reply</a>
                                     </div>
@@ -202,7 +186,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                             <div className="blog_center">
                                 <div>
                                     <figure className="thumbnail">
-                                        <img alt="" src="/assets/images/app_landing2/team/3.png" />
+                                        <img alt="" src="/assets/images/OTF/articleinner/comment3.png" />
                                     </figure>
                                 </div>
                                 <div className="blog_user arrow left">
@@ -221,7 +205,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                                                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                                 aliquip ex ea commodo consequat.
-                                </p>
+                                            </p>
                                         </div>
                                         <a className="link-btn" href="#"><i className="fa fa-reply pr-2"></i>reply</a>
                                     </div>
@@ -236,7 +220,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                             <div className="blog_center">
                                 <div>
                                     <figure className="thumbnail">
-                                        <img alt="" src="/assets/images/app_landing2/team/4.png" />
+                                        <img alt="" src="/assets/images/OTF/articleinner/comment4.png" />
                                     </figure>
                                 </div>
                                 <div className="blog_user arrow left">
@@ -245,7 +229,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                                             <div className="comment-user"><i className="fa fa-user"></i><h6> That Guy </h6>
                                             </div>
                                             <div className="comment-date"><i className="fa fa-clock-o"></i><h6> Dec 16,
-                                    2014</h6></div>
+                                                2014</h6></div>
                                         </div>
                                         <div className="comment-post">
                                             <p>
@@ -253,7 +237,7 @@ const DetailWrapper = ({ className, showcaseType }) => {
                                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                                                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                                 aliquip ex ea commodo consequat.
-                                </p>
+                                            </p>
                                         </div>
                                         <a className="link-btn" href="#"><i className="fa fa-reply pr-2"></i>reply</a>
                                     </div>
@@ -268,29 +252,29 @@ const DetailWrapper = ({ className, showcaseType }) => {
                 <div className="container">
                     <div className="row">
                         <Col xs="12" className="quote_form">
-                            <hr />
-                            <h3 className="page-header-comment mb-4">Leave you comment :</h3>
+                            <h3 className="oftHeading text-dark text-left mb-0 mt-3 mb-4">Leave you comment :</h3>
                             <Form>
                                 <div className="form-row">
                                     <FormGroup className="col-md-6">
-                                        <Label>Name :</Label>
+                                        <Label>Name</Label>
                                         <Input className="form-control" placeholder="Enter Your Name" required=""
                                             type="text" />
                                     </FormGroup>
                                     <FormGroup className="col-md-6">
-                                        <Label htmlFor="inputEmail4">Email :</Label>
+                                        <Label htmlFor="inputEmail4">Email</Label>
                                         <Input className="form-control" id="inputEmail4" placeholder="Enter Your Email"
                                             required="" type="email" />
                                     </FormGroup>
                                     <FormGroup className="col-md-12">
-                                        <Label htmlFor="exampleTextarea">Message :</Label>
+                                        <Label htmlFor="exampleTextarea">Message</Label>
                                         <textarea className="form-control msg_coment" id="exampleTextarea" placeholder="Leave a Comment"
                                             required="" rows="3"></textarea>
                                     </FormGroup>
                                 </div>
-                                <a className="btn btn-default primary-btn m-t-20 radius-0" href="#">Post Comment
-                        <span className="con_btn_eff"></span>
-                                </a>
+                                <button className="otfBtn1 mt-3 px-5"
+                                    style={{ border: "1px solid #F58220" }} >
+                                    Post Comment
+                                </button>
                             </Form>
                         </Col>
                     </div>

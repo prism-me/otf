@@ -45,19 +45,13 @@ const Footer = () => (
                                         <a href="#">Our Mission, Vision, & Values</a>
                                     </li>
                                     <li>
-                                        <a href="#">Press</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Franchisees</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">International Opportunities</a>
+                                        <a href="/page/press">Press</a>
                                     </li>
                                     <li>
                                         <a href="#">Jobs</a>
                                     </li>
                                     <li>
-                                        <a href="#">Articles</a>
+                                        <a href="/page/articles" className='active'>Articles</a>
                                     </li>
                                 </ul>
                             </div>
@@ -68,22 +62,10 @@ const Footer = () => (
                             <div>
                                 <ul className="footer-lists">
                                     <li>
-                                        <a href="#">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Customer Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Real Estate</a>
-                                    </li>
-                                    <li>
                                         <a href="#">Promotion Terms</a>
                                     </li>
                                     <li>
                                         <a href="#">Do not sell my information</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Global Studios</a>
                                     </li>
                                 </ul>
                             </div>

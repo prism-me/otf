@@ -4,7 +4,23 @@ import { Container, Row, Col } from 'reactstrap'
 const Benefits = ({ benefitList }) => (
     <section className="gym benefit rightAnimation" id="plan">
 
-        <div className="animated-bg"><i></i><i></i><i></i></div>
+        <div className="animated-bg"><i
+            style={{
+                background: "#f5822091",
+                boxShadow: "0 15px 30px 0 #f5822091"
+            }}
+        ></i>
+            <i
+                style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}
+            ></i>
+            <i style={{
+                background: "#f5822091",
+                boxShadow: "0 15px 30px 0 #f5822091"
+            }}></i>
+        </div>
 
         <Container>
             <h3 className="oftHeading text-dark">Membership Benefits</h3>

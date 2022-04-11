@@ -4605,8 +4605,8 @@ booking section end
   }
 
   .animated-bg i {
-    background: #fff6f6;
-    box-shadow: 0 15px 30px 0 #f3c4c3;
+    background: #f5822091;
+    box-shadow: 0 15px 30px 0 #f5822091;
   }
 }
 
@@ -7290,15 +7290,19 @@ yoga-theme css end
   &.blog {
     .blog-agency {
       .blog-contain {
-        border: 1px solid $border-blog;
+        border: 1px solid $orange;
         background: $white;
-        border-radius: 10px;
         overflow: hidden;
-        filter: drop-shadow(0 0 10px #eee);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+        border-radius: 30px;
         transition: all 0.3s;
 
         >img {
           width: 100%;
+        }
+
+        .blog-img {
+          border-radius: 30px;
         }
 
         &:hover {
@@ -7623,10 +7627,10 @@ agency css end
   .blog-list {
     &:nth-child(even) {
       .img-container {
-        text-align: right;
+        text-align: left;
 
         .center-text {
-          justify-content: flex-end;
+          justify-content: flex-start;
         }
       }
 
@@ -8368,6 +8372,8 @@ tap to top css end
     .animated-bg i {
       left: unset;
       right: 0;
+      background: #dddddd;
+      box-shadow: 0 15px 30px 0 #dddddd;
     }
   }
 
@@ -9071,6 +9077,8 @@ tap to top css end
       .animated-bg i {
         left: unset;
         right: 0;
+        background: #dddddd;
+        box-shadow: 0 15px 30px 0 #dddddd;
       }
     }
 
@@ -10892,6 +10900,7 @@ gym css start
           background: $white;
           border-radius: 0;
           padding: 1rem;
+          border: 1px solid $orange;
 
           &:focus {
             border: 1px solid $orange;
@@ -11176,9 +11185,9 @@ gym css start
   }
 
   .animated-bg i {
-    background: #2e2e2e40;
+    background: #f5822091;
     bottom: 0;
-    box-shadow: 0 15px 30px 0 #dddddd;
+    box-shadow: 0 15px 30px 0 #f5822091;
     position: absolute;
     height: 100px;
     width: 100px;
@@ -11192,6 +11201,26 @@ gym css start
     .animated-bg i {
       left: unset;
       right: 0;
+      background: #dddddd;
+      box-shadow: 0 15px 30px 0 #dddddd;
+    }
+  }
+
+  .quote_form {
+    label {
+      font-weight: 500;
+    }
+
+    .form-control {
+      background: $white;
+      border-radius: 0;
+      padding: 0.7rem;
+      border: 1px solid $orange;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+
+      &:focus {
+        border: 1px solid $orange;
+      }
     }
   }
 
@@ -12573,7 +12602,7 @@ blog-section css start
 
     &:before {
       content: "";
-      border-bottom: 4px solid $primary;
+      border-bottom: 4px solid $orange;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -13609,7 +13638,7 @@ error css end
     }
 
     .blog-description {
-      border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+      border-bottom: 1px solid $orange;
       padding-bottom: 20px;
 
       p {
@@ -13774,8 +13803,9 @@ error css end
               p {
                 margin-bottom: 0;
                 padding: 15px 0 0 0;
-                font-weight: 400;
+                font-weight: 300;
                 color: $gray15;
+                text-align: justify;
                 letter-spacing: 0;
               }
             }
@@ -20788,6 +20818,8 @@ footer {
     .animated-bg i {
       left: unset;
       right: 0;
+      background: #dddddd;
+      box-shadow: 0 15px 30px 0 #dddddd;
     }
   }
 

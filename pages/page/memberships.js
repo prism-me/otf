@@ -86,7 +86,12 @@ const Memberships = () => {
                 benefitList={benefitList}
             />
 
-            <CounterSection />
+            <CounterSection
+                title="Get 10% off during this festive season!"
+                subtitle="Senectus viverra laoreet proin eget. Ullamcorper in lorem nisl aliquet orci enim vel, a. Ut quis luctus massa."
+                btntext="Book a class now"
+                bgImg="/assets/images/OTF/home/get-off.jpg"
+            />
 
             <Faq />
 

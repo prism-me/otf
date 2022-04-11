@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Row,Col} from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import CommonLayout from "../../../containers/common/common-layout"
 import DetailSecion from '../../../containers/blog/card/detail-wrapper'
 import Categories from "../../../containers/blog/categories"
@@ -12,8 +12,8 @@ const DetailLeftSidebar = () => (
         <section className="agency blog-sec blog-sidebar single_blog_item">
             <Container>
                 <Row>
-                    <DetailSecion 
-                        className="col-lg-9 order-lg-2" 
+                    <DetailSecion
+                        className="col-lg-9 order-lg-2"
                         showcaseType="Image"
                     />
                     <Col lg="3">

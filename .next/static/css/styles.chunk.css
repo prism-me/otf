@@ -12299,8 +12299,8 @@ booking section end
   .app2 .subscribe input {
     font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300))); }
   .app2 .animated-bg i {
-    background: #fff6f6;
-    box-shadow: 0 15px 30px 0 #f3c4c3; }
+    background: #f5822091;
+    box-shadow: 0 15px 30px 0 #f5822091; }
 
 .event-countdown .countdown ul {
   flex-wrap: wrap;
@@ -13984,14 +13984,16 @@ yoga-theme css end
     background: transparent; }
 
 .agency.blog .blog-agency .blog-contain {
-  border: 1px solid #f3f3f3;
+  border: 1px solid #F58220;
   background: #FFFFFF;
-  border-radius: 10px;
   overflow: hidden;
-  filter: drop-shadow(0 0 10px #eee);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+  border-radius: 30px;
   transition: all 0.3s; }
   .agency.blog .blog-agency .blog-contain > img {
     width: 100%; }
+  .agency.blog .blog-agency .blog-contain .blog-img {
+    border-radius: 30px; }
   .agency.blog .blog-agency .blog-contain:hover {
     box-shadow: 1px 1px 10px 1px #eee; }
   .agency.blog .blog-agency .blog-contain .img-container .blog-head {
@@ -14180,9 +14182,9 @@ agency css end
   text-transform: capitalize; }
 
 .split .blog-list:nth-child(even) .img-container {
-  text-align: right; }
+  text-align: left; }
   .split .blog-list:nth-child(even) .img-container .center-text {
-    justify-content: flex-end; }
+    justify-content: flex-start; }
 
 .split .blog-list:nth-child(even) .blog-agency .blog-contain > div:first-child {
   order: 2; }
@@ -14643,7 +14645,9 @@ tap to top css end
 
 .saas1.rightAnimation .animated-bg i {
   left: unset;
-  right: 0; }
+  right: 0;
+  background: #dddddd;
+  box-shadow: 0 15px 30px 0 #dddddd; }
 
 .saas1 .title img {
   display: inline-block;
@@ -15056,7 +15060,9 @@ tap to top css end
 
 .saas1.testimonial.rightAnimation .animated-bg i {
   left: unset;
-  right: 0; }
+  right: 0;
+  background: #dddddd;
+  box-shadow: 0 15px 30px 0 #dddddd; }
 
 .saas1.testimonial .oftsubHeading {
   font-size: 16px;
@@ -16211,7 +16217,8 @@ gym css start
     .gym.bg-location .BGImgLocation .formStyle .inputStyle {
       background: #FFFFFF;
       border-radius: 0;
-      padding: 1rem; }
+      padding: 1rem;
+      border: 1px solid #F58220; }
       .gym.bg-location .BGImgLocation .formStyle .inputStyle:focus {
         border: 1px solid #F58220; }
 
@@ -16369,9 +16376,9 @@ gym css start
       opacity: 1; }
 
 .gym .animated-bg i {
-  background: #2e2e2e40;
+  background: #f5822091;
   bottom: 0;
-  box-shadow: 0 15px 30px 0 #dddddd;
+  box-shadow: 0 15px 30px 0 #f5822091;
   position: absolute;
   height: 100px;
   width: 100px;
@@ -16382,7 +16389,21 @@ gym css start
 
 .gym.rightAnimation .animated-bg i {
   left: unset;
-  right: 0; }
+  right: 0;
+  background: #dddddd;
+  box-shadow: 0 15px 30px 0 #dddddd; }
+
+.gym .quote_form label {
+  font-weight: 500; }
+
+.gym .quote_form .form-control {
+  background: #FFFFFF;
+  border-radius: 0;
+  padding: 0.7rem;
+  border: 1px solid #F58220;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14); }
+  .gym .quote_form .form-control:focus {
+    border: 1px solid #F58220; }
 
 .gym.brand-slider {
   padding: 50px 0; }
@@ -17207,7 +17228,7 @@ blog-section css start
   line-height: 1; }
   .blog-sidebar .blog-title:before {
     content: "";
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid #F58220;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -17901,7 +17922,7 @@ error css end
   margin-top: 10px; }
 
 .single_blog_item .blog-text .blog-description {
-  border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+  border-bottom: 1px solid #F58220;
   padding-bottom: 20px; }
   .single_blog_item .blog-text .blog-description p {
     font-weight: 400;
@@ -18010,8 +18031,9 @@ error css end
       .blog_comment.comment-list .comment_sec .blog_center .blog_user .panel-body .comment-post p {
         margin-bottom: 0;
         padding: 15px 0 0 0;
-        font-weight: 400;
+        font-weight: 300;
         color: #777;
+        text-align: justify;
         letter-spacing: 0; }
     .blog_comment.comment-list .comment_sec .blog_center.re_comment {
       margin-top: 5px; }
@@ -22667,7 +22689,9 @@ footer.saas1 h5 {
 
 .coaching.rightAnimation .animated-bg i {
   left: unset;
-  right: 0; }
+  right: 0;
+  background: #dddddd;
+  box-shadow: 0 15px 30px 0 #dddddd; }
 
 .coaching .oftHeading {
   font-size: 25px;
@@ -23624,7 +23648,8 @@ footer.saas1 h5 {
   .collection-wrapper .data-sticky_parent .product-right {
     margin-bottom: 0;
     padding-bottom: 0; }
-  .multiple-carousel, .center-slide {
+  .multiple-carousel,
+  .center-slide {
     padding-top: 66px; }
   .saas2.laptop-slider .slider-container .trainers-slider .slick-dots {
     top: -55px; }
@@ -24828,8 +24853,6 @@ footer.saas1 h5 {
 @media only screen and (min-width: 768px) {
   .blog-sec.blog-list .blog-agency .blog-contain .blog-info {
     padding-top: 0; }
-  .blog-sec.blog-list .blog-agency .blog-contain .blog-img {
-    border: 1px solid #f3f3f3; }
   .blog-sec.blog-list .blog-agency .blog-info {
     padding: 0 !important; }
   .blog-sec.blog-list .blog-agency .btn-bottom {

@@ -18,11 +18,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/page/offers": [
+    "/page/articles": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/page/workout": [
+    "/page/press": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

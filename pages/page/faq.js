@@ -53,7 +53,23 @@ const FAQ = () => {
         >
             <section className="saas1 faq testimonial-bg inner-container rightAnimation" id="faq">
 
-                <div className="animated-bg"><i></i><i></i><i></i></div>
+                <div className="animated-bg"><i
+                    style={{
+                        background: "#f5822091",
+                        boxShadow: "0 15px 30px 0 #f5822091"
+                    }}
+                ></i>
+                    <i
+                        style={{
+                            background: "#f5822091",
+                            boxShadow: "0 15px 30px 0 #f5822091"
+                        }}
+                    ></i>
+                    <i style={{
+                        background: "#f5822091",
+                        boxShadow: "0 15px 30px 0 #f5822091"
+                    }}></i>
+                </div>
 
                 <Container>
 

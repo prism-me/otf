@@ -6,7 +6,24 @@ import {
 const Workouteveryone = () => {
     return (
         <section className="coaching rightAnimation">
-            <div className="animated-bg"><i></i><i></i><i></i></div>
+
+            <div className="animated-bg"><i
+                style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}
+            ></i>
+                <i
+                    style={{
+                        background: "#f5822091",
+                        boxShadow: "0 15px 30px 0 #f5822091"
+                    }}
+                ></i>
+                <i style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}></i>
+            </div>
 
             <Container>
                 <h2 className="oftHeading text-center">
