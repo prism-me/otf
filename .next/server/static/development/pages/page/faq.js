@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -148,2119 +148,6 @@ const MENUITEMS = [{
   path: '/page/faq',
   type: 'link'
 }];
-
-/***/ }),
-
-/***/ "./containers/blog/card/detail-wrapper.js":
-/*!************************************************!*\
-  !*** ./containers/blog/card/detail-wrapper.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\blog\\card\\detail-wrapper.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-var settings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  autoplay: true,
-  slidesToScroll: 1,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1
-    }
-  }, {
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 1
-    }
-  }]
-};
-
-const ImageWrapper = () => __jsx("div", {
-  className: "blog-block",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "blog-box",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "overflow-hidden",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 13
-  }
-}, __jsx("img", {
-  alt: "blog",
-  className: "img-fluid blur-up lazyload ",
-  src: "/assets/images/OTF/articleinner/articaldetail.png",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 17
-  }
-}))));
-
-const GalleryWrapper = () => __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 34,
-    columnNumber: 5
-  }
-}), __jsx("div", {
-  className: "item",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "border-portfolio",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36,
-    columnNumber: 13
-  }
-}, __jsx("a", {
-  className: "zoom_gallery",
-  "data-source": "http://500px.com/photo/32736307",
-  href: "/assets/images/agency/blog/12.jpg",
-  title: "Into The Blue",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37,
-    columnNumber: 17
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid blur-up lazyload ",
-  src: "/assets/images/agency/blog/12.jpg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 39,
-    columnNumber: 21
-  }
-})))), __jsx("div", {
-  className: "item",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "border-portfolio",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 13
-  }
-}, __jsx("a", {
-  className: "zoom_gallery",
-  "data-source": "http://500px.com/photo/32554131",
-  href: "/assets/images/agency/blog/10.jpg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 46,
-    columnNumber: 17
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid blur-up lazyload ",
-  src: "/assets/images/agency/blog/10.jpg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 21
-  }
-})))));
-
-const VideoWrapper = () => {
-  const {
-    0: modal,
-    1: setModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])();
-
-  const toggle = () => {
-    setModal(!modal);
-  };
-
-  return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    md: "12",
-    className: "m-b-50 p-0",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "video w-100",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "button center-content",
-    onClick: toggle,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 17
-    }
-  }, __jsx("img", {
-    alt: "video",
-    className: "img-fluid",
-    src: "/assets/images/saas1/testimonial-video-icon.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 21
-    }
-  }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
-    isOpen: modal,
-    toggle: toggle,
-    centered: true,
-    size: "lg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 13
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalHeader"], {
-    toggle: toggle,
-    className: "modal-no-header close-up",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 17
-    }
-  }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], {
-    className: "iframe-modal",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 17
-    }
-  }, __jsx("iframe", {
-    className: "mfp-iframe",
-    frameborder: "0",
-    allowfullscreen: "",
-    src: "//www.youtube.com/embed/dNIfsv1rKJo?autoplay=1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 21
-    }
-  }))));
-};
-
-const DetailWrapper = ({
-  className,
-  showcaseType
-}) => {
-  const Showcase = () => {
-    switch (showcaseType) {
-      case "Image":
-        return __jsx(ImageWrapper, {
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 82,
-            columnNumber: 24
-          }
-        });
-
-      case "Gallery":
-        return __jsx(GalleryWrapper, {
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 84,
-            columnNumber: 24
-          }
-        });
-
-      case "Video":
-        return __jsx(VideoWrapper, {
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 86,
-            columnNumber: 24
-          }
-        });
-
-      default:
-        return __jsx(ImageWrapper, {
-          __self: undefined,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 88,
-            columnNumber: 24
-          }
-        });
-    }
-  };
-
-  return __jsx("div", {
-    className: className,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 9
-    }
-  }, Showcase(), __jsx("div", {
-    className: "blog-text m-t-20",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 13
-    }
-  }, __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 17
-    }
-  }, "July, 24th 2019"), __jsx("a", {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 41
-    }
-  }, __jsx("h3", {
-    className: "oftHeading text-dark text-left mb-4 mt-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 21
-    }
-  }, "Lorem Ipsum")), __jsx("div", {
-    className: "blog-divider",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 17
-    }
-  }), __jsx("div", {
-    className: "blog-description",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 17
-    }
-  }, __jsx("p", {
-    className: "p-light oftsubHeading",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 21
-    }
-  }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."), __jsx("p", {
-    className: "p-light oftsubHeading",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 21
-    }
-  }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."), __jsx("h5", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 21
-    }
-  }, "Author Example"), __jsx("h5", {
-    className: "pull-right",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 21
-    }
-  }, "10", __jsx("i", {
-    className: "fa fa-heart-o ml-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 50
-    }
-  }), ", 50", __jsx("i", {
-    className: "fa fa-comments-o ml-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 92
-    }
-  })))), __jsx("h3", {
-    className: "oftHeading text-dark text-left mb-0 mt-3 mb-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 13
-    }
-  }, "Comments :"), __jsx("div", {
-    className: "comment-list blog_comment",
-    style: {
-      padding: "0 0 1rem 0",
-      borderBottom: "1px solid #F58220"
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "comment_sec",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123,
-      columnNumber: 17
-    }
-  }, __jsx("article", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "12",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "blog_center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 29
-    }
-  }, __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 33
-    }
-  }, __jsx("figure", {
-    className: "thumbnail",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 37
-    }
-  }, __jsx("img", {
-    alt: "",
-    src: "/assets/images/OTF/articleinner/comment1.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 41
-    }
-  }))), __jsx("div", {
-    className: "blog_user arrow left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 33
-    }
-  }, __jsx("div", {
-    className: "panel-body",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 37
-    }
-  }, __jsx("div", {
-    className: "text-left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 41
-    }
-  }, __jsx("div", {
-    className: "comment-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 75
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 105
-    }
-  }, "That Guy")), __jsx("div", {
-    className: "comment-date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-clock-o",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 75
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 108
-    }
-  }, " Dec 16, 2014 "))), __jsx("div", {
-    className: "comment-post",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140,
-      columnNumber: 41
-    }
-  }, __jsx("p", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141,
-      columnNumber: 45
-    }
-  }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.")), __jsx("a", {
-    className: "link-btn",
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 41
-    }
-  }, __jsx("i", {
-    className: "fa fa-reply pr-2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 74
-    }
-  }), "reply")))))), __jsx("article", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 152,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "11",
-    className: "offset-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "blog_center re_comment",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 154,
-      columnNumber: 29
-    }
-  }, __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 155,
-      columnNumber: 33
-    }
-  }, __jsx("figure", {
-    className: "thumbnail",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156,
-      columnNumber: 37
-    }
-  }, __jsx("img", {
-    alt: "",
-    src: "/assets/images/OTF/articleinner/comment2.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 157,
-      columnNumber: 41
-    }
-  }))), __jsx("div", {
-    className: "blog_user arrow left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 160,
-      columnNumber: 33
-    }
-  }, __jsx("div", {
-    className: "panel-body",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 161,
-      columnNumber: 37
-    }
-  }, __jsx("div", {
-    className: "text-left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 162,
-      columnNumber: 41
-    }
-  }, __jsx("div", {
-    className: "comment-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 163,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 164,
-      columnNumber: 49
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 164,
-      columnNumber: 79
-    }
-  }, " That Guy ")), __jsx("div", {
-    className: "comment-date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 166,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-clock-o",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 167,
-      columnNumber: 49
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 167,
-      columnNumber: 82
-    }
-  }, " Dec 16, 2014"))), __jsx("div", {
-    className: "comment-post",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 41
-    }
-  }, __jsx("p", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 171,
-      columnNumber: 45
-    }
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do")), __jsx("a", {
-    className: "link-btn",
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175,
-      columnNumber: 41
-    }
-  }, __jsx("i", {
-    className: "fa fa-reply pr-2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175,
-      columnNumber: 74
-    }
-  }), "reply"))))))), __jsx("div", {
-    className: "comment_sec",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 183,
-      columnNumber: 17
-    }
-  }, __jsx("article", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 184,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "12",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 185,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "blog_center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 186,
-      columnNumber: 29
-    }
-  }, __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 187,
-      columnNumber: 33
-    }
-  }, __jsx("figure", {
-    className: "thumbnail",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 188,
-      columnNumber: 37
-    }
-  }, __jsx("img", {
-    alt: "",
-    src: "/assets/images/OTF/articleinner/comment3.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 189,
-      columnNumber: 41
-    }
-  }))), __jsx("div", {
-    className: "blog_user arrow left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 192,
-      columnNumber: 33
-    }
-  }, __jsx("div", {
-    className: "panel-body",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 193,
-      columnNumber: 37
-    }
-  }, __jsx("div", {
-    className: "text-left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 194,
-      columnNumber: 41
-    }
-  }, __jsx("div", {
-    className: "comment-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 195,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 196,
-      columnNumber: 49
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 196,
-      columnNumber: 79
-    }
-  }, " That Guy ")), __jsx("div", {
-    className: "comment-date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 198,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-clock-o",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 199,
-      columnNumber: 49
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 199,
-      columnNumber: 82
-    }
-  }, " Dec 16, 2014"))), __jsx("div", {
-    className: "comment-post",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 202,
-      columnNumber: 41
-    }
-  }, __jsx("p", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 203,
-      columnNumber: 45
-    }
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), __jsx("a", {
-    className: "link-btn",
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 41
-    }
-  }, __jsx("i", {
-    className: "fa fa-reply pr-2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 74
-    }
-  }), "reply"))))))), __jsx("div", {
-    className: "comment_sec",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 217,
-      columnNumber: 17
-    }
-  }, __jsx("article", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "12",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 25
-    }
-  }, __jsx("div", {
-    className: "blog_center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 220,
-      columnNumber: 29
-    }
-  }, __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 221,
-      columnNumber: 33
-    }
-  }, __jsx("figure", {
-    className: "thumbnail",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 222,
-      columnNumber: 37
-    }
-  }, __jsx("img", {
-    alt: "",
-    src: "/assets/images/OTF/articleinner/comment4.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 223,
-      columnNumber: 41
-    }
-  }))), __jsx("div", {
-    className: "blog_user arrow left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 226,
-      columnNumber: 33
-    }
-  }, __jsx("div", {
-    className: "panel-body",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 227,
-      columnNumber: 37
-    }
-  }, __jsx("div", {
-    className: "text-left",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 228,
-      columnNumber: 41
-    }
-  }, __jsx("div", {
-    className: "comment-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 229,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-user",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 229,
-      columnNumber: 75
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 229,
-      columnNumber: 105
-    }
-  }, " That Guy ")), __jsx("div", {
-    className: "comment-date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 231,
-      columnNumber: 45
-    }
-  }, __jsx("i", {
-    className: "fa fa-clock-o",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 231,
-      columnNumber: 75
-    }
-  }), __jsx("h6", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 231,
-      columnNumber: 108
-    }
-  }, " Dec 16, 2014"))), __jsx("div", {
-    className: "comment-post",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234,
-      columnNumber: 41
-    }
-  }, __jsx("p", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 235,
-      columnNumber: 45
-    }
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), __jsx("a", {
-    className: "link-btn",
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 242,
-      columnNumber: 41
-    }
-  }, __jsx("i", {
-    className: "fa fa-reply pr-2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 242,
-      columnNumber: 74
-    }
-  }), "reply")))))))), __jsx("div", {
-    className: "quote_2 comment_form_sec",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 251,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "container",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 252,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 253,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-    xs: "12",
-    className: "quote_form",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 254,
-      columnNumber: 25
-    }
-  }, __jsx("h3", {
-    className: "oftHeading text-dark text-left mb-0 mt-3 mb-4",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 255,
-      columnNumber: 29
-    }
-  }, "Leave you comment :"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Form"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 256,
-      columnNumber: 29
-    }
-  }, __jsx("div", {
-    className: "form-row",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 257,
-      columnNumber: 33
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["FormGroup"], {
-    className: "col-md-6",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 258,
-      columnNumber: 37
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Label"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 259,
-      columnNumber: 41
-    }
-  }, "Name"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Input"], {
-    className: "form-control",
-    placeholder: "Enter Your Name",
-    required: "",
-    type: "text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 260,
-      columnNumber: 41
-    }
-  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["FormGroup"], {
-    className: "col-md-6",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 263,
-      columnNumber: 37
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Label"], {
-    htmlFor: "inputEmail4",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 264,
-      columnNumber: 41
-    }
-  }, "Email"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Input"], {
-    className: "form-control",
-    id: "inputEmail4",
-    placeholder: "Enter Your Email",
-    required: "",
-    type: "email",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 265,
-      columnNumber: 41
-    }
-  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["FormGroup"], {
-    className: "col-md-12",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 268,
-      columnNumber: 37
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Label"], {
-    htmlFor: "exampleTextarea",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 269,
-      columnNumber: 41
-    }
-  }, "Message"), __jsx("textarea", {
-    className: "form-control msg_coment",
-    id: "exampleTextarea",
-    placeholder: "Leave a Comment",
-    required: "",
-    rows: "3",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 270,
-      columnNumber: 41
-    }
-  }))), __jsx("button", {
-    className: "otfBtn1 mt-3 px-5",
-    style: {
-      border: "1px solid #F58220"
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 274,
-      columnNumber: 33
-    }
-  }, "Post Comment")))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (DetailWrapper);
-
-/***/ }),
-
-/***/ "./containers/blog/categories/index.js":
-/*!*********************************************!*\
-  !*** ./containers/blog/categories/index.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\blog\\categories\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Categories = ({}) => __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
-  }
-}, __jsx("h5", {
-  className: "blog-title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, "categories"), __jsx("div", {
-  className: "sidebar-container borders",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 9
-  }
-}, __jsx("ul", {
-  className: "sidebar-list",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 13
-  }
-}, __jsx("li", {
-  className: "d-flex",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 17
-  }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 21
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 25
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-angle-right m-r-15",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 29
-  }
-}), "Lorem Ipsum Is Simple"))), __jsx("li", {
-  className: "d-flex",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 17
-  }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 21
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19,
-    columnNumber: 25
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-angle-right m-r-15",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 29
-  }
-}), "Many Variations"))), __jsx("li", {
-  className: "d-flex",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 17
-  }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 21
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 25
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-angle-right m-r-15",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 29
-  }
-}), "random text"))), __jsx("li", {
-  className: "d-flex",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 17
-  }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 34,
-    columnNumber: 21
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 35,
-    columnNumber: 25
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-angle-right m-r-15",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36,
-    columnNumber: 29
-  }
-}), "Lorem Ipsum"))), __jsx("li", {
-  className: "d-flex",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 17
-  }
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 42,
-    columnNumber: 21
-  }
-}, __jsx("a", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 43,
-    columnNumber: 25
-  }
-}, __jsx("i", {
-  "aria-hidden": "true",
-  className: "fa fa-angle-right m-r-15",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 29
-  }
-}), "it's Random"))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Categories);
-
-/***/ }),
-
-/***/ "./containers/blog/instagram/index.js":
-/*!********************************************!*\
-  !*** ./containers/blog/instagram/index.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\blog\\instagram\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Instagram = ({}) => {
-  return __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 9
-    }
-  }, __jsx("h5", {
-    className: "blog-title",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 13
-    }
-  }, "instagram"), __jsx("div", {
-    className: "sidebar-container insta",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 13
-    }
-  }, __jsx("ul", {
-    className: "blog-insta",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 17
-    }
-  }, __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst1.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst2.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst3.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst4.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 33
-    }
-  }))))), __jsx("ul", {
-    className: "blog-insta",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 17
-    }
-  }, __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst5.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst6.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst7.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 33
-    }
-  })))), __jsx("li", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 21
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 29
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/inst8.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 33
-    }
-  })))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Instagram);
-
-/***/ }),
-
-/***/ "./containers/blog/newsletter/index.js":
-/*!*********************************************!*\
-  !*** ./containers/blog/newsletter/index.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\blog\\newsletter\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-const NewsLetter = ({}) => {
-  return __jsx("div", {
-    className: "sidebar-container",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 9
-    }
-  }, __jsx("h5", {
-    className: "blog-title",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 13
-    }
-  }, "newsletter"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
-    className: "newsletter text-center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 13
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["FormGroup"], {
-    className: "mb-0",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 17
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-    className: "form-control",
-    placeholder: "enter email",
-    type: "text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 21
-    }
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 21
-    }
-  }, __jsx("a", {
-    href: "#javascript",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 36
-    }
-  }, __jsx("i", {
-    "aria-hidden": "true",
-    className: "fa fa-paper-plane",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 58
-    }
-  }))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (NewsLetter);
-
-/***/ }),
-
-/***/ "./containers/blog/posts/index.js":
-/*!****************************************!*\
-  !*** ./containers/blog/posts/index.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\blog\\posts\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const PopularPosts = ({}) => {
-  return __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 9
-    }
-  }, __jsx("h5", {
-    className: "blog-title",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 13
-    }
-  }, "popular posts"), __jsx("div", {
-    className: "sidebar-container",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "post-container d-flex",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "w-35 m-r-25",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 21
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/pp1.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 25
-    }
-  }), __jsx("div", {
-    className: "badge",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 25
-    }
-  }, "2020")), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 21
-    }
-  }, __jsx("h5", {
-    className: "post-head",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 25
-    }
-  }, "lorem ipsum"), __jsx("h6", {
-    className: "date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 25
-    }
-  }, "nov 22, 2020"))), __jsx("div", {
-    className: "post-container d-flex",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "w-35 m-r-25",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 21
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/pp2.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 25
-    }
-  }), __jsx("div", {
-    className: "badge badge-red",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 25
-    }
-  }, "2020")), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 21
-    }
-  }, __jsx("h5", {
-    className: "post-head",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 25
-    }
-  }, "lorem ipsum"), __jsx("h6", {
-    className: "date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 25
-    }
-  }, "nov 22, 2020"))), __jsx("div", {
-    className: "post-container d-flex",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "w-35 m-r-25",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 21
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/pp3.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 25
-    }
-  }), __jsx("div", {
-    className: "badge badge-yellow",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 25
-    }
-  }, "2020")), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 21
-    }
-  }, __jsx("h5", {
-    className: "post-head",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 25
-    }
-  }, "lorem ipsum"), __jsx("h6", {
-    className: "date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 25
-    }
-  }, "nov 22, 2020"))), __jsx("div", {
-    className: "post-container d-flex",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "w-35 m-r-25",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 21
-    }
-  }, __jsx("img", {
-    alt: "",
-    className: "img-fluid",
-    src: "/assets/images/OTF/articleinner/pp4.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 25
-    }
-  }), __jsx("div", {
-    className: "badge badge-blue",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 25
-    }
-  }, "2020")), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 21
-    }
-  }, __jsx("h5", {
-    className: "post-head",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 25
-    }
-  }, "lorem ipsum"), __jsx("h6", {
-    className: "date",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 25
-    }
-  }, "nov 22, 2020")))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (PopularPosts);
 
 /***/ }),
 
@@ -3014,39 +901,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
 
 /***/ }),
 
@@ -4953,112 +2807,14 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/layouts/sections/gym/counter.js":
-/*!***********************************************!*\
-  !*** ./pages/layouts/sections/gym/counter.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\counter.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/***/ "./node_modules/react-light-accordion/demo/css/index.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-light-accordion/demo/css/index.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 
-
-const Counter = ({
-  title,
-  subtitle,
-  btntext,
-  bgImg
-}) => __jsx("section", {
-  className: "gym counter rightAnimation  bg-img3 bg1",
-  style: {
-    backgroundImage: `url('${bgImg}')`
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "animated-bg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 9
-  }
-}, __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 38
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 45
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 52
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "text-center",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 13
-  }
-}, __jsx("h3", {
-  className: "text-white oftHeading mb-4",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 17
-  }
-}, title), __jsx("p", {
-  className: "p-light text-white text-center mb-5 oftsubHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 17
-  }
-}, subtitle), __jsx("a", {
-  className: "otfBtn1",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 17
-  }
-}, btntext))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Counter);
 
 /***/ }),
 
@@ -5638,10 +3394,10 @@ const Footer = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 
 /***/ }),
 
-/***/ "./pages/page/articles-detail.js":
-/*!***************************************!*\
-  !*** ./pages/page/articles-detail.js ***!
-  \***************************************/
+/***/ "./pages/page/faq.js":
+/*!***************************!*\
+  !*** ./pages/page/faq.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5649,57 +3405,193 @@ const Footer = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _containers_common_common_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../containers/common/common-layout */ "./containers/common/common-layout.js");
-/* harmony import */ var _pages_layouts_sections_gym_counter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../pages/layouts/sections/gym/counter */ "./pages/layouts/sections/gym/counter.js");
-/* harmony import */ var _articlesdetail_articles_inner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./articlesdetail/articles-inner */ "./pages/page/articlesdetail/articles-inner.js");
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\articles-detail.js";
+/* harmony import */ var react_light_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-light-accordion */ "react-light-accordion");
+/* harmony import */ var react_light_accordion__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-light-accordion/demo/css/index.css */ "./node_modules/react-light-accordion/demo/css/index.css");
+/* harmony import */ var react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _containers_common_common_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../containers/common/common-layout */ "./containers/common/common-layout.js");
+/* harmony import */ var _faq_faqform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faq/faqform */ "./pages/page/faq/faqform.js");
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\faq.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
  // import Custom Components
 
 
 
 
+const FAQ = () => {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    document.querySelector(".accordion .accordion-item").classList.add("active");
+    return () => {
+      document.querySelector(".accordion .accordion-item").classList.remove("active");
+    };
+  }, []);
 
-const ArticlesDetail = () => __jsx(_containers_common_common_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  title: "Lorem ipsum",
-  subtitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  btntext: "Lorem ipsum dolor",
-  bannerImg: "/assets/images/OTF/banner/articlesbanner.jpg",
-  metaTitle: "Articles",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 5
-  }
-}, __jsx(_articlesdetail_articles_inner__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 9
-  }
-}), __jsx(_pages_layouts_sections_gym_counter__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  title: "Lorem Ipsum",
-  subtitle: "Senectus viverra laoreet proin eget. Ullamcorper in lorem nisl aliquet orci enim vel, a. Ut quis luctus massa.",
-  btntext: "Lorem Ipsum",
-  bgImg: "/assets/images/OTF/articles/articalbg.jpg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 9
-  }
-}));
+  const DummyContent1 = props => __jsx("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, props.answer);
 
-/* harmony default export */ __webpack_exports__["default"] = (ArticlesDetail);
+  const faqData = [{
+    question: "How early should I arrive for my first Orangetheory class?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "I haven't worked out in a long time? Can I still do the workout?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "I have issues with (part of the body). Can I still do your workout?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "What do the 5 zones mean, and why is the Orange zone so important?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }, {
+    question: "What equipment do you use at Orangetheory?",
+    answer: "No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is. No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is."
+  }];
+  return __jsx(_containers_common_common_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "Try Us For Free.Yes, Free!",
+    btntext: "book a free class now",
+    promtext: "*Promotion Terms. Limited Time Offer.",
+    bannerImg: "/assets/images/OTF/banner/faqbanner.jpg",
+    metaTitle: "Support",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }, __jsx("section", {
+    className: "saas1 faq testimonial-bg inner-container rightAnimation",
+    id: "faq",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: "animated-bg",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, __jsx("i", {
+    style: {
+      background: "#f5822091",
+      boxShadow: "0 15px 30px 0 #f5822091"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 46
+    }
+  }), __jsx("i", {
+    style: {
+      background: "#f5822091",
+      boxShadow: "0 15px 30px 0 #f5822091"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 21
+    }
+  }), __jsx("i", {
+    style: {
+      background: "#f5822091",
+      boxShadow: "0 15px 30px 0 #f5822091"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 21
+    }
+  })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 17
+    }
+  }, __jsx("div", {
+    className: "faq-block",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 21
+    }
+  }, __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 25
+    }
+  }, __jsx("h3", {
+    className: "frequent-text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 29
+    }
+  }, "Frequently Asked Questions"), __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["Accordion"], {
+    atomic: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79,
+      columnNumber: 29
+    }
+  }, faqData.map((x, i) => __jsx(react_light_accordion__WEBPACK_IMPORTED_MODULE_1__["AccordionItem"], {
+    className: "card-header bg-primary",
+    title: x.question,
+    key: i,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 41
+    }
+  }, __jsx(DummyContent1, {
+    answer: x.answer,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 45
+    }
+  })))))))), __jsx(_faq_faqform__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92,
+      columnNumber: 13
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FAQ);
 
 /***/ }),
 
-/***/ "./pages/page/articlesdetail/articles-inner.js":
-/*!*****************************************************!*\
-  !*** ./pages/page/articlesdetail/articles-inner.js ***!
-  \*****************************************************/
+/***/ "./pages/page/faq/faqform.js":
+/*!***********************************!*\
+  !*** ./pages/page/faq/faqform.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5709,23 +3601,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _containers_blog_card_detail_wrapper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../containers/blog/card/detail-wrapper */ "./containers/blog/card/detail-wrapper.js");
-/* harmony import */ var _containers_blog_categories__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../containers/blog/categories */ "./containers/blog/categories/index.js");
-/* harmony import */ var _containers_blog_posts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../containers/blog/posts */ "./containers/blog/posts/index.js");
-/* harmony import */ var _containers_blog_newsletter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../containers/blog/newsletter */ "./containers/blog/newsletter/index.js");
-/* harmony import */ var _containers_blog_instagram__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../containers/blog/instagram */ "./containers/blog/instagram/index.js");
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\articlesdetail\\articles-inner.js";
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\faq\\faqform.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-
-
-
-const ArticlesInner = () => __jsx("section", {
-  className: "agency gym blog-sec blog-sidebar single_blog_item",
+const Faqform = () => __jsx("section", {
+  className: "gym format bg-location p-0",
+  id: "bmi",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -5733,6 +3616,7 @@ const ArticlesInner = () => __jsx("section", {
     columnNumber: 5
   }
 }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  fluid: true,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -5746,73 +3630,159 @@ const ArticlesInner = () => __jsx("section", {
     lineNumber: 12,
     columnNumber: 13
   }
-}, __jsx(_containers_blog_card_detail_wrapper__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  className: "col-lg-9 order-lg-2",
-  showcaseType: "Image",
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  sm: 6,
+  className: "p-0",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13,
     columnNumber: 17
   }
-}), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  lg: "3",
+}, __jsx("iframe", {
+  src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6032486928893!2d55.25071151432762!3d25.216599037102654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4362916220b1%3A0x175f64a16111cae7!2sOrangetheory%20Fitness%20at%20Mercato%20Mall!5e0!3m2!1sen!2s!4v1649050081764!5m2!1sen!2s",
+  width: "100%",
+  height: "100%",
+  style: {
+    border: "0"
+  },
+  allowfullscreen: "",
+  loading: "lazy",
+  referrerpolicy: "no-referrer-when-downgrade",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 21
+  }
+})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  sm: 6,
+  className: "BGImgLocation p-0",
+  style: {
+    backgroundImage: "url('/assets/images/OTF/faq/faqformBg.jpg')"
+  },
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 17,
     columnNumber: 17
   }
-}, __jsx("div", {
-  className: "blog-side",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 21
-  }
-}, __jsx(_containers_blog_categories__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19,
-    columnNumber: 25
-  }
-}), __jsx(_containers_blog_posts__WEBPACK_IMPORTED_MODULE_4__["default"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+  className: "formStyle",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 20,
-    columnNumber: 25
+    columnNumber: 21
   }
-}), __jsx(_containers_blog_newsletter__WEBPACK_IMPORTED_MODULE_5__["default"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+  form: true,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21,
     columnNumber: 25
   }
-}), __jsx(_containers_blog_instagram__WEBPACK_IMPORTED_MODULE_6__["default"], {
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  md: 6,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 22,
+    columnNumber: 29
+  }
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23,
+    columnNumber: 33
+  }
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  type: "email",
+  name: "email",
+  id: "email",
+  placeholder: "Email address",
+  className: "inputStyle",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 24,
+    columnNumber: 37
+  }
+}))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  md: 6,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33,
+    columnNumber: 29
+  }
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 33
+  }
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  type: "text",
+  name: "phone",
+  id: "phone",
+  placeholder: "Phone number",
+  className: "inputStyle",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 37
+  }
+})))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 45,
     columnNumber: 25
   }
-}))))));
+}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  type: "textarea",
+  name: "Message",
+  id: "Message",
+  placeholder: "Message",
+  className: "inputStyle",
+  style: {
+    resize: "none"
+  },
+  rows: "4",
+  cols: "50",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 46,
+    columnNumber: 29
+  }
+})), __jsx("button", {
+  className: "otfBtn1 px-5 mt-3",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 56,
+    columnNumber: 25
+  }
+}, "Submit"))))));
 
-/* harmony default export */ __webpack_exports__["default"] = (ArticlesInner);
+/* harmony default export */ __webpack_exports__["default"] = (Faqform);
 
 /***/ }),
 
-/***/ 11:
-/*!*********************************************!*\
-  !*** multi ./pages/page/articles-detail.js ***!
-  \*********************************************/
+/***/ 9:
+/*!*********************************!*\
+  !*** multi ./pages/page/faq.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! I:\Prism Projects\OTF\otf\pages\page\articles-detail.js */"./pages/page/articles-detail.js");
+module.exports = __webpack_require__(/*! I:\Prism Projects\OTF\otf\pages\page\faq.js */"./pages/page/faq.js");
 
 
 /***/ }),
@@ -5949,14 +3919,14 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-slick":
-/*!******************************!*\
-  !*** external "react-slick" ***!
-  \******************************/
+/***/ "react-light-accordion":
+/*!****************************************!*\
+  !*** external "react-light-accordion" ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react-slick");
+module.exports = require("react-light-accordion");
 
 /***/ }),
 
@@ -5983,4 +3953,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=articles-detail.js.map
+//# sourceMappingURL=faq.js.map

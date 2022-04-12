@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -205,6 +205,205 @@ const TopHeader = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TopHeader);
+
+/***/ }),
+
+/***/ "./containers/common/breadcrumb.js":
+/*!*****************************************!*\
+  !*** ./containers/common/breadcrumb.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\common\\breadcrumb.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Breadcrumb = ({
+  btntext,
+  title,
+  subtitle,
+  bannerImg,
+  promtext
+}) => {
+  return __jsx("section", {
+    className: "agency breadcrumb-section ",
+    style: {
+      background: `url(${bannerImg})`
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 9
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 13
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 17
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    xs: "12",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 21
+    }
+  }, __jsx("div", {
+    className: " d-flex flex-column justify-content-center align-items-center",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 25
+    }
+  }, __jsx("h2", {
+    className: "breadcrumb-text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 29
+    }
+  }, title), subtitle && __jsx("p", {
+    className: "breadcrumb-subtext",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 33
+    }
+  }, subtitle), __jsx("button", {
+    className: "breadcrumb-btn",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 29
+    }
+  }, btntext), promtext && __jsx("p", {
+    className: "text-white mt-3",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 33
+    }
+  }, __jsx("small", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 64
+    }
+  }, promtext)))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Breadcrumb);
+
+/***/ }),
+
+/***/ "./containers/common/common-layout.js":
+/*!********************************************!*\
+  !*** ./containers/common/common-layout.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _containers_common_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../containers/common/header */ "./containers/common/header.js");
+/* harmony import */ var _breadcrumb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./breadcrumb */ "./containers/common/breadcrumb.js");
+/* harmony import */ var _pages_layouts_sections_gym_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pages/layouts/sections/gym/footer */ "./pages/layouts/sections/gym/footer.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\containers\\common\\common-layout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+const CommonLayout = ({
+  children,
+  btntext,
+  title,
+  subtitle,
+  bannerImg,
+  metaTitle,
+  promtext
+}) => {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    document.body.style.setProperty('--primary', '#000');
+    document.body.style.setProperty('--secondary', '#000');
+    document.body.style.setProperty('--light', '#252525');
+    document.body.style.setProperty('--dark', '#000');
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }, __jsx("title", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 17
+    }
+  }, metaTitle)), __jsx(_containers_common_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "gym nav-lg",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }), __jsx(_breadcrumb__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    subtitle: subtitle,
+    title: title,
+    bannerImg: bannerImg,
+    btntext: btntext,
+    promtext: promtext,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }), __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, children), __jsx(_pages_layouts_sections_gym_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 13
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CommonLayout);
 
 /***/ }),
 
@@ -702,39 +901,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
 
 /***/ }),
 
@@ -2641,583 +2807,14 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _containers_common_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../containers/common/header */ "./containers/common/header.js");
-/* harmony import */ var _pages_layouts_sections_gym_banner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/layouts/sections/gym/banner */ "./pages/layouts/sections/gym/banner.js");
-/* harmony import */ var _pages_layouts_sections_gym_format__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/layouts/sections/gym/format */ "./pages/layouts/sections/gym/format.js");
-/* harmony import */ var _pages_layouts_sections_gym_about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/layouts/sections/gym/about */ "./pages/layouts/sections/gym/about.js");
-/* harmony import */ var _pages_layouts_sections_gym_schedule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/layouts/sections/gym/schedule */ "./pages/layouts/sections/gym/schedule.js");
-/* harmony import */ var _pages_layouts_sections_gym_counter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/layouts/sections/gym/counter */ "./pages/layouts/sections/gym/counter.js");
-/* harmony import */ var _pages_layouts_sections_gym_trainer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../pages/layouts/sections/gym/trainer */ "./pages/layouts/sections/gym/trainer.js");
-/* harmony import */ var _pages_layouts_sections_gym_pricing__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../pages/layouts/sections/gym/pricing */ "./pages/layouts/sections/gym/pricing.js");
-/* harmony import */ var _pages_layouts_sections_gym_calculate__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../pages/layouts/sections/gym/calculate */ "./pages/layouts/sections/gym/calculate.js");
-/* harmony import */ var _pages_layouts_sections_gym_footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../pages/layouts/sections/gym/footer */ "./pages/layouts/sections/gym/footer.js");
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
- // import Custom Components
+/***/ "./node_modules/react-light-accordion/demo/css/index.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-light-accordion/demo/css/index.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 
-
-
-
-
-
- // import TestimonialSection from '../pages/layouts/sections/gym/testimonial'
-
-
- // import BrandSection from '../pages/layouts/sections/gym/brand'
-
-
-
-const Gym = () => {
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    document.body.style.setProperty('--primary', '#000');
-    document.body.style.setProperty('--secondary', '#000');
-    document.body.style.setProperty('--light', '#000');
-    document.body.style.setProperty('--dark', '#000');
-  });
-  const sliderData = [{
-    bannerImg: "/assets/images/OTF/banner/homeBannerSlider.jpg",
-    title: "The Smartest Workout for More Results",
-    detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-    btn1: "BOOK A FREE CLASS NOW",
-    btn2: "view membership details"
-  }, {
-    bannerImg: "/assets/images/OTF/banner/homeBannerSlider.jpg",
-    title: "The Smartest Workout for More Results",
-    detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-    btn1: "BOOK A FREE CLASS NOW",
-    btn2: "view membership details"
-  }];
-  const listImg = ["/assets/images/OTF/icons/heatl1.png", "/assets/images/OTF/icons/heatl2.png", "/assets/images/OTF/icons/heatl3.png"];
-  const testimonial = [{
-    img: "/assets/images/OTF/testimonial/testimonial1.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial2.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial3.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial4.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial5.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial6.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }, {
-    img: "/assets/images/OTF/testimonial/testimonial7.png",
-    title: "Client name example",
-    subtitle: "Lorem ipsum dolor amit set lorem ipsum dolor amit.."
-  }];
-  return __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 9
-    }
-  }, "Orange Theory")), __jsx(_containers_common_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "gym nav-lg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_banner__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    sliderData: sliderData,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_about__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_schedule__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: "Health and Safety (It's not either/or)",
-    detail: "As the pandemic continues, it’s incredibly important Orangetheory studios operate with an abundance of caution. We continually review and evaluate our safety and disinfection protocols to align with the latest recommendations and local government mandates.",
-    detail2: "The Orangetheory studio design, structured class schedule, block interval training and tight-knit community of franchisees enables us to have a more controlled environment in comparison to other fitness gyms.",
-    listImg: listImg,
-    bgImg: "/assets/images/OTF/home/health-safetybg.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_pricing__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_counter__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    title: "Get 10% off during this festive season!",
-    subtitle: "Senectus viverra laoreet proin eget. Ullamcorper in lorem nisl aliquet orci enim vel, a. Ut quis luctus massa.",
-    btntext: "BOOK A FREE CLASS NOW",
-    bgImg: "/assets/images/OTF/home/get-off.jpg",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_trainer__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    testimonial: testimonial,
-    title: "Testimonials",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_format__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_calculate__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 7
-    }
-  }), __jsx(_pages_layouts_sections_gym_footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 7
-    }
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Gym);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/about.js":
-/*!*********************************************!*\
-  !*** ./pages/layouts/sections/gym/about.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\about.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const About = () => __jsx("section", {
-  className: "gym format",
-  id: "about",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "animated-bg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 9
-  }
-}, __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 38
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 45
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 52
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 9
-  }
-}, __jsx("h3", {
-  className: "oftHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 13
-  }
-}, "What happens in class doesn\u2019t stay in class?"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 13
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "6",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 17
-  }
-}, __jsx("div", {
-  className: "text-center center-content",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 21
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid format-img",
-  src: "/assets/images/OTF/home/warrior-2-pose.png",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 25
-  }
-}))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "6",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 17
-  }
-}, __jsx("div", {
-  className: "center-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 21
-  }
-}, __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 25
-  }
-}, __jsx("div", {
-  className: "format-sub-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 29
-  }
-}, __jsx("p", {
-  className: "p-light oftsubHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19,
-    columnNumber: 33
-  }
-}, "Orangetheory is a heart-rate based HIIT total-body group workout that combines science, coaching and technology to guarantee maximum results from the inside out. It\u2019s designed to charge your metabolism for MORE caloric afterburn, MORE results, and MORE confidence, all to deliver you MORE LIFE.  Orangetheory is more than a gym because the work you do here in our studio will make all the difference out there in your world.")), __jsx("a", {
-  className: "otfBtn",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23,
-    columnNumber: 29
-  }
-}, "learn more")))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (About);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/banner.js":
-/*!**********************************************!*\
-  !*** ./pages/layouts/sections/gym/banner.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\banner.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  arrows: false,
-  autoplay: true,
-  swipeToSlide: true,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-
-const Banner = ({
-  sliderData
-}) => __jsx("section", {
-  className: "gym header",
-  id: "home",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "header5-content",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 9
-  }
-}, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-  className: "default-dots gym-slider",
-  id: "gym-slider"
-}, settings, {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 13
-  }
-}), sliderData.map((x, i) => __jsx("div", {
-  className: "item",
-  key: i,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21,
-    columnNumber: 25
-  }
-}, __jsx("div", {
-  className: "gym-header bg",
-  style: {
-    backgroundImage: `url(${x.bannerImg})`
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22,
-    columnNumber: 29
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 33
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 37
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-  md: "10",
-  className: "offset-md-1",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 41
-  }
-}, __jsx("div", {
-  className: "center-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 45
-  }
-}, __jsx("div", {
-  className: "text-center",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29,
-    columnNumber: 49
-  }
-}, __jsx("div", {
-  className: "header-text bold-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30,
-    columnNumber: 53
-  }
-}, __jsx("h1", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31,
-    columnNumber: 57
-  }
-}, x.title)), __jsx("div", {
-  className: "header-sub-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 53
-  }
-}, __jsx("p", {
-  className: "text-white p-light",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 34,
-    columnNumber: 57
-  }
-}, x.detail)), x.btnm && __jsx("button", {
-  className: "otfBtn1",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 40,
-    columnNumber: 57
-  }
-}, x.btnm), __jsx("div", {
-  className: "link-horizontal",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 53
-  }
-}, __jsx("ul", {
-  className: "justify-content-center",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 57
-  }
-}, x.btn1 && __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 65
-  }
-}, __jsx("a", {
-  className: " btn btn-default",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 49,
-    columnNumber: 69
-  }
-}, x.btn1)), x.btn2 && __jsx("li", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 65
-  }
-}, __jsx("a", {
-  className: " btn btn-default",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 56,
-    columnNumber: 69
-  }
-}, x.btn2)))), x.viewbtn && __jsx("button", {
-  className: "viewbtn",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 65,
-    columnNumber: 57
-  }
-}, x.viewbtn))))))))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Banner);
 
 /***/ }),
 
@@ -3470,115 +3067,6 @@ const Calculate = () => __jsx("section", {
 })))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Calculate);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/counter.js":
-/*!***********************************************!*\
-  !*** ./pages/layouts/sections/gym/counter.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\counter.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Counter = ({
-  title,
-  subtitle,
-  btntext,
-  bgImg
-}) => __jsx("section", {
-  className: "gym counter rightAnimation  bg-img3 bg1",
-  style: {
-    backgroundImage: `url('${bgImg}')`
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "animated-bg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 9
-  }
-}, __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 38
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 45
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 52
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "text-center",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 13
-  }
-}, __jsx("h3", {
-  className: "text-white oftHeading mb-4",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 17
-  }
-}, title), __jsx("p", {
-  className: "p-light text-white text-center mb-5 oftsubHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 17
-  }
-}, subtitle), __jsx("a", {
-  className: "otfBtn1",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 17
-  }
-}, btntext))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Counter);
 
 /***/ }),
 
@@ -4158,10 +3646,10 @@ const Footer = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 
 /***/ }),
 
-/***/ "./pages/layouts/sections/gym/format.js":
-/*!**********************************************!*\
-  !*** ./pages/layouts/sections/gym/format.js ***!
-  \**********************************************/
+/***/ "./pages/page/locations.js":
+/*!*********************************!*\
+  !*** ./pages/page/locations.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4169,821 +3657,53 @@ const Footer = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\format.js";
+/* harmony import */ var react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-light-accordion/demo/css/index.css */ "./node_modules/react-light-accordion/demo/css/index.css");
+/* harmony import */ var react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_light_accordion_demo_css_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _containers_common_common_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../containers/common/common-layout */ "./containers/common/common-layout.js");
+/* harmony import */ var _pages_layouts_sections_gym_calculate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pages/layouts/sections/gym/calculate */ "./pages/layouts/sections/gym/calculate.js");
+var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\page\\locations.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-const featureData = [{
-  img: "/assets/images/OTF/icons/f1.png",
-  title: "Free classes per month",
-  subtitle: "In nulla tristique consequat mattis. Netus aliquet."
-}, {
-  img: "/assets/images/OTF/icons/f2.png",
-  title: "Largest & most affordable",
-  subtitle: "In faucibus volutpat fringilla dictumst blandit scelerisque."
-}, {
-  img: "/assets/images/OTF/icons/f3.png",
-  title: "Gender based workout spaces",
-  subtitle: "Parturient vitae arcu mollis nulla. Velit ligula amet quis eget."
-}, {
-  img: "/assets/images/OTF/icons/f4.png",
-  title: "Latest piece of equipments",
-  subtitle: "Sit maecenas metus odio purus. Adipiscing donec in orci."
-}, {
-  img: "/assets/images/OTF/icons/f5.png",
-  title: "Covered car parking",
-  subtitle: "Cras lobortis mattis sed faucibus tempus."
-}, {
-  img: "/assets/images/OTF/icons/f6.png",
-  title: "open anytime 24/7",
-  subtitle: "Vulputate dolor eu mattis condimentum. "
-}];
-
-const Format = () => __jsx("section", {
-  className: "gym formatBG rightAnimation",
-  style: {
-    backgroundImage: "url('/assets/images/OTF/home/features.jpg')"
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 38,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "animated-bg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 9
-  }
-}, __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 38
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 45
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 52
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-  fluid: true,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 43,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "bgFeature",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 13
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 17
-  }
-}, featureData.map((x, i) => __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "6",
-  key: i,
-  className: "mb-4",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 29
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 49,
-    columnNumber: 33
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  sm: "2",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 50,
-    columnNumber: 37
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid",
-  src: x.img,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 41
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  sm: 10,
-  className: "d-flex flex-column justify-content-center align-items-start",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 53,
-    columnNumber: 37
-  }
-}, __jsx("h4", {
-  className: "formatHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 41
-  }
-}, x.title), __jsx("p", {
-  className: "p-light formatsubHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 41
-  }
-}, x.subtitle)))))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Format);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/pricing.js":
-/*!***********************************************!*\
-  !*** ./pages/layouts/sections/gym/pricing.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\pricing.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+ // import Custom Components
 
 
 
-var settings = {
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  arrows: false,
-  slidesToShow: 3,
-  autoplay: true,
-  centerMode: true,
-  centerPadding: '0',
-  slidesToScroll: 1,
-  responsive: [{
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1
-    }
-  }]
-};
-const PricingResume2 = [{
-  icon: "/assets/images/OTF/icons/Premier.png",
-  iconW: "/assets/images/OTF/icons/PremierW.png",
-  title: "Orange Premier",
-  feature1: "Unlimited classes",
-  feature2: 'Reduced rate for families'
-}, {
-  icon: "/assets/images/OTF/icons/Orange-elite.png",
-  iconW: "/assets/images/OTF/icons/eliteW.png",
-  title: "Orange Elite",
-  feature1: "8 classes/month",
-  feature2: 'Extra classes at reduced rate'
-}, {
-  icon: "/assets/images/OTF/icons/Basic.png",
-  iconW: "/assets/images/OTF/icons/BasicW.png",
-  title: "Orange Basic",
-  feature1: "4 classes/month",
-  feature2: 'Extra classes at reduced rate'
-}, {
-  icon: "/assets/images/OTF/icons/Basic.png",
-  iconW: "/assets/images/OTF/icons/BasicW.png",
-  title: "Orange Basic",
-  feature1: "4 classes/month",
-  feature2: 'Extra classes at reduced rate'
-}];
 
-const Pricing = () => __jsx("section", {
-  className: "gym pricing set-relative",
-  id: "plan",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 57,
-    columnNumber: 5
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 58,
-    columnNumber: 9
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 59,
-    columnNumber: 13
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-  md: "10",
-  className: "offset-md-1",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 60,
-    columnNumber: 17
-  }
-}, __jsx("h2", {
-  className: "oftHeading text-dark",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 61,
-    columnNumber: 21
-  }
-}, "Let\u2019s talk memberships")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-  lg: "12",
-  md: "8",
-  className: "offset-md-2 offset-lg-0",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 63,
-    columnNumber: 17
-  }
-}, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-  className: "pricing-slider price-margin"
-}, settings, {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 64,
-    columnNumber: 21
-  }
-}), PricingResume2.map((item, i) => {
-  return __jsx("div", {
-    className: "item",
-    key: i,
+const Locations = () => {
+  return __jsx(_containers_common_common_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Find us near you!",
+    subtitle: "Feugiat vulputate cursus sagittis pulvinar duis non magna cursus. Parturient donec vehicula neque, ut consectetur pretium. Velit et duis a purus vitae vivamus. Aliquet tellus est.",
+    btntext: "Book your session",
+    bannerImg: "/assets/images/OTF/banner/locationbanner.jpg",
+    metaTitle: "Locations",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 33
+      lineNumber: 11,
+      columnNumber: 9
     }
-  }, __jsx("div", {
-    className: "price-container hover-overlay shadows bg-white text-center",
+  }, __jsx(_pages_layouts_sections_gym_calculate__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 37
+      lineNumber: 18,
+      columnNumber: 13
     }
-  }, __jsx("div", {
-    className: "price-feature-container set-relative",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 41
-    }
-  }, __jsx("div", {
-    className: "feature-text",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 45
-    }
-  }, __jsx("center", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 49
-    }
-  }, __jsx("img", {
-    src: item.icon,
-    className: "feature-icon1 mb-4",
-    alt: "icon",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 53
-    }
-  }), __jsx("img", {
-    src: item.iconW,
-    className: "feature-icon2 d-none mb-4",
-    alt: "icon",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 53
-    }
-  })), __jsx("h4", {
-    className: "feature-text-heading text-center bold text-uppercase font-primary",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 49
-    }
-  }, item.title), __jsx("hr", {
-    className: "set-border",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76,
-      columnNumber: 49
-    }
-  })), __jsx("div", {
-    className: "price-features font-primary",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 45
-    }
-  }, __jsx("h5", {
-    className: "price-feature text-center mb-1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 49
-    }
-  }, item.feature1), __jsx("h5", {
-    className: "price-feature text-center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 49
-    }
-  }, item.feature2)), __jsx("a", {
-    className: "otfBtn2",
-    href: "#",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82,
-      columnNumber: 45
-    }
-  }, "join now"))));
-}))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Pricing);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/schedule.js":
-/*!************************************************!*\
-  !*** ./pages/layouts/sections/gym/schedule.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\schedule.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Schedule = ({
-  titleM,
-  title,
-  detail,
-  list,
-  listImg,
-  btnText,
-  bgImg,
-  subtitle,
-  detail2
-}) => __jsx("section", {
-  className: `gym format rightAnimation bg-schedule ${subtitle && "mt-5"}`,
-  id: "schedule",
-  style: {
-    backgroundImage: `url("${bgImg}")`
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
-  }
-}, __jsx("div", {
-  className: "animated-bg",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 9
-  }
-}, __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 38
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 45
-  }
-}), __jsx("i", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 52
-  }
-})), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 9
-  }
-}, title && __jsx("h3", {
-  className: "oftHeading",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13,
-    columnNumber: 17
-  }
-}, title), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15,
-    columnNumber: 13
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "6",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 17
-  }
-}, __jsx("div", {
-  className: "center-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
-    columnNumber: 21
-  }
-}, __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 25
-  }
-}, titleM && __jsx("h3", {
-  className: `oftHeading text-left ${subtitle && "mb-3"}`,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21,
-    columnNumber: 33
-  }
-}, titleM), subtitle && __jsx("h4", {
-  className: "text-white mb-5",
-  style: {
-    fontSize: "20px"
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25,
-    columnNumber: 33
-  }
-}, subtitle), __jsx("div", {
-  className: "format-sub-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 29
-  }
-}, __jsx("p", {
-  className: "p-light oftsubHeading text-white",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 33
-  }
-}, detail), detail2 && __jsx("p", {
-  className: "p-light oftsubHeading text-white mt-3",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 37
-  }
-}, detail2)), listImg && __jsx("ul", {
-  className: "icon-collection",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 33
-  }
-}, listImg.map((x, i) => __jsx("li", {
-  className: "about-icongym",
-  key: i,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 43,
-    columnNumber: 41
-  }
-}, __jsx("a", {
-  className: "center-content",
-  href: "#",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 45
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid icons",
-  src: x,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 49
-  }
-}))))), list && __jsx("ul", {
-  className: "text-white pl-4",
-  style: {
-    listStyle: "circle"
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 33
-  }
-}, list.map((x, i) => __jsx("li", {
-  key: i,
-  style: {
-    fontSize: "16px",
-    fontWeight: "300",
-    textAlign: "left"
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 56,
-    columnNumber: 41
-  }
-}, x))), btnText && __jsx("button", {
-  className: `otfBtn1 px-5 ${subtitle ? "mt-2" : " mt-5"}`,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 67,
-    columnNumber: 33
-  }
-}, btnText)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-  md: "6",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 75,
-    columnNumber: 17
-  }
-}, __jsx("div", {
-  className: "text-center center-content",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 76,
-    columnNumber: 21
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid format-img",
-  src: "/assets/images/OTF/home/health-safty.png",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 77,
-    columnNumber: 25
-  }
-}))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Schedule);
-
-/***/ }),
-
-/***/ "./pages/layouts/sections/gym/trainer.js":
-/*!***********************************************!*\
-  !*** ./pages/layouts/sections/gym/trainer.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "I:\\Prism Projects\\OTF\\otf\\pages\\layouts\\sections\\gym\\trainer.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 5,
-  autoplay: true,
-  swipeToSlide: true,
-  centerMode: true,
-  centerPadding: '60px',
-  arrows: false,
-  slidesToScroll: 1,
-  responsive: [{
-    breakpoint: 420,
-    settings: {
-      slidesToShow: 1
-    }
-  }, {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 3
-    }
-  }]
+  }));
 };
 
-const Trainer = ({
-  testimonial,
-  title
-}) => __jsx("section", {
-  className: "gym trainers",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31,
-    columnNumber: 5
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-  className: "overflow-hide",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 32,
-    columnNumber: 9
-  }
-}, __jsx("h3", {
-  className: "oftHeading text-dark mb-0",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33,
-    columnNumber: 13
-  }
-}, title), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36,
-    columnNumber: 13
-  }
-}, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
-  xs: "12",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37,
-    columnNumber: 17
-  }
-}, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-  className: "owl-carousel owl-theme trainers-slider",
-  id: "trainers-slider"
-}, settings, {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 38,
-    columnNumber: 21
-  }
-}), testimonial.map((x, i) => __jsx("div", {
-  className: "item",
-  key: i,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 33
-  }
-}, __jsx("img", {
-  alt: "",
-  className: "img-fluid",
-  src: x.img,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 42,
-    columnNumber: 37
-  }
-}), __jsx("div", {
-  className: "text-center trainers-info",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 43,
-    columnNumber: 37
-  }
-}, __jsx("h4", {
-  className: " mb-2",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 44,
-    columnNumber: 41
-  }
-}, x.title), __jsx("p", {
-  className: "p-light text-center",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 49,
-    columnNumber: 41
-  }
-}, x.subtitle)))))))));
-
-/* harmony default export */ __webpack_exports__["default"] = (Trainer);
+/* harmony default export */ __webpack_exports__["default"] = (Locations);
 
 /***/ }),
 
-/***/ 4:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 3:
+/*!***************************************!*\
+  !*** multi ./pages/page/locations.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! I:\Prism Projects\OTF\otf\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! I:\Prism Projects\OTF\otf\pages\page\locations.js */"./pages/page/locations.js");
 
 
 /***/ }),
@@ -5120,17 +3840,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-slick":
-/*!******************************!*\
-  !*** external "react-slick" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-slick");
-
-/***/ }),
-
 /***/ "reactstrap":
 /*!*****************************!*\
   !*** external "reactstrap" ***!
@@ -5154,4 +3863,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=locations.js.map
