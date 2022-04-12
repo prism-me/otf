@@ -39,7 +39,9 @@ const Counter = () => (
                             <Container>
                                 <Row>
                                     <Col md="6">
-                                        <h3 className="oftHeading">Health and Safety (It's not either/or)</h3>
+                                        <h3 className="oftHeading">
+                                            {x.title}
+                                        </h3>
 
                                         <p className="p-light oftsubHeading text-white">
                                             {x.detail1}

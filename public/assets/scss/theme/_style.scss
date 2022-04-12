@@ -67,6 +67,49 @@
  1. general css start
 *************************/
 
+
+/**************************
+headings font
+*************************/
+
+
+@font-face {
+  font-family: "klavika-bold";
+  src: url("/assets/fonts/klavika/klavika-bold.otf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'klavika-bold', sans-serif;
+}
+
+a {
+  span {
+    font-family: 'klavika-bold', sans-serif;
+  }
+}
+
+/**************************
+general font
+*************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+p {
+  color: $paracolor;
+}
+
 .center-header {
   z-index: 1;
 }
@@ -77,20 +120,19 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   position: relative;
   font-size: 14px;
   color: $secondary;
   overflow-x: hidden;
 
   &.event {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 }
 
 h1,
 h2 {
-  font-family: "Capriola", sans-serif;
   text-transform: capitalize;
 }
 
@@ -117,7 +159,6 @@ h5,
 h6,
 li,
 a {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: normal;
 }
@@ -1879,6 +1920,8 @@ section {
           // color: $light-gray;
           color: $black;
           margin-bottom: 20px;
+          font-weight: 600;
+          font-family: 'Source Sans Pro', sans-serif;
         }
       }
     }
@@ -2595,7 +2638,7 @@ download section end
         font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
 
         &::placeholder {
-          font-family: work-sans, sans-serif;
+          font-family: 'Source Sans Pro', sans-serif;
           font-weight: 600;
           letter-spacing: 0.5px;
           font-size: 14px;
@@ -2761,6 +2804,7 @@ body {
 
   .copyright-text {
     font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -2778,7 +2822,7 @@ body {
 
     &:hover {
       color: #000 !important;
-      font-weight: 500 !important;
+      font-weight: bold !important;
     }
   }
 
@@ -3782,6 +3826,7 @@ footer {
 
         a {
           font-weight: 300;
+          font-family: 'Source Sans Pro', sans-serif;
           color: $black;
 
           &:hover {
@@ -4306,7 +4351,7 @@ booking section end
 
   h1,
   h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   h3,
@@ -4342,7 +4387,6 @@ booking section end
   h5,
   h6,
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
 
@@ -4493,6 +4537,7 @@ booking section end
 
         .post {
           margin-bottom: 15px;
+
         }
 
         .team-para {
@@ -4677,7 +4722,6 @@ booking section end
           }
 
           .title {
-            font-family: "Satisfy", cursive;
             line-height: normal;
             font-weight: 400;
             font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (1920 - 300)));
@@ -4861,11 +4905,7 @@ booking section end
           margin-right: 25px;
 
           .song-head,
-          .song-sub-head {
-            font-family: "PT Sans", sans-serif;
-          }
-
-          .song-head {
+          .song-sub-head .song-head {
             font-size: calc(14px + (16 - 14) * (100vw - 330px) / (1920 - 330));
           }
 
@@ -4996,7 +5036,6 @@ booking section end
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: normal;
   }
@@ -5011,7 +5050,6 @@ booking section end
   }
 
   h1 {
-    font-family: "PT Sans", sans-serif;
     text-transform: uppercase;
     font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1920 - 300)));
     font-weight: 700;
@@ -5579,7 +5617,6 @@ music css end
 
   h1,
   h2 {
-    font-family: "Poppins", sans-serif;
     text-transform: capitalize;
   }
 
@@ -5610,7 +5647,6 @@ music css end
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: normal;
   }
@@ -5824,12 +5860,11 @@ resume-theme css end
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   h1 {
     font-size: calc(22px + (200 - 22) * ((100vw - 300px) / (1920 - 300)));
-    font-family: "Alex Brush", cursive;
     margin-top: -33px;
     margin-bottom: -35px;
     line-height: normal;
@@ -5983,7 +6018,6 @@ resume-theme css end
     .text-container {
       .couple-text {
         .banner-text {
-          font-family: "Alex Brush", cursive;
           font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1920 - 300)));
           font-weight: 400;
           margin-bottom: 0;
@@ -6174,7 +6208,6 @@ wedding-theme css end
   p,
   li,
   a {
-    font-family: "Poppins", sans-serif;
     line-height: normal;
   }
 
@@ -6710,7 +6743,6 @@ yoga-theme css end
 
   h1,
   h2 {
-    font-family: "Poppins", sans-serif;
     text-transform: capitalize;
   }
 
@@ -6727,7 +6759,6 @@ yoga-theme css end
   h4,
   h5,
   h6 {
-    font-family: "Poppins", sans-serif;
     text-transform: capitalize;
   }
 
@@ -6809,6 +6840,15 @@ yoga-theme css end
   p {
     font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1920 - 300)));
     font-weight: 400;
+  }
+
+  &.rightAnimation {
+    .animated-bg i {
+      left: unset;
+      right: 0;
+      background: #dddddd;
+      box-shadow: 0 15px 30px 0 #dddddd;
+    }
   }
 
   .btn {
@@ -7474,6 +7514,9 @@ agency css end
 
       p {
         margin-bottom: unset;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: $paracolor;
       }
 
       .blog-text {
@@ -7490,8 +7533,10 @@ agency css end
       }
 
       .font-blog {
-        font-weight: 400;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', sans-serif;
         text-transform: none;
+        color: $paracolor;
       }
 
       .borders-before,
@@ -8307,7 +8352,7 @@ tap to top css end
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   h2,
@@ -8573,7 +8618,6 @@ tap to top css end
               counter-increment: section;
               content: counter(section);
               color: $white;
-              font-family: popins, sans-serif;
               left: -15px;
               font-size: 14px;
               color: #d6d6d6;
@@ -9276,7 +9320,8 @@ tap to top css end
             margin-bottom: 0;
             background-color: transparent;
             font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
-            font-weight: 500;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600;
             position: relative;
             color: #071828;
             padding: 12px 20px;
@@ -9570,7 +9615,7 @@ saas1 css end
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   nav {
@@ -10063,12 +10108,7 @@ wedding css start
     padding-bottom: 15px;
 
     .days {
-      font-family: "Alex Brush", cursive;
       display: block;
-
-      .days-text {
-        font-family: "Alex Brush", cursive;
-      }
     }
 
     .set-border-left {
@@ -10202,7 +10242,6 @@ wedding css start
           }
 
           .title {
-            font-family: "Alex Brush", cursive;
             line-height: normal;
             font-weight: 600;
             margin-top: 20px;
@@ -10270,7 +10309,6 @@ event css start
   li,
   p,
   a {
-    font-family: "Work Sans", sans-serif;
     font-weight: 500;
   }
 
@@ -10284,7 +10322,6 @@ event css start
   }
 
   h1 {
-    font-family: "Satisfy", cursive;
     font-size: calc(22px + (60 - 22) * ((100vw - 300px) / (1920 - 300)));
     margin-bottom: -12px;
     margin-top: -9px;
@@ -10624,7 +10661,7 @@ event css start
           font-size: 14px;
 
           &::placeholder {
-            font-family: "Work Sans", sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
           }
         }
       }
@@ -10707,7 +10744,6 @@ gym css start
 
   h1,
   h2 {
-    font-family: "Poppins", sans-serif;
     text-transform: capitalize;
   }
 
@@ -10738,7 +10774,6 @@ gym css start
   h6,
   li,
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
 
@@ -10751,7 +10786,7 @@ gym css start
   h5,
   h6,
   p {
-    color: $secondary;
+    color: $paracolor;
   }
 
   h1 {
@@ -10922,8 +10957,12 @@ gym css start
 
       .locationsubHeading {
         font-size: 16px;
+        font-weight: 600;
 
         a {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 600;
+
           &:hover {
             color: $orange;
           }
@@ -11894,6 +11933,8 @@ popup css start
       color: $primary;
       font-weight: 400;
       letter-spacing: 0.5px;
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif;
     }
   }
 }
@@ -12634,6 +12675,8 @@ blog-section css start
         position: relative;
 
         a {
+          font-weight: 600;
+          font-family: 'Source Sans Pro', sans-serif;
           color: $black;
           margin-left: 15px;
           transition: all 0.4s;
@@ -12673,10 +12716,13 @@ blog-section css start
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 10px;
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif;
     }
 
     .date {
       color: $black;
+      font-family: 'Source Sans Pro', sans-serif;
     }
 
     div {
@@ -12717,6 +12763,8 @@ blog-section css start
 
   input {
     padding: 16px 36px 16px 16px;
+    background: $white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
   }
 
   .blog-insta {
@@ -13044,7 +13092,6 @@ error css start
     }
 
     h2 {
-      font-family: "Work Sans", sans-serif;
       padding: 0 40px;
     }
 
@@ -13077,7 +13124,6 @@ error css end
         padding: 9px 25px 10px;
         border-radius: 0;
         color: #777;
-        font-family: "work-sans", sans-serif;
         font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
         line-height: 1;
         letter-spacing: 1px;
@@ -13107,7 +13153,6 @@ error css end
           font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
           line-height: 2.2;
           letter-spacing: 1px;
-          font-family: "Work Sans", sans-serif;
 
           &:hover,
           &:focus {
@@ -13198,7 +13243,6 @@ error css end
       display: inline-block;
 
       a {
-        font-family: "Work Sans", sans-serif;
         letter-spacing: 0;
       }
     }
@@ -17635,6 +17679,8 @@ error css end
     &.title-inner {
       .borders {
         span {
+          font-family: 'klavika-bold', sans-serif;
+
           &.white-border {
 
             &:before,
@@ -18092,7 +18138,7 @@ error css end
   p,
   li,
   a {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   h1 {
@@ -18162,7 +18208,7 @@ error css end
   p,
   li,
   a {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'klavika-bold', sans-serif;
   }
 
   h1,
@@ -18479,7 +18525,7 @@ header {
     padding: 2rem 1rem;
 
     nav ul li a {
-      font-size: 15px;
+      font-size: 17px;
     }
   }
 
@@ -20513,8 +20559,30 @@ footer {
 }
 
 .footer2 {
+
+
+  .footer-contant {
+    .footer-lists {
+      li {
+        a {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 16px;
+
+          &:hover {
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+  }
+
   .para-address {
     margin-bottom: 10px;
+    font-size: 16px;
+
+    strong {
+      font-family: 'klavika-bold', sans-serif;
+    }
 
     i {
       color: $orange;
@@ -20526,10 +20594,14 @@ footer {
 
     a {
       font-weight: 300;
+      font-size: 16px;
+      font-family: 'Source Sans Pro', sans-serif;
       color: $black;
+
 
       &:hover {
         color: $orange;
+        font-weight: bold;
       }
     }
   }
@@ -20676,6 +20748,8 @@ footer {
         font-size: 16px;
         text-align: center;
         margin-bottom: 2rem;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', sans-serif;
       }
 
     }

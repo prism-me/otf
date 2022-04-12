@@ -8,7 +8,7 @@ const Coaching = () => {
         <section className="coaching p-0">
             <Container>
                 <h2 className="oftHeading text-center">
-                    <span>MORE COACHING. MORE SUPPORT. MORE MOTIVATION.</span>
+                    MORE COACHING. MORE SUPPORT. MORE MOTIVATION.
                 </h2>
                 <p className="p-light oftsubHeading text-center">
                     Orangetheory Live delivers an energy-packed, full-body group personal training experience in an easy-to-use platform that makes you feel like you’re back in the studio. Get connected with a local coach who provides real-time feedback, motivation, and inspiration, and an intimate group setting that allows you to connect with the studio community before and after your workout.

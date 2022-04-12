@@ -9,7 +9,24 @@ import NewsLetter from "../../../containers/blog/newsletter"
 import Instagram from "../../../containers/blog/instagram"
 
 const Pressgrid = () => (
-    <section className="agency blog blog-sec blog-sidebar">
+    <section className="agency blog blog-sec blog-sidebar rightAnimation">
+        <div className="animated-bg"><i
+            style={{
+                background: "#f5822091",
+                boxShadow: "0 15px 30px 0 #f5822091"
+            }}
+        ></i>
+            <i
+                style={{
+                    background: "#f5822091",
+                    boxShadow: "0 15px 30px 0 #f5822091"
+                }}
+            ></i>
+            <i style={{
+                background: "#f5822091",
+                boxShadow: "0 15px 30px 0 #f5822091"
+            }}></i>
+        </div>
         <Container>
             <Row>
                 <Col lg="9" className="order-lg-2">

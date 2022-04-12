@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300&display=swap);
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9585,6 +9586,35 @@ a.text-dark:hover, a.text-dark:focus {
 /**************************
  1. general css start
 *************************/
+/**************************
+headings font
+*************************/
+@font-face {
+  font-family: "klavika-bold";
+  src: url("/assets/fonts/klavika/klavika-bold.otf"); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'klavika-bold', sans-serif; }
+
+a span {
+  font-family: 'klavika-bold', sans-serif; }
+
+/**************************
+general font
+*************************/
+* {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+p {
+  color: #2E2E2E; }
+
 .center-header {
   z-index: 1; }
 
@@ -9593,17 +9623,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: #FFFFFF; }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   position: relative;
   font-size: 14px;
   color: var(--secondary);
   overflow-x: hidden; }
   body.event {
-    font-family: "Work Sans", sans-serif; }
+    font-family: 'Source Sans Pro', sans-serif; }
 
 h1,
 h2 {
-  font-family: "Capriola", sans-serif;
   text-transform: capitalize; }
 
 h4,
@@ -9627,7 +9656,6 @@ h5,
 h6,
 li,
 a {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: normal; }
 
@@ -10706,7 +10734,9 @@ section {
     border-radius: 4px; }
   .pricing.gym .price-container .price-features .price-feature {
     color: #000000;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif; }
 
 .pricing.wedding .price-container.shadows {
   border-radius: 0; }
@@ -11151,7 +11181,7 @@ download section end
 .subscribe.event .form-group input, .subscribe.wedding .form-group input, .subscribe.yoga .form-group input {
   font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300))); }
   .subscribe.event .form-group input::placeholder, .subscribe.wedding .form-group input::placeholder, .subscribe.yoga .form-group input::placeholder {
-    font-family: work-sans, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 14px; }
@@ -11255,6 +11285,7 @@ body.menu-on:before {
   font-weight: 300; }
   .copyright .copyright-text {
     font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -11267,7 +11298,7 @@ body.menu-on:before {
       height: 100%; }
     .copyright .copyright-text:hover {
       color: #000 !important;
-      font-weight: 500 !important; }
+      font-weight: bold !important; }
   .copyright .fa-heart {
     color: #fb3b64; }
   .copyright .link-horizontal ul li {
@@ -11833,6 +11864,7 @@ footer {
       font-weight: 200; }
       footer .logo-sec .footer-para .para-address a {
         font-weight: 300;
+        font-family: 'Source Sans Pro', sans-serif;
         color: #000000; }
         footer .logo-sec .footer-para .para-address a:hover {
           color: #F58220; }
@@ -12139,7 +12171,7 @@ booking section end
   overflow: visible; }
   .app2 h1,
   .app2 h2 {
-    font-family: "Poppins", sans-serif; }
+    font-family: 'klavika-bold', sans-serif; }
   .app2 h3,
   .app2 h4,
   .app2 h5,
@@ -12165,7 +12197,6 @@ booking section end
   .app2 h5,
   .app2 h6,
   .app2 a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500; }
   .app2 h5,
   .app2 h6,
@@ -12349,7 +12380,6 @@ booking section end
         font-weight: 700;
         font-size: calc(30px + (45 - 30) * ((100vw - 300px) / (1920 - 300))); }
       .event-countdown .countdown ul li .event-counter .title {
-        font-family: "Satisfy", cursive;
         line-height: normal;
         font-weight: 400;
         font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (1920 - 300)));
@@ -12477,9 +12507,7 @@ booking section end
         justify-content: center;
         margin-right: 25px; }
         .music .music-container .play-bg .song-text-container .song-text .song-head,
-        .music .music-container .play-bg .song-text-container .song-text .song-sub-head {
-          font-family: "PT Sans", sans-serif; }
-        .music .music-container .play-bg .song-text-container .song-text .song-head {
+        .music .music-container .play-bg .song-text-container .song-text .song-sub-head .song-head {
           font-size: calc(14px + (16 - 14) * (100vw - 330px) / (1920 - 330)); }
         .music .music-container .play-bg .song-text-container .song-text .song-sub-head {
           font-size: 13px;
@@ -12570,7 +12598,6 @@ booking section end
 .music h6,
 .music li,
 .music a {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: normal; }
 
@@ -12583,7 +12610,6 @@ booking section end
   color: var(--secondary); }
 
 .music h1 {
-  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 700;
@@ -12930,7 +12956,6 @@ music css end
 
 .resume h1,
 .resume h2 {
-  font-family: "Poppins", sans-serif;
   text-transform: capitalize; }
 
 .resume h4,
@@ -12957,7 +12982,6 @@ music css end
 .resume h6,
 .resume li,
 .resume a {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: normal; }
 
@@ -13105,11 +13129,10 @@ resume-theme css end
 .wedding h6,
 .wedding li,
 .wedding a {
-  font-family: "Poppins", sans-serif; }
+  font-family: 'klavika-bold', sans-serif; }
 
 .wedding h1 {
   font-size: calc(22px + (200 - 22) * ((100vw - 300px) / (1920 - 300)));
-  font-family: "Alex Brush", cursive;
   margin-top: -33px;
   margin-bottom: -35px;
   line-height: normal; }
@@ -13207,7 +13230,6 @@ resume-theme css end
   position: relative; }
 
 .wedding .wedding-banner .text-container .couple-text .banner-text {
-  font-family: "Alex Brush", cursive;
   font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 400;
   margin-bottom: 0;
@@ -13304,7 +13326,6 @@ wedding-theme css end
 .yoga p,
 .yoga li,
 .yoga a {
-  font-family: "Poppins", sans-serif;
   line-height: normal; }
 
 .yoga h1 {
@@ -13607,7 +13628,6 @@ yoga-theme css end
 *************************/
 .agency h1,
 .agency h2 {
-  font-family: "Poppins", sans-serif;
   text-transform: capitalize; }
 
 .agency h4,
@@ -13622,7 +13642,6 @@ yoga-theme css end
 .agency h4,
 .agency h5,
 .agency h6 {
-  font-family: "Poppins", sans-serif;
   text-transform: capitalize; }
 
 .agency h2,
@@ -13685,6 +13704,12 @@ yoga-theme css end
 .agency p {
   font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 400; }
+
+.agency.rightAnimation .animated-bg i {
+  left: unset;
+  right: 0;
+  background: #dddddd;
+  box-shadow: 0 15px 30px 0 #dddddd; }
 
 .agency .btn {
   text-transform: uppercase; }
@@ -14087,7 +14112,10 @@ agency css end
     padding: 28px;
     bottom: 0; }
     .blog .img-container .blog-info p {
-      margin-bottom: unset; }
+      margin-bottom: unset;
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #2E2E2E; }
     .blog .img-container .blog-info .blog-text {
       letter-spacing: 0;
       margin-bottom: 15px; }
@@ -14098,8 +14126,10 @@ agency css end
     .blog .img-container .blog-info i {
       color: #FFFFFF; }
     .blog .img-container .blog-info .font-blog {
-      font-weight: 400;
-      text-transform: none; }
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: none;
+      color: #2E2E2E; }
     .blog .img-container .blog-info .borders-before,
     .blog .img-container .blog-info .small-font {
       font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
@@ -14594,7 +14624,7 @@ tap to top css end
 .saas1 h6,
 .saas1 li,
 .saas1 a {
-  font-family: "Poppins", sans-serif; }
+  font-family: 'klavika-bold', sans-serif; }
 
 .saas1 h2,
 .saas1 h3,
@@ -14784,7 +14814,6 @@ tap to top css end
             counter-increment: section;
             content: counter(section);
             color: #FFFFFF;
-            font-family: popins, sans-serif;
             left: -15px;
             font-size: 14px;
             color: #d6d6d6;
@@ -15196,7 +15225,8 @@ tap to top css end
       margin-bottom: 0;
       background-color: transparent;
       font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
-      font-weight: 500;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
       position: relative;
       color: #071828;
       padding: 12px 20px; }
@@ -15370,7 +15400,7 @@ saas1 css end
 .saas2 h6,
 .saas2 li,
 .saas2 a {
-  font-family: "Poppins", sans-serif; }
+  font-family: 'klavika-bold', sans-serif; }
 
 .saas2 nav {
   padding: 0; }
@@ -15664,10 +15694,7 @@ wedding css start
     padding-left: 15px;
     padding-bottom: 15px; }
     .wedding-time .count .days {
-      font-family: "Alex Brush", cursive;
       display: block; }
-      .wedding-time .count .days .days-text {
-        font-family: "Alex Brush", cursive; }
     .wedding-time .count .set-border-left {
       position: absolute;
       border-left: 5px solid var(--dark);
@@ -15763,7 +15790,6 @@ wedding css start
           font-weight: 600;
           font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300))); }
         .timimg-wedding .countdown ul li .event-counter .title {
-          font-family: "Alex Brush", cursive;
           line-height: normal;
           font-weight: 600;
           margin-top: 20px;
@@ -15809,7 +15835,6 @@ event css start
 .event li,
 .event p,
 .event a {
-  font-family: "Work Sans", sans-serif;
   font-weight: 500; }
 
 .event h2,
@@ -15821,7 +15846,6 @@ event css start
   color: var(--secondary); }
 
 .event h1 {
-  font-family: "Satisfy", cursive;
   font-size: calc(22px + (60 - 22) * ((100vw - 300px) / (1920 - 300)));
   margin-bottom: -12px;
   margin-top: -9px; }
@@ -16036,7 +16060,7 @@ event css start
 .event.booking .form-inline .form-group input {
   font-size: 14px; }
   .event.booking .form-inline .form-group input::placeholder {
-    font-family: "Work Sans", sans-serif; }
+    font-family: 'Source Sans Pro', sans-serif; }
 
 .event.zoom-gallery .filter-section .filter-container.nav-tabs .nav-link.active {
   background-color: var(--primary);
@@ -16065,7 +16089,6 @@ gym css start
 *************************/
 .gym h1,
 .gym h2 {
-  font-family: "Poppins", sans-serif;
   text-transform: capitalize; }
 
 .gym h4,
@@ -16092,7 +16115,6 @@ gym css start
 .gym h6,
 .gym li,
 .gym a {
-  font-family: "Poppins", sans-serif;
   font-weight: 500; }
 
 .gym h2,
@@ -16103,7 +16125,7 @@ gym css start
 .gym h5,
 .gym h6,
 .gym p {
-  color: var(--secondary); }
+  color: #2E2E2E; }
 
 .gym h1 {
   font-size: calc(22px + (60 - 22) * ((100vw - 300px) / (1920 - 300)));
@@ -16231,9 +16253,13 @@ gym css start
     text-transform: capitalize;
     margin-bottom: 1rem; }
   .gym.bg-location .locationDiv .locationsubHeading {
-    font-size: 16px; }
-    .gym.bg-location .locationDiv .locationsubHeading a:hover {
-      color: #F58220; }
+    font-size: 16px;
+    font-weight: 600; }
+    .gym.bg-location .locationDiv .locationsubHeading a {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600; }
+      .gym.bg-location .locationDiv .locationsubHeading a:hover {
+        color: #F58220; }
   .gym.bg-location .locationDiv .iconstyelLocation {
     background: #FFFFFF;
     padding: 2rem;
@@ -16817,7 +16843,9 @@ popup css start
 .speaker .employee .post {
   color: var(--primary);
   font-weight: 400;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 /*************************
   Popup css end
@@ -17249,6 +17277,8 @@ blog-section css start
     border-bottom: 1px solid #eee;
     position: relative; }
     .blog-sidebar .sidebar-container .sidebar-list li a {
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif;
       color: #000000;
       margin-left: 15px;
       transition: all 0.4s; }
@@ -17272,9 +17302,12 @@ blog-section css start
   .blog-sidebar .post-container .post-head {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif; }
   .blog-sidebar .post-container .date {
-    color: #000000; }
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif; }
   .blog-sidebar .post-container div {
     position: relative; }
     .blog-sidebar .post-container div.w-35 {
@@ -17298,7 +17331,9 @@ blog-section css start
         background: #ffd200; }
 
 .blog-sidebar input {
-  padding: 16px 36px 16px 16px; }
+  padding: 16px 36px 16px 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14); }
 
 .blog-sidebar .blog-insta {
   display: flex; }
@@ -17535,7 +17570,6 @@ error css start
       display: block;
       padding-top: 10px; }
     .coming-soon .count h2 {
-      font-family: "Work Sans", sans-serif;
       padding: 0 40px; }
     .coming-soon .count .days {
       font-weight: 300; }
@@ -17558,7 +17592,6 @@ error css end
     padding: 9px 25px 10px;
     border-radius: 0;
     color: #777;
-    font-family: "work-sans", sans-serif;
     font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1;
     letter-spacing: 1px; }
@@ -17574,8 +17607,7 @@ error css end
       color: #777;
       font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
       line-height: 2.2;
-      letter-spacing: 1px;
-      font-family: "Work Sans", sans-serif; }
+      letter-spacing: 1px; }
       .filter-section .filter-container ul > li > a:hover, .filter-section .filter-container ul > li > a:focus {
         text-decoration: none;
         color: var(--primary);
@@ -17633,7 +17665,6 @@ error css end
   .portfolio-section .list-inline li {
     display: inline-block; }
     .portfolio-section .list-inline li a {
-      font-family: "Work Sans", sans-serif;
       letter-spacing: 0; }
 
 .portfolio-section .center_tag {
@@ -20653,12 +20684,13 @@ error css end
 .borders-before span.white-border:before {
   border-color: #FFFFFF !important; }
 
-.title.title2.title-inner .borders span.white-border:before, .title.title2.title-inner .borders span.white-border:after {
-  border-color: #FFFFFF; }
-
-.title.title2.title-inner .borders span:before, .title.title2.title-inner .borders span:after {
-  border-color: var(--primary);
-  opacity: 0.6; }
+.title.title2.title-inner .borders span {
+  font-family: 'klavika-bold', sans-serif; }
+  .title.title2.title-inner .borders span.white-border:before, .title.title2.title-inner .borders span.white-border:after {
+    border-color: #FFFFFF; }
+  .title.title2.title-inner .borders span:before, .title.title2.title-inner .borders span:after {
+    border-color: var(--primary);
+    opacity: 0.6; }
 
 .side-section {
   height: 100vh;
@@ -20957,7 +20989,7 @@ error css end
 .creative p,
 .creative li,
 .creative a {
-  font-family: "Work Sans", sans-serif; }
+  font-family: 'klavika-bold', sans-serif; }
 
 .creative h1 {
   font-weight: 500;
@@ -21005,7 +21037,7 @@ error css end
 .portfolio-metro p,
 .portfolio-metro li,
 .portfolio-metro a {
-  font-family: "Montserrat", sans-serif; }
+  font-family: 'klavika-bold', sans-serif; }
 
 .portfolio-metro h1,
 .portfolio-metro h2,
@@ -21216,7 +21248,7 @@ header {
   header.nav-lg {
     padding: 2rem 1rem; }
     header.nav-lg nav ul li a {
-      font-size: 15px; }
+      font-size: 17px; }
   header.resume .responsive-btn i, header.dark .responsive-btn i {
     color: #000000 !important; }
   header.dark nav {
@@ -22498,17 +22530,29 @@ footer.saas1 h5 {
   .topheader a {
     color: #F58220; }
 
+.footer2 .footer-contant .footer-lists li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px; }
+  .footer2 .footer-contant .footer-lists li a:hover {
+    font-weight: bold !important; }
+
 .footer2 .para-address {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 16px; }
+  .footer2 .para-address strong {
+    font-family: 'klavika-bold', sans-serif; }
   .footer2 .para-address i {
     color: #F58220; }
   .footer2 .para-address span {
     font-weight: 300; }
   .footer2 .para-address a {
     font-weight: 300;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #000000; }
     .footer2 .para-address a:hover {
-      color: #F58220; }
+      color: #F58220;
+      font-weight: bold; }
 
 .contenedor {
   /*hovers*/ }
@@ -22611,7 +22655,9 @@ footer.saas1 h5 {
     .plans .plans-container .plans-features .plans-feature {
       font-size: 16px;
       text-align: center;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-family: 'Source Sans Pro', sans-serif; }
 
 .plans .otfBtn2 {
   color: #000000;

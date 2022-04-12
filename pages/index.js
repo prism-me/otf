@@ -29,14 +29,14 @@ const Gym = () => {
       bannerImg: "/assets/images/OTF/banner/homeBannerSlider.jpg",
       title: "The Smartest Workout for More Results",
       detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-      btn1: "book class now",
+      btn1: "BOOK A FREE CLASS NOW",
       btn2: "view membership details"
     },
     {
       bannerImg: "/assets/images/OTF/banner/homeBannerSlider.jpg",
       title: "The Smartest Workout for More Results",
       detail: "Aliquet nullam cursus mollis donec imperdiet enim viverra. A ac tincidunt mollis sit sed placerat diam bibendum porta. Egestas nisl viverra arcu faucibus.",
-      btn1: "book class now",
+      btn1: "BOOK A FREE CLASS NOW",
       btn2: "view membership details"
     }
   ];
@@ -112,7 +112,7 @@ const Gym = () => {
       <CounterSection
         title="Get 10% off during this festive season!"
         subtitle="Senectus viverra laoreet proin eget. Ullamcorper in lorem nisl aliquet orci enim vel, a. Ut quis luctus massa."
-        btntext="Book a class now"
+        btntext="BOOK A FREE CLASS NOW"
         bgImg="/assets/images/OTF/home/get-off.jpg"
 
       />
