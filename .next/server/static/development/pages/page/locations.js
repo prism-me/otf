@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3053,9 +3053,9 @@ const Calculate = () => __jsx("section", {
   style: {
     border: "0"
   },
-  allowfullscreen: "",
+  allowFullScreen: "",
   loading: "lazy",
-  referrerpolicy: "no-referrer-when-downgrade",
+  referrerPolicy: "no-referrer-when-downgrade",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -3320,7 +3320,7 @@ const Footer = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     columnNumber: 37
   }
 }, __jsx("a", {
-  href: "#",
+  href: "/page/about-us?#mission",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -3694,7 +3694,7 @@ const Locations = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***************************************!*\
   !*** multi ./pages/page/locations.js ***!
   \***************************************/

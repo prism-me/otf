@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap'
-const About = ({ title, detail, info1title, info1detail, info2title, info2detail, info3title, info3detail }) => (
-    <section className="gym format about-detail pb-2">
+const About = ({ divId, title, detail, info1title, info1detail, info2title, info2detail, info3title, info3detail }) => (
+    <section className="gym format about-detail pb-2" id={divId && divId}>
         <Container>
             <Row>
                 <Col md="8" className="offset-md-2">

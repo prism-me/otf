@@ -20,6 +20,7 @@ const AboutUs = () => (
     >
 
         <AbouSection
+            divId="mission"
             title="a little about orange theory"
             detail="Orangetheory is a 1 hour, full body workout, focused on training Endurance, Strength and/or Power. We use Heart Rate Based Interval Training, which burns more calories post workout than a traditional exercise. When wearing our Heart Rate monitors, your real time results are displayed on large screens throughout the studio. Intensity is based on your individual Heart Rate zones, making the workout effective for all fitness levels. To top it off, our fitness coaches to lead the workout to prevent you from over or under training."
             info1title="Our Mission"

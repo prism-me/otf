@@ -42,7 +42,7 @@ const Footer = () => (
                                         <a href="#">Select You Locations</a>
                                     </li>
                                     <li>
-                                        <a href="#">Our Mission, Vision, & Values</a>
+                                        <a href="/page/about-us?#mission">Our Mission, Vision, & Values</a>
                                     </li>
                                     <li>
                                         <a href="/page/press">Press</a>

@@ -33016,9 +33016,9 @@ var Calculate = function Calculate() {
     style: {
       border: "0"
     },
-    allowfullscreen: "",
+    allowFullScreen: "",
     loading: "lazy",
-    referrerpolicy: "no-referrer-when-downgrade",
+    referrerPolicy: "no-referrer-when-downgrade",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -33397,7 +33397,7 @@ var Footer = function Footer() {
       columnNumber: 37
     }
   }, __jsx("a", {
-    href: "#",
+    href: "/page/about-us?#mission",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -34556,7 +34556,7 @@ var Trainer = function Trainer(_ref) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 9:
 /*!***********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=I%3A%5CPrism%20Projects%5COTF%5Cotf%5Cpages%5Cindex.js ***!
   \***********************************************************************************************************************/
@@ -34579,5 +34579,5 @@ module.exports = dll_f7def7ba0dcb228c444e;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]);
+},[[9,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
