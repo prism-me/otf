@@ -18,7 +18,7 @@ const Offerbanner = () => {
         >
             <Container>
                 <Row>
-                    <Col sm={6} className='d-flex flex-column align-items-center justify-content-center'>
+                    <Col sm={6} className='d-flex flex-column align-items-start justify-content-center'>
                         <h2 className="offer-text">
                             WORK 1 HOUR. BURN FOR 36
                         </h2>

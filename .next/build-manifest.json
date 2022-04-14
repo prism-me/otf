@@ -26,7 +26,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/page/articles-detail": [
+    "/page/offers": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
