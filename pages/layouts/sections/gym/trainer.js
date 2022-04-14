@@ -36,7 +36,8 @@ const Trainer = ({ testimonial, title }) => (
             <Row>
                 <Col xs="12">
                     <Slider className="owl-carousel owl-theme trainers-slider" id="trainers-slider" {...settings}>
-                        {testimonial.length > 0 &&
+                        {testimonial &&
+                            testimonial.length > 0 &&
                             testimonial.map((x, i) => (
                                 <div className="item" key={i}>
                                     <img alt="" className="img-fluid" src={x.img} />

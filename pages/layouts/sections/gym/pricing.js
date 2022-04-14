@@ -62,29 +62,31 @@ const Pricing = () => (
                 </Col>
                 <Col lg="12" md="8" className="offset-md-2 offset-lg-0">
                     <Slider className="pricing-slider price-margin" {...settings}>
-                        {PricingResume2.length > 0 && PricingResume2.map((item, i) => {
-                            return (
-                                <div className="item" key={i}>
-                                    <div className="price-container hover-overlay shadows bg-white text-center">
-                                        <div className="price-feature-container set-relative">
-                                            <div className="feature-text">
-                                                <center>
-                                                    <img src={item.icon} className="feature-icon1 mb-4" alt={"icon"} />
-                                                    <img src={item.iconW} className="feature-icon2 d-none mb-4" alt={"icon"} />
-                                                </center>
-                                                <h4 className="feature-text-heading text-center bold text-uppercase font-primary">{item.title}</h4>
-                                                <hr className="set-border" />
+                        {PricingResume2 &&
+                            PricingResume2.length > 0
+                            && PricingResume2.map((item, i) => {
+                                return (
+                                    <div className="item" key={i}>
+                                        <div className="price-container hover-overlay shadows bg-white text-center">
+                                            <div className="price-feature-container set-relative">
+                                                <div className="feature-text">
+                                                    <center>
+                                                        <img src={item.icon} className="feature-icon1 mb-4" alt={"icon"} />
+                                                        <img src={item.iconW} className="feature-icon2 d-none mb-4" alt={"icon"} />
+                                                    </center>
+                                                    <h4 className="feature-text-heading text-center bold text-uppercase font-primary">{item.title}</h4>
+                                                    <hr className="set-border" />
+                                                </div>
+                                                <div className="price-features font-primary">
+                                                    <h5 className="price-feature text-center mb-1">{item.feature1}</h5>
+                                                    <h5 className="price-feature text-center">{item.feature2}</h5>
+                                                </div>
+                                                <a className="otfBtn2" href="#">join now</a>
                                             </div>
-                                            <div className="price-features font-primary">
-                                                <h5 className="price-feature text-center mb-1">{item.feature1}</h5>
-                                                <h5 className="price-feature text-center">{item.feature2}</h5>
-                                            </div>
-                                            <a className="otfBtn2" href="#">join now</a>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
                     </Slider>
                 </Col>
             </Row>

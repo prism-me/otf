@@ -111,3 +111,12 @@ $theme-deafult: #000;
 $grey-about: #f7f7f7;
 $font-color:#333333;
 $star-yellow: #ffa200;
+
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "(max-width: 767px)";
+$lsm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xsm: "(max-width: 575px)";
+$mXsm: "only screen and (min-width: 400px) and (max-width: 574px)";
+$tiny: "(max-width: 399px)";
+$mTiny: "only screen and (min-width: 200px) and (max-width: 398px)";

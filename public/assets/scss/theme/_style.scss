@@ -1054,8 +1054,17 @@ section {
   ul {
     display: flex;
 
+    @media #{$sm} {
+      display: block;
+
+    }
+
     li {
       padding-right: 35px;
+
+      @media #{$sm} {
+        padding-right: 0px !important;
+      }
 
       &.borders-right {
         border-right: 1px solid $white;
@@ -1071,6 +1080,10 @@ section {
 
       a {
         background-color: transparent;
+
+        @media #{$sm} {
+          margin-bottom: 1rem;
+        }
 
         &.icon-btn {
           i {
@@ -3182,7 +3195,11 @@ header {
         text-transform: capitalize;
         font-size: 40px;
         font-weight: 700;
+
         // font-style: italic;
+        @media #{$sm} {
+          font-size: 25px;
+        }
       }
 
       .header-sub-text {
@@ -9115,6 +9132,10 @@ tap to top css end
       color: $orange;
       text-align: center;
       margin-bottom: 1rem;
+
+      @media #{$sm} {
+        font-size: 22px;
+      }
     }
 
     &.rightAnimation {
@@ -9306,6 +9327,10 @@ tap to top css end
       color: $black;
       text-align: center;
       margin-bottom: 2rem;
+
+      @media #{$sm} {
+        font-size: 22px;
+      }
     }
 
     .faq-block {
@@ -9364,6 +9389,10 @@ tap to top css end
         color: $black;
         text-align: center;
         margin-bottom: 2rem;
+
+        @media #{$sm} {
+          font-size: 22px;
+        }
       }
 
       h6 {
@@ -10826,6 +10855,11 @@ gym css start
     color: $orange;
     text-align: center;
     margin-bottom: 2rem;
+
+    @media #{$sm} {
+      font-size: 22px;
+      margin-bottom: 2rem !important;
+    }
   }
 
   .oftsubHeading {
@@ -10907,6 +10941,24 @@ gym css start
       padding: 4rem 0 3rem 3rem;
       margin: 0 2rem;
 
+      @media #{$xsm} {
+        margin: 0 1rem;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .formatedetailDiv {
+        @media #{$xsm} {
+          display: block !important;
+        }
+      }
+
+      .formateImg {
+        @media #{$xsm} {
+          margin-bottom: 2rem;
+        }
+      }
+
       .formatHeading {
         color: $white;
         font-size: 20px;
@@ -10927,6 +10979,17 @@ gym css start
       background-position: right;
       background-size: cover;
       background-color: $black;
+
+      .calLocationspacing {
+        @media #{$sm} {
+          padding: 3rem 0 !important;
+        }
+
+        @media #{$md} {
+          padding: 2rem 0 !important;
+        }
+
+      }
 
       .formStyle {
         padding: 8rem 4rem;
@@ -10977,6 +11040,10 @@ gym css start
         border-radius: 100%;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
 
+        @media #{$sm} {
+          margin-top: 1.5rem;
+        }
+
         &:hover {
           color: $white;
           background: $orange;
@@ -10988,6 +11055,10 @@ gym css start
   &.locations {
     .locationImg {
       position: relative;
+
+      @media #{$sm} {
+        margin-bottom: 2rem;
+      }
     }
 
     .image {
@@ -11129,6 +11200,10 @@ gym css start
     }
 
     .slick-dots {
+      @media #{$xsm} {
+        margin-bottom: 1.5rem;
+      }
+
       li {
         margin-top: 40px !important;
         line-height: 1;
@@ -12078,6 +12153,10 @@ breadcrumb-section css start
     color: $white;
     text-align: center;
     margin-bottom: 2rem;
+
+    @media #{$sm} {
+      font-size: 25px;
+    }
   }
 
   .breadcrumb-subtext {
@@ -12097,12 +12176,20 @@ breadcrumb-section css start
     font-weight: 700;
     color: $white;
     margin-bottom: 2rem;
+
+    @media #{$sm} {
+      font-size: 25px;
+    }
   }
 
   .offer-subtext {
     color: $white;
     font-size: 25px;
     margin-bottom: 2rem;
+
+    @media #{$sm} {
+      font-size: 22px;
+    }
   }
 
   .offer-detail {
@@ -17681,6 +17768,10 @@ error css end
         span {
           font-family: 'klavika-bold', sans-serif;
 
+          @media #{$sm} {
+            font-size: 22px;
+          }
+
           &.white-border {
 
             &:before,
@@ -20689,6 +20780,10 @@ footer {
     font-weight: 700;
     color: $orange;
     text-transform: capitalize;
+
+    @media #{$sm} {
+      font-size: 22px;
+    }
   }
 
   .imgOfferContainer {
@@ -20819,6 +20914,10 @@ footer {
                 font-weight: 700;
                 color: $orange;
                 margin-bottom: 2rem;
+
+                @media #{$sm} {
+                  font-size: 22px;
+                }
               }
 
               .oftsubHeading {
@@ -20902,6 +21001,10 @@ footer {
     font-weight: 700;
     color: $orange;
     margin-bottom: 2rem;
+
+    @media #{$sm} {
+      font-size: 22px;
+    }
   }
 
   .oftsubHeading {

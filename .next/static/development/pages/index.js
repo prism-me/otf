@@ -32491,7 +32491,7 @@ var About = function About() {
     }
   }, __jsx("img", {
     alt: "",
-    className: "img-fluid format-img",
+    className: "img-fluid format-img mb-3",
     src: "/assets/images/OTF/home/warrior-2-pose.png",
     __self: _this,
     __source: {
@@ -32618,7 +32618,7 @@ var Banner = function Banner(_ref) {
       lineNumber: 18,
       columnNumber: 13
     }
-  }), sliderData.length > 0 && sliderData.map(function (x, i) {
+  }), sliderData && sliderData.length > 0 && sliderData.map(function (x, i) {
     return __jsx("div", {
       className: "item",
       key: i,
@@ -32824,7 +32824,9 @@ var Calculate = function Calculate() {
       columnNumber: 13
     }
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: 6,
+    sm: 12,
+    md: 6,
+    lg: 6,
     className: "BGImgLocation p-0",
     style: {
       backgroundImage: "url('/assets/images/OTF/home/locationbg.jpg')"
@@ -32836,7 +32838,7 @@ var Calculate = function Calculate() {
       columnNumber: 17
     }
   }, __jsx("div", {
-    className: "p-5 mx-5 mb-4",
+    className: "p-5 mx-5 mb-4 calLocationspacing",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -33003,7 +33005,9 @@ var Calculate = function Calculate() {
       columnNumber: 41
     }
   }))))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: 6,
+    sm: 12,
+    md: 6,
+    lg: 6,
     className: "p-0",
     __self: _this,
     __source: {
@@ -33832,7 +33836,7 @@ var Format = function Format() {
       lineNumber: 45,
       columnNumber: 17
     }
-  }, featureData.length > 0 && featureData.map(function (x, i) {
+  }, featureData && featureData.length > 0 && featureData.map(function (x, i) {
     return __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
       md: "6",
       key: i,
@@ -33840,14 +33844,14 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 29
       }
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 33
       }
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -33855,26 +33859,26 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 37
       }
     }, __jsx("img", {
       alt: "",
-      className: "img-fluid",
+      className: "img-fluid formateImg",
       src: x.img,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 41
       }
     })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
       sm: 10,
-      className: "d-flex flex-column justify-content-center align-items-start",
+      className: "d-flex flex-column justify-content-center align-items-start formatedetailDiv",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
+        lineNumber: 54,
         columnNumber: 37
       }
     }, __jsx("h4", {
@@ -33882,7 +33886,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 55,
         columnNumber: 41
       }
     }, x.title), __jsx("p", {
@@ -33890,7 +33894,7 @@ var Format = function Format() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55,
+        lineNumber: 56,
         columnNumber: 41
       }
     }, x.subtitle))));
@@ -34025,46 +34029,46 @@ var Pricing = function Pricing() {
       lineNumber: 64,
       columnNumber: 21
     }
-  }), PricingResume2.length > 0 && PricingResume2.map(function (item, i) {
+  }), PricingResume2 && PricingResume2.length > 0 && PricingResume2.map(function (item, i) {
     return __jsx("div", {
       className: "item",
       key: i,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67,
-        columnNumber: 33
+        lineNumber: 69,
+        columnNumber: 37
       }
     }, __jsx("div", {
       className: "price-container hover-overlay shadows bg-white text-center",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68,
-        columnNumber: 37
+        lineNumber: 70,
+        columnNumber: 41
       }
     }, __jsx("div", {
       className: "price-feature-container set-relative",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 41
+        lineNumber: 71,
+        columnNumber: 45
       }
     }, __jsx("div", {
       className: "feature-text",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 45
+        lineNumber: 72,
+        columnNumber: 49
       }
     }, __jsx("center", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
-        columnNumber: 49
+        lineNumber: 73,
+        columnNumber: 53
       }
     }, __jsx("img", {
       src: item.icon,
@@ -34073,8 +34077,8 @@ var Pricing = function Pricing() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
-        columnNumber: 53
+        lineNumber: 74,
+        columnNumber: 57
       }
     }), __jsx("img", {
       src: item.iconW,
@@ -34083,48 +34087,48 @@ var Pricing = function Pricing() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
-        columnNumber: 53
+        lineNumber: 75,
+        columnNumber: 57
       }
     })), __jsx("h4", {
       className: "feature-text-heading text-center bold text-uppercase font-primary",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 49
+        lineNumber: 77,
+        columnNumber: 53
       }
     }, item.title), __jsx("hr", {
       className: "set-border",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 49
+        lineNumber: 78,
+        columnNumber: 53
       }
     })), __jsx("div", {
       className: "price-features font-primary",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
-        columnNumber: 45
+        lineNumber: 80,
+        columnNumber: 49
       }
     }, __jsx("h5", {
       className: "price-feature text-center mb-1",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
-        columnNumber: 49
+        lineNumber: 81,
+        columnNumber: 53
       }
     }, item.feature1), __jsx("h5", {
       className: "price-feature text-center",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80,
-        columnNumber: 49
+        lineNumber: 82,
+        columnNumber: 53
       }
     }, item.feature2)), __jsx("a", {
       className: "otfBtn2",
@@ -34132,8 +34136,8 @@ var Pricing = function Pricing() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
-        columnNumber: 45
+        lineNumber: 84,
+        columnNumber: 49
       }
     }, "join now"))));
   }))))));
@@ -34506,14 +34510,14 @@ var Trainer = function Trainer(_ref) {
       lineNumber: 38,
       columnNumber: 21
     }
-  }), testimonial.length > 0 && testimonial.map(function (x, i) {
+  }), testimonial && testimonial.length > 0 && testimonial.map(function (x, i) {
     return __jsx("div", {
       className: "item",
       key: i,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 42,
         columnNumber: 33
       }
     }, __jsx("img", {
@@ -34523,7 +34527,7 @@ var Trainer = function Trainer(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 37
       }
     }), __jsx("div", {
@@ -34531,7 +34535,7 @@ var Trainer = function Trainer(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 37
       }
     }, __jsx("h4", {
@@ -34539,7 +34543,7 @@ var Trainer = function Trainer(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 41
       }
     }, x.title), __jsx("p", {
@@ -34547,7 +34551,7 @@ var Trainer = function Trainer(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 41
       }
     }, x.subtitle)));

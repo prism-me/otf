@@ -35,7 +35,8 @@ const Plans = () => {
                             Ready to change the way you look, the way you feel, and your life? From free trial workout to monthly packages, Orangetheory has a plan perfect for you. By investing in your health today, you’re also investing in a longer, stronger and more vibrant future.
                         </p>
                     </Col>
-                    {plansData.length > 0 &&
+                    {plansData &&
+                        plansData.length > 0 &&
                         plansData.map((item, i) => (
                             <Col sm={4} key={i} className="mb-3">
                                 <div className="plans-container hover-overlay text-center">

@@ -16,7 +16,7 @@ const Banner = ({ sliderData }) => (
     <section className="gym header" id="home">
         <div className="header5-content">
             <Slider className="default-dots gym-slider" id="gym-slider" {...settings}>
-                {
+                {sliderData &&
                     sliderData.length > 0 &&
                     sliderData.map((x, i) => (
                         <div className="item" key={i}>

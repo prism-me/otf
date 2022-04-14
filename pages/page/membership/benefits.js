@@ -25,7 +25,8 @@ const Benefits = ({ benefitList }) => (
         <Container>
             <h3 className="oftHeading text-dark">Membership Benefits</h3>
             <Row>
-                {benefitList.length > 0 &&
+                {benefitList &&
+                    benefitList.length > 0 &&
                     benefitList.map((x, i) => (
                         <Col lg="4" md="4" className="offset-md-2 offset-lg-0" key={i}>
                             <div>
@@ -41,7 +42,7 @@ const Benefits = ({ benefitList }) => (
                                     />
                                 </center>
                             </div>
-                            <p className='p-light oftsubHeading text-center mt-3'>
+                            <p className='p-light oftsubHeading text-center my-3'>
                                 {
                                     x.title
                                 }
@@ -51,7 +52,7 @@ const Benefits = ({ benefitList }) => (
                 }
             </Row>
             <center>
-                <button className='otfBtn1 mt-5 px-5'
+                <button className='otfBtn1 mt-3 px-5'
                     style={{ border: "1px solid #F58220" }}
                 >
                     Avail now

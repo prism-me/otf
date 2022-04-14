@@ -20,7 +20,7 @@ const Coaching = () => {
                     style={{ backgroundImage: `url("/assets/images/OTF/offer/sciencebakedbg.jpg")` }}
                 >
                     <Col sm={6}>
-                        <img src="/assets/images/OTF/offer/sciencebaked.png" className='img-fluid' alt={"img"} />
+                        <img src="/assets/images/OTF/offer/sciencebaked.png" className='img-fluid mb-3' alt={"img"} />
                     </Col>
                     <Col sm={6} className="d-flex flex-column justify-content-center align-items-center">
                         <Container>

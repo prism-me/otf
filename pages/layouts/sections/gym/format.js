@@ -43,14 +43,15 @@ const Format = () => (
         <Container fluid>
             <div className='bgFeature'>
                 <Row>
-                    {featureData.length > 0 &&
+                    {featureData &&
+                        featureData.length > 0 &&
                         featureData.map((x, i) => (
                             <Col md="6" key={i} className="mb-4">
                                 <Row>
                                     <Col sm="2">
-                                        <img alt="" className="img-fluid" src={x.img} />
+                                        <img alt="" className="img-fluid formateImg" src={x.img} />
                                     </Col>
-                                    <Col sm={10} className={"d-flex flex-column justify-content-center align-items-start"} >
+                                    <Col sm={10} className={"d-flex flex-column justify-content-center align-items-start formatedetailDiv"} >
                                         <h4 className="formatHeading">{x.title}</h4>
                                         <p className="p-light formatsubHeading">
                                             {x.subtitle}

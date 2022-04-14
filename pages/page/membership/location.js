@@ -5,7 +5,7 @@ const Location = () => (
     <section className="gym locations pb-0" id="plan">
         <Container>
             <Row>
-                <Col lg="4" md="4" className="offset-md-2 offset-lg-0">
+                <Col lg="4" md="4" className="offset-lg-0">
                     <div class="locationImg">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6032486928893!2d55.25071151432762!3d25.216599037102654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4362916220b1%3A0x175f64a16111cae7!2sOrangetheory%20Fitness%20at%20Mercato%20Mall!5e0!3m2!1sen!2s!4v1649050081764!5m2!1sen!2s"
                             width="100%" height="370px" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -23,7 +23,7 @@ const Location = () => (
                         </div>
                     </div>
                 </Col>
-                <Col lg="4" md="4" className="offset-md-2 offset-lg-0">
+                <Col lg="4" md="4" className="offset-lg-0">
                     <div class="locationImg">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.8857122970785!2d55.21780921448317!3d25.13955444020715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6bd35b12bb4b%3A0x625190607a7e36d8!2sTimes%20Square%20Center%20Dubai!5e0!3m2!1sen!2s!4v1649231938810!5m2!1sen!2s"
                             width="100%" height="370px" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -41,7 +41,7 @@ const Location = () => (
                     </div>
 
                 </Col>
-                <Col lg="4" md="4" className="offset-md-2 offset-lg-0"
+                <Col lg="4" md="4" className="offset-lg-0"
                 >
                     <div class="locationImg">
                         <img src="/assets/images/OTF/membership/locationImg.png" alt="Avatar" className="image img-fluid" />

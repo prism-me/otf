@@ -10248,8 +10248,14 @@ section {
 
 .link-horizontal ul {
   display: flex; }
+  @media (max-width: 767px) {
+    .link-horizontal ul {
+      display: block; } }
   .link-horizontal ul li {
     padding-right: 35px; }
+    @media (max-width: 767px) {
+      .link-horizontal ul li {
+        padding-right: 0px !important; } }
     .link-horizontal ul li.borders-right {
       border-right: 1px solid #FFFFFF;
       height: 52px;
@@ -10260,6 +10266,9 @@ section {
       padding-right: 0; }
     .link-horizontal ul li a {
       background-color: transparent; }
+      @media (max-width: 767px) {
+        .link-horizontal ul li a {
+          margin-bottom: 1rem; } }
       .link-horizontal ul li a.icon-btn i {
         font-size: 27px;
         height: 58px;
@@ -11478,6 +11487,9 @@ header.saas1 nav .main-menu li > a > span {
         text-transform: capitalize;
         font-size: 40px;
         font-weight: 700; }
+        @media (max-width: 767px) {
+          .header .bg.gym-header h1 {
+            font-size: 25px; } }
       .header .bg.gym-header .header-sub-text {
         padding: 0 85px; }
         .header .bg.gym-header .header-sub-text p {
@@ -15086,6 +15098,9 @@ tap to top css end
   color: #F58220;
   text-align: center;
   margin-bottom: 1rem; }
+  @media (max-width: 767px) {
+    .saas1.testimonial .oftHeading {
+      font-size: 22px; } }
 
 .saas1.testimonial.rightAnimation .animated-bg i {
   left: unset;
@@ -15215,6 +15230,9 @@ tap to top css end
   color: #000000;
   text-align: center;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .saas1.faq .frequent-text {
+      font-size: 22px; } }
 
 .saas1.faq .faq-block .accordion {
   border: none;
@@ -15252,6 +15270,9 @@ tap to top css end
   color: #000000;
   text-align: center;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .saas1.faq .faq-block .frequent-text {
+      font-size: 22px; } }
 
 .saas1.faq .faq-block h6 {
   font-weight: normal;
@@ -16159,6 +16180,10 @@ gym css start
   color: #F58220;
   text-align: center;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .gym .oftHeading {
+      font-size: 22px;
+      margin-bottom: 2rem !important; } }
 
 .gym .oftsubHeading {
   font-size: 16px;
@@ -16221,6 +16246,17 @@ gym css start
     backdrop-filter: blur(4px);
     padding: 4rem 0 3rem 3rem;
     margin: 0 2rem; }
+    @media (max-width: 575px) {
+      .gym.formatBG .bgFeature {
+        margin: 0 1rem;
+        text-align: center;
+        padding: 2rem; } }
+    @media (max-width: 575px) {
+      .gym.formatBG .bgFeature .formatedetailDiv {
+        display: block !important; } }
+    @media (max-width: 575px) {
+      .gym.formatBG .bgFeature .formateImg {
+        margin-bottom: 2rem; } }
     .gym.formatBG .bgFeature .formatHeading {
       color: #FFFFFF;
       font-size: 20px;
@@ -16234,6 +16270,12 @@ gym css start
   background-position: right;
   background-size: cover;
   background-color: #000000; }
+  @media (max-width: 767px) {
+    .gym.bg-location .BGImgLocation .calLocationspacing {
+      padding: 3rem 0 !important; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .gym.bg-location .BGImgLocation .calLocationspacing {
+      padding: 2rem 0 !important; } }
   .gym.bg-location .BGImgLocation .formStyle {
     padding: 8rem 4rem; }
     .gym.bg-location .BGImgLocation .formStyle .inputStyle {
@@ -16267,12 +16309,18 @@ gym css start
     color: #F58220;
     border-radius: 100%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14); }
+    @media (max-width: 767px) {
+      .gym.bg-location .locationDiv .iconstyelLocation {
+        margin-top: 1.5rem; } }
     .gym.bg-location .locationDiv .iconstyelLocation:hover {
       color: #FFFFFF;
       background: #F58220; }
 
 .gym.locations .locationImg {
   position: relative; }
+  @media (max-width: 767px) {
+    .gym.locations .locationImg {
+      margin-bottom: 2rem; } }
 
 .gym.locations .image {
   display: block;
@@ -16356,6 +16404,10 @@ gym css start
       color: #FFFFFF; }
     .gym .pricing-slider .slick-list .slick-track .slick-slide.slick-center.slick-active .price-container .price-feature-container .price-features .price-feature {
       color: #FFFFFF; }
+
+@media (max-width: 575px) {
+  .gym .pricing-slider .slick-dots {
+    margin-bottom: 1.5rem; } }
 
 .gym .pricing-slider .slick-dots li {
   margin-top: 40px !important;
@@ -16932,6 +16984,9 @@ breadcrumb-section css start
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .breadcrumb-text {
+        font-size: 25px; } }
   .breadcrumb-section .breadcrumb-subtext {
     color: #FFFFFF;
     font-size: 16px;
@@ -16946,10 +17001,16 @@ breadcrumb-section css start
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .offer-text {
+        font-size: 25px; } }
   .breadcrumb-section .offer-subtext {
     color: #FFFFFF;
     font-size: 25px;
     margin-bottom: 2rem; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .offer-subtext {
+        font-size: 22px; } }
   .breadcrumb-section .offer-detail {
     color: #FFFFFF;
     font-size: 16px;
@@ -20686,6 +20747,9 @@ error css end
 
 .title.title2.title-inner .borders span {
   font-family: 'klavika-bold', sans-serif; }
+  @media (max-width: 767px) {
+    .title.title2.title-inner .borders span {
+      font-size: 22px; } }
   .title.title2.title-inner .borders span.white-border:before, .title.title2.title-inner .borders span.white-border:after {
     border-color: #FFFFFF; }
   .title.title2.title-inner .borders span:before, .title.title2.title-inner .borders span:after {
@@ -22611,6 +22675,9 @@ footer.saas1 h5 {
   font-weight: 700;
   color: #F58220;
   text-transform: capitalize; }
+  @media (max-width: 767px) {
+    .plans .oftHeading {
+      font-size: 22px; } }
 
 .plans .imgOfferContainer {
   background-repeat: no-repeat;
@@ -22698,6 +22765,9 @@ footer.saas1 h5 {
       font-weight: 700;
       color: #F58220;
       margin-bottom: 2rem; }
+      @media (max-width: 767px) {
+        .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .oftHeading {
+          font-size: 22px; } }
     .OTbeatStyle .otbeat-slider .slick-list .slick-track .slick-slide > div .item .oftsubHeading {
       font-size: 16px;
       text-align: justify;
@@ -22744,6 +22814,9 @@ footer.saas1 h5 {
   font-weight: 700;
   color: #F58220;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .coaching .oftHeading {
+      font-size: 22px; } }
 
 .coaching .oftsubHeading {
   font-size: 16px;

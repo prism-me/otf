@@ -77,7 +77,8 @@ const FAQ = () => {
                         <div>
                             <h3 className="frequent-text">Frequently Asked Questions</h3>
                             <Accordion atomic={true}>
-                                {faqData.length > 0 &&
+                                {faqData &&
+                                    faqData.length > 0 &&
                                     faqData.map((x, i) => (
                                         <AccordionItem className="card-header bg-primary" title={x.question} key={i} >
                                             <DummyContent1 answer={x.answer} />
