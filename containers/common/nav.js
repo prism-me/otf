@@ -80,10 +80,13 @@ const Nav = () => {
 
     return (
         <div className={`navbar`} id="togglebtn">
-            <div className="responsive-btn">
-                <a className="btn-back" onClick={closeSidebar}>
+            <div className="responsive-btn text-right">
+                <i aria-hidden="true" className="fa fa-close modalIconStyle"
+                    onClick={closeSidebar}
+                ></i>
+                {/* <a className="btn-back" onClick={closeSidebar}>
                     <h5>close</h5>
-                </a>
+                </a> */}
             </div>
             <ul className="main-menu">
                 {MENUITEMS.map((menuItem, i) => {

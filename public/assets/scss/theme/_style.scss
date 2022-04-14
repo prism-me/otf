@@ -18643,11 +18643,31 @@ header {
   z-index: 600;
   width: 100%;
 
+  .modalIconStyle {
+    font-size: 20px;
+    border-radius: 100%;
+    background: $orange;
+    padding: 1rem 1.1rem;
+    color: $white;
+  }
+
   &.nav-lg {
     padding: 2rem 1rem;
 
     nav ul li a {
       font-size: 17px;
+
+      span {
+        @media #{$sm, $md} {
+          font-family: 'Source Sans Pro', sans-serif !important;
+          font-weight: 600;
+        }
+      }
+
+      @media #{$sm, $md} {
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-weight: 600;
+      }
     }
   }
 

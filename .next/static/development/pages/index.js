@@ -359,15 +359,16 @@ var Nav = function Nav() {
       columnNumber: 9
     }
   }, __jsx("div", {
-    className: "responsive-btn",
+    className: "responsive-btn text-right",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 83,
       columnNumber: 13
     }
-  }, __jsx("a", {
-    className: "btn-back",
+  }, __jsx("i", {
+    "aria-hidden": "true",
+    className: "fa fa-close modalIconStyle",
     onClick: closeSidebar,
     __self: _this,
     __source: {
@@ -375,19 +376,12 @@ var Nav = function Nav() {
       lineNumber: 84,
       columnNumber: 17
     }
-  }, __jsx("h5", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85,
-      columnNumber: 21
-    }
-  }, "close"))), __jsx("ul", {
+  })), __jsx("ul", {
     className: "main-menu",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 91,
       columnNumber: 13
     }
   }, _constant_navMenu__WEBPACK_IMPORTED_MODULE_2__["MENUITEMS"].map(function (menuItem, i) {
@@ -397,7 +391,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 94,
         columnNumber: 25
       }
     }, menuItem.type === 'sub' ? __jsx("a", {
@@ -409,14 +403,14 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94,
+        lineNumber: 97,
         columnNumber: 33
       }
     }, __jsx("span", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 98,
         columnNumber: 37
       }
     }, menuItem.title)) : '', menuItem.type === 'link' && __jsx("a", {
@@ -425,7 +419,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 102,
         columnNumber: 33
       }
     }, menuItem.title), menuItem.children && __jsx("ul", {
@@ -437,7 +431,7 @@ var Nav = function Nav() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 110,
         columnNumber: 33
       }
     }, menuItem.children.map(function (childrenItem, index) {
@@ -447,7 +441,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112,
+          lineNumber: 115,
           columnNumber: 41
         }
       }, childrenItem.type === 'sub' ? __jsx("a", {
@@ -458,7 +452,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 117,
           columnNumber: 49
         }
       }, childrenItem.title) : '', childrenItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -466,14 +460,14 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 122,
           columnNumber: 49
         }
       }, __jsx("a", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120,
+          lineNumber: 123,
           columnNumber: 53
         }
       }, "    ", childrenItem.title, " ")) : '', childrenItem.children ? __jsx("ul", {
@@ -481,7 +475,7 @@ var Nav = function Nav() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 127,
           columnNumber: 49
         }
       }, childrenItem.children.map(function (childrenSubItem, key) {
@@ -490,7 +484,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 126,
+            lineNumber: 129,
             columnNumber: 57
           }
         }, childrenSubItem.type === 'link' ? __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -498,7 +492,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 128,
+            lineNumber: 131,
             columnNumber: 65
           }
         }, __jsx("a", {
@@ -506,7 +500,7 @@ var Nav = function Nav() {
           __self: _this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 129,
+            lineNumber: 132,
             columnNumber: 69
           }
         }, childrenSubItem.title)) : '');
@@ -516,7 +510,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 145,
       columnNumber: 17
     }
   }, "  ", __jsx("button", {
@@ -524,7 +518,7 @@ var Nav = function Nav() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 145,
       columnNumber: 23
     }
   }, "Free Class"), " ")));
