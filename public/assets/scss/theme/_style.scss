@@ -12182,6 +12182,32 @@ breadcrumb-section css start
     }
   }
 
+  .offerBtn {
+    color: $white;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid $orange;
+    text-transform: uppercase;
+    background: $orange;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    display: none;
+
+    @media #{$sm} {
+      display: block;
+    }
+
+    &:hover {
+      background: $white;
+      color: $orange;
+      border: 1px solid $white;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
   .offer-subtext {
     color: $white;
     font-size: 25px;
@@ -12204,6 +12230,11 @@ breadcrumb-section css start
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
     backdrop-filter: blur(4px);
     border-radius: 30px;
+    display: block;
+
+    @media #{$sm} {
+      display: none;
+    }
 
     .inputStyle {
       background: $white;
@@ -21018,5 +21049,62 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.sburning {
+  .modalIconWrape {
+    text-align: right;
+
+    .modalIconStyle {
+      font-size: 20px;
+      border-radius: 100%;
+      background: $orange;
+      padding: 1rem 1.1rem;
+      color: $white;
+    }
+  }
+
+  .offer-form {
+    padding: 2rem 1rem;
+
+    .offerBtn {
+      color: $white;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid $orange;
+      text-transform: uppercase;
+      background: $orange;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+
+      &:hover {
+        background: $white;
+        color: $orange;
+        border: 1px solid $white;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .offer-subtext {
+      color: $black;
+      font-size: 22px;
+      margin-bottom: 2rem;
+    }
+
+    .inputStyle {
+      background: $white;
+      border-radius: 0;
+      padding: 0.7rem;
+      border: 1px solid $orange;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+
+      &:focus {
+        border: 1px solid $orange;
+      }
+    }
   }
 }

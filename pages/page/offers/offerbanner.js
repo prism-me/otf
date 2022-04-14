@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Container, Row, Col,
     Form,
     FormGroup,
     Input,
 } from 'reactstrap'
+import StartBurning from './startburning';
 
 
 const location = [
@@ -12,13 +13,16 @@ const location = [
     "Times Square Centre"
 ]
 const Offerbanner = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <section className="agency offer breadcrumb-section "
             style={{ background: `url("/assets/images/OTF/banner/offerbanner.jpg")` }}
         >
             <Container>
                 <Row>
-                    <Col sm={6} className='d-flex flex-column align-items-start justify-content-center'>
+                    <Col sm={12} md={6} lg={6} className='d-flex flex-column justify-content-center align-items-center'>
                         <h2 className="offer-text">
                             WORK 1 HOUR. BURN FOR 36
                         </h2>
@@ -29,7 +33,15 @@ const Offerbanner = () => {
                         <h3 className="offer-subtext">Buy 2 Months Membership and
                             get the 3rd Month for 10dhs only.</h3>
                     </Col>
-                    <Col sm={6}>
+                    <Col sm={12} md={6} lg={6}>
+                        <center>
+                            <button className='offerBtn px-5'
+                                onClick={() => setShowModal(true)}
+                            >Start Burning</button>
+                            <StartBurning
+                                show={showModal} onHide={() => setShowModal(false)}
+                            />
+                        </center>
                         <Form className='offer-form'>
                             <h3 className="offer-subtext">Start Burning</h3>
                             <FormGroup>

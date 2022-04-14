@@ -17004,6 +17004,25 @@ breadcrumb-section css start
     @media (max-width: 767px) {
       .breadcrumb-section .offer-text {
         font-size: 25px; } }
+  .breadcrumb-section .offerBtn {
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #F58220;
+    text-transform: uppercase;
+    background: #F58220;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    display: none; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .offerBtn {
+        display: block; } }
+    .breadcrumb-section .offerBtn:hover {
+      background: #FFFFFF;
+      color: #F58220;
+      border: 1px solid #FFFFFF; }
+    .breadcrumb-section .offerBtn:focus {
+      outline: 0; }
   .breadcrumb-section .offer-subtext {
     color: #FFFFFF;
     font-size: 25px;
@@ -17020,7 +17039,11 @@ breadcrumb-section css start
     background: #2e2e2e7d;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
     backdrop-filter: blur(4px);
-    border-radius: 30px; }
+    border-radius: 30px;
+    display: block; }
+    @media (max-width: 767px) {
+      .breadcrumb-section .offer-form {
+        display: none; } }
     .breadcrumb-section .offer-form .inputStyle {
       background: #FFFFFF;
       border-radius: 0;
@@ -22828,6 +22851,45 @@ footer.saas1 h5 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.sburning .modalIconWrape {
+  text-align: right; }
+  .sburning .modalIconWrape .modalIconStyle {
+    font-size: 20px;
+    border-radius: 100%;
+    background: #F58220;
+    padding: 1rem 1.1rem;
+    color: #FFFFFF; }
+
+.sburning .offer-form {
+  padding: 2rem 1rem; }
+  .sburning .offer-form .offerBtn {
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #F58220;
+    text-transform: uppercase;
+    background: #F58220;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px; }
+    .sburning .offer-form .offerBtn:hover {
+      background: #FFFFFF;
+      color: #F58220;
+      border: 1px solid #FFFFFF; }
+    .sburning .offer-form .offerBtn:focus {
+      outline: 0; }
+  .sburning .offer-form .offer-subtext {
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 2rem; }
+  .sburning .offer-form .inputStyle {
+    background: #FFFFFF;
+    border-radius: 0;
+    padding: 0.7rem;
+    border: 1px solid #F58220;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14); }
+    .sburning .offer-form .inputStyle:focus {
+      border: 1px solid #F58220; }
 
 /**=====================
      63. Responsive CSS Start
