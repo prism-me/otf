@@ -75,7 +75,7 @@ const Offerbanner = () => {
                                     style={{ color: "#c6c6c9" }}
                                 >
                                     <option style={{ color: "#495057" }}>Select Location</option>
-                                    {
+                                    {location.length > 0 &&
                                         location.map((x) => (
                                             <option style={{ color: "#495057" }} key={x}>{x}</option>
                                         ))

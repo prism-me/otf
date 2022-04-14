@@ -73,7 +73,7 @@ const Speaker = () => (
                 </Col>
                 <Col xs="12" className="speker-container">
                     <Slider className="speaker-slider " {...settings}>
-                        {
+                        {speaker.length > 0 &&
                             speaker.map((x, i) => (
                                 <div className="item" key={i}>
                                     <div className="text-center">

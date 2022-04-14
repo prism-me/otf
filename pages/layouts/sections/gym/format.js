@@ -43,7 +43,7 @@ const Format = () => (
         <Container fluid>
             <div className='bgFeature'>
                 <Row>
-                    {
+                    {featureData.length > 0 &&
                         featureData.map((x, i) => (
                             <Col md="6" key={i} className="mb-4">
                                 <Row>

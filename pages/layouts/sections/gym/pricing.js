@@ -62,7 +62,7 @@ const Pricing = () => (
                 </Col>
                 <Col lg="12" md="8" className="offset-md-2 offset-lg-0">
                     <Slider className="pricing-slider price-margin" {...settings}>
-                        {PricingResume2.map((item, i) => {
+                        {PricingResume2.length > 0 && PricingResume2.map((item, i) => {
                             return (
                                 <div className="item" key={i}>
                                     <div className="price-container hover-overlay shadows bg-white text-center">

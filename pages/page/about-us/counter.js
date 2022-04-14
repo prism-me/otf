@@ -30,7 +30,7 @@ const otfData = [
 const Counter = () => (
     <section className="OTbeatStyle p-0">
         <Slider className="default-dots otbeat-slider" id="gym-slider" {...settings}>
-            {
+            {otfData.length > 0 &&
                 otfData.map((x, i) => (
                     <div className="item" key={i}>
                         <div className="otbBgImg"

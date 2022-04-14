@@ -39,7 +39,7 @@ const Schedule = ({ titleM, title, detail, list, listImg, btnText, bgImg, subtit
                             {
                                 listImg &&
                                 <ul className="icon-collection">
-                                    {listImg.map((x, i) => (
+                                    {listImg.length > 0 && listImg.map((x, i) => (
                                         <li className="about-icongym" key={i}>
                                             <a className="center-content" href="#">
                                                 <img alt="" className="img-fluid icons" src={x} />
@@ -52,7 +52,7 @@ const Schedule = ({ titleM, title, detail, list, listImg, btnText, bgImg, subtit
                             {
                                 list &&
                                 <ul className='text-white pl-4' style={{ listStyle: "circle" }}>
-                                    {list.map((x, i) => (
+                                    {list.length > 0 && list.map((x, i) => (
                                         <li key={i}
                                             style={{ fontSize: "16px", fontWeight: "300", textAlign: "left" }}
                                         >

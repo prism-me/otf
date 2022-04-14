@@ -91,7 +91,7 @@ const Testimonial = () => {
                     <Col md="6">
                         <div className="testimonial-slider">
                             <Slider {...settings}>
-                                {
+                                {videoData.length > 0 &&
                                     videoData.map((x, i) => (
                                         <div className="item" key={i}>
                                             <div className="testimonial">

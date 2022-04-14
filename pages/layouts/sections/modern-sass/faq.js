@@ -42,7 +42,7 @@ const Faq = () => {
                 <div className="faq-block">
                     <div>
                         <Accordion atomic={true}>
-                            {
+                            {faqData.length > 0 &&
                                 faqData.map((x, i) => (
                                     <AccordionItem className="card-header bg-primary" title={x.question} key={i}>
                                         <DummyContent className="active" answer={x.answer} />
